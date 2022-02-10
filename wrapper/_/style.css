@@ -1,0 +1,20 @@
+body {
+    background-color: #342d4e;
+    color: white;
+    font-family: sans-serif;
+  }
+
+#twic-header{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0 8px 0;
+  background-color: #9002ff;
+  height: 50px;
+}
+
+.twic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}

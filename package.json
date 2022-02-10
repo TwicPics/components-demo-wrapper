@@ -1,0 +1,26 @@
+{
+    "author": "TwicPics <hello@twic.pics> (https://www.twicpics.com)",
+    "bugs": {
+      "url": "https://github.com/TwicPics/components-demo-wrapper/issues"
+    },
+    "description": "A component to easily create formatted demos.",
+    "homepage": "https://github.com/TwicPics/components-demo-wrapper",
+    "keywords": [
+      "component library",
+      "react",
+      "twicpics"
+    ],
+    "license": "MIT",
+    "name": "@twicpics/components-demo-wrapper",
+    "repository": {
+      "type": "git",
+      "url": "git@github.com:TwicPics/components-demo-wrapper.git"
+    },
+    "version": "0.0.1",
+    "dependencies": {
+    },
+    "devDependencies": {
+        
+    },
+    "type": "module"
+}
