@@ -1,4 +1,3 @@
-import "../_/style.css";
 import { default as TwicHeader } from "./twicHeader";
 
 import React from "react";

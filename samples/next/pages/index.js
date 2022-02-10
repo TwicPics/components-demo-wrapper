@@ -1,8 +1,7 @@
-import './App.css';
+import { TwicImg } from "@twicpics/components/react";
 import { TwicWrapper } from '@twicpics/components-demo-wrapper/wrapper/react';
-import { TwicImg } from '@twicpics/components/react';
 
-function App() {
+export default function Home() {
     return (
         <TwicWrapper redirect="www.twicpics.com" tags={["tag1", "tag2", "tag3"]}>
             <div className="twic-grid">
@@ -26,4 +25,3 @@ function App() {
         </TwicWrapper>
     );
 }
-export default App;

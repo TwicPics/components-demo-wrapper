@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const TwicHeader = ( { redirect = `https://www.twicpics.com/docs/getting-started/overview`, tags=[] } ) => {
     return (
         <header id="twic-header">

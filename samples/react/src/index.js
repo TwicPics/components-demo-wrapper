@@ -1,10 +1,10 @@
+import App from './App';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '@twicpics/components-demo-wrapper/wrapper/_/style.css';
-import './index.css';
-import App from './App';
 import { installTwicPics } from "@twicpics/components/react";
 import "@twicpics/components/style.css";
+import '@twicpics/components-demo-wrapper/wrapper/_/style.css';
+import './index.css';
 
 installTwicPics( {
     "domain": `https://demo.twic.pics`,

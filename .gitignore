@@ -1,3 +1,4 @@
+/samples/**/.next
 /samples/**/build
 /samples/**/package-lock.json
 /samples/**/yarn.lock

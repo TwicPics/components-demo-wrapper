@@ -11,8 +11,8 @@
     "react-scripts": "4.0.3"
   },
   "scripts": {
-    "build": "$npm_execpath install && DISABLE_ESLINT_PLUGIN=true SKIP_PREFLIGHT_CHECK=true react-app-rewired build",
-    "serve": "$npm_execpath install && DISABLE_ESLINT_PLUGIN=true SKIP_PREFLIGHT_CHECK=true PORT=3000 react-app-rewired start"
+    "build": "node ../../build && $npm_execpath install && DISABLE_ESLINT_PLUGIN=true SKIP_PREFLIGHT_CHECK=true react-app-rewired build",
+    "serve": "node ../../build && $npm_execpath install && DISABLE_ESLINT_PLUGIN=true SKIP_PREFLIGHT_CHECK=true react-app-rewired start"
 },
   "eslintConfig": {
     "extends": [

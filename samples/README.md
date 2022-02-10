@@ -6,9 +6,12 @@ This directory contains sample projects for all supported frameworks.
 
 | subdirectory | content |
 | - | - |
+| `samples/next` | [Next.js](https://nextjs.org/) sample project |
 | `samples/react` | [React](https://reactjs.org/) sample project |
 
 ## Usage
+
+You must first install `@twicpics/components-demo-wrapper` using `yarn build` at the root of the repository.
 
 Enter the corresponding directory, type `yarn serve` and point your browser towards `http://localhost:3000`.
 
