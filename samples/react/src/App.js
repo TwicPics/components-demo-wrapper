@@ -1,29 +1,20 @@
 import './App.css';
-import { TwicWrapper } from '@twicpics/components-demo-wrapper/wrapper/react';
-import { TwicImg } from '@twicpics/components/react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import BasicGrid from './components/basicGrid/BasicGrid';
+import ResponsiveGrid from './components/responsiveGrid/ResponsiveGrid';
+import Home from './components/_home/Home';
 
 function App() {
     return (
-        <TwicWrapper redirect="www.twicpics.com" tags={["tag1", "tag2", "tag3"]}>
-            <div className="twic-grid">
-                <TwicImg src="https://assets.twicpics.com/examples/football.jpg" />
-                <TwicImg
-                    src="football.jpg"
-                    ratio="16/9"
-                    mode="cover"
-                    step="100"
-                    placeholder="meancolor"
-                />
-                <TwicImg
-                    src="/football.jpg"
-                    step="100"
-                    focus="auto"
-                    ratio="500/800"
-                    placeholder="none"
-                    alt="custom alt attribute"
-                />
-            </div>
-        </TwicWrapper>
+        <div className="App">
+      <Router>
+        <>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/basic-grid" component={BasicGrid} />
+          <Route exact path="/responsive-grid" component={ResponsiveGrid} />
+        </>
+      </Router>
+    </div>
     );
 }
 export default App;
