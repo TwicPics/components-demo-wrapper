@@ -1,8 +1,8 @@
-import './BasicGrid.css';
+import './TwicBasicGrid.css';
 import { TwicWrapper } from '@twicpics/components-demo-wrapper/wrapper/react';
 import { TwicImg } from '@twicpics/components/react';
 
-function BasicGrid() {
+function TwicBasicGrid() {
     return (
         <TwicWrapper redirect="www.twicpics.com" tags={["tag1", "tag2", "tag3"]}>
             <div className="twic-grid">
@@ -42,4 +42,4 @@ function BasicGrid() {
         </TwicWrapper>
     );
 }
-export default BasicGrid;
+export default TwicBasicGrid;

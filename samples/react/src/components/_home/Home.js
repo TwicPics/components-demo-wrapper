@@ -11,6 +11,11 @@ function Home() {
           </NavLink>
         </li>
         <li>
+          <NavLink to="/slideshow">
+            Slideshow
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/responsive-grid">
             Responsive Grid
           </NavLink>

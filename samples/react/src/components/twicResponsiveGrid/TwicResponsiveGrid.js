@@ -1,4 +1,4 @@
-import './ResponsiveGrid.scss';
+import './TwicResponsiveGrid.scss';
 import { TwicWrapper } from '@twicpics/components-demo-wrapper/wrapper/react';
 import { TwicImg } from '@twicpics/components/react';
 
@@ -7,7 +7,7 @@ import { TwicImg } from '@twicpics/components/react';
  * Custom behaviour on twic done ( scale 0 to 1 rather than opacity )
  * No placeholder
  */
-function ResponsiveGrid() {
+function TwicResponsiveGrid() {
     return (
         <TwicWrapper redirect="www.twicpics.com" tags={["tag1", "tag2", "tag3"]}>
             <div className="responsive-grid-container">
@@ -487,4 +487,4 @@ function ResponsiveGrid() {
         </TwicWrapper>
     );
 }
-export default ResponsiveGrid;
+export default TwicResponsiveGrid;

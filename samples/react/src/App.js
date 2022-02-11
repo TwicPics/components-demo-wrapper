@@ -1,8 +1,9 @@
 import './App.css';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import BasicGrid from './components/basicGrid/BasicGrid';
-import ResponsiveGrid from './components/responsiveGrid/ResponsiveGrid';
 import Home from './components/_home/Home';
+import TwicBasicGrid from './components/twicBasicGrid/TwicBasicGrid';
+import TwicResponsiveGrid from './components/twicResponsiveGrid/TwicResponsiveGrid';
+import TwicSlideshow from './components/twicSlideshow/TwicSlideShow';
 
 function App() {
     return (
@@ -10,8 +11,9 @@ function App() {
       <Router>
         <>
           <Route exact path="/" component={Home} />
-          <Route exact path="/basic-grid" component={BasicGrid} />
-          <Route exact path="/responsive-grid" component={ResponsiveGrid} />
+          <Route exact path="/basic-grid" component={TwicBasicGrid} />
+          <Route exact path="/slideshow" component={TwicSlideshow} />
+          <Route exact path="/responsive-grid" component={TwicResponsiveGrid} />
         </>
       </Router>
     </div>
