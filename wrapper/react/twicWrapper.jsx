@@ -4,9 +4,9 @@ import React from "react";
 
 const TwicWrapper = ( { redirect, children, tags } ) => {
     return (
-        <div className="twic-demo">
+        <div id="twic-demo-wrapper">
             <TwicHeader redirect={redirect} tags={tags} ></TwicHeader>
-            <main className="twic-demo-container">
+            <main id="twic-demo-container">
                     {children}
             </main>
         </div>

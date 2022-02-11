@@ -1,20 +1,30 @@
 body {
-    background-color: #342d4e;
-    color: white;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: #454446;
   }
 
+#twic-demo-wrapper {
+
+}
+
 #twic-header{
- display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px 0 8px 0;
   background-color: #9002ff;
-  height: 50px;
+}
+
+#twic-header img {
+    width: 140px;
+}
+
+#twic-demo-container {
+    margin: 1rem;
 }
 
 .twic-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 1rem;
 }
