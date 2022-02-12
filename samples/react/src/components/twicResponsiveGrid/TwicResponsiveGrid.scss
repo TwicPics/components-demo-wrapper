@@ -41,8 +41,13 @@
                         padding: 0 10px;
                     }
                 }
-                &:hover div.text {
-                    opacity: 1;
+                &:hover {
+                    & div.text {
+                        opacity: 1;
+                    }
+                    & img.twic-done {
+                        transform: scale(1.2);
+                    }
                 }
                 & img {
                     position: absolute;
