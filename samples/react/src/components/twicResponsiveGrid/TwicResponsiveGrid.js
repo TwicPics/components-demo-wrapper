@@ -3,485 +3,87 @@ import { TwicWrapper } from '@twicpics/components-demo-wrapper/wrapper/react';
 import { TwicImg } from '@twicpics/components/react';
 
 /**
+ * list of unit images
+ */
+const seed = [
+    {
+        url: "codepen/tp-write.jpg",
+        text: "write"
+    },
+    {
+        url: "codepen/tp-snow.jpg",
+        text: "snow"
+    },
+    {
+        url: "codepen/tp-rasp.jpg",
+        text: "rasp"
+    },
+    {
+        url: "codepen/tp-pug.jpg",
+        text: "pug"
+    },
+    {
+        url: "codepen/tp-moth.jpg",
+        text: "moth"
+    },
+    {
+        url: "codepen/tp-lion.jpg",
+        text: "lion"
+    },
+    {
+        url: "codepen/tp-lake.jpg",
+        text: "lake"
+    },
+    {
+        url: "codepen/tp-friend.jpg",
+        text: "friend"
+    },
+    {
+        url: "codepen/tp-cereals.jpg",
+        text: "cereals"
+    },
+    {
+        url: "codepen/tp-castle.jpg",
+        text: "castle"
+    },
+    {
+        url: "codepen/tp-canyon.jpg",
+        text: "canyon"
+    },
+    {
+        url: "codepen/tp-cafe.jpg",
+        text: "cafe"
+    },
+    {
+        url: "codepen/tp-artichoke.jpg",
+        text: "artichoke"
+    },
+];
+
+/**
+ * list of images to display
+ */
+const images = [...seed, ...seed, ...seed,...seed, ...seed, ...seed, ...seed, ...seed, ...seed, ...seed, ...seed, ...seed];
+
+/**
  * Displays images in grid with responsive rules setted on li width
  * Custom behaviour on twic done ( scale 0 to 1 rather than opacity )
  * No placeholder
  */
-function TwicResponsiveGrid() {
+const TwicResponsiveGrid = () => {
     return (
         <TwicWrapper redirect="www.twicpics.com" tags={["tag1", "tag2", "tag3"]}>
             <div className="responsive-grid-container">
                 <ul className="cbp-rfgrid">
-                    <li>
-                        <a href="#">
-                            <TwicImg placeholder="none" ratio="4/3" mode="cover" src="codepen/tp-write.jpg" />
-                            <div className="text">
-                                <h3>write</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <TwicImg placeholder="none" ratio="4/3" mode="cover" src="codepen/tp-snow.jpg" />
-                            <div className="text">
-                                <h3>snow</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-rasp.jpg" />
-                            <div className="text">
-                                <h3>rasp</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-pug.jpg" />
-                            <div className="text">
-                                <h3>pug</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-moth.jpg" />
-                            <div className="text">
-                                <h3>moth</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-lion.jpg" />
-                            <div className="text">
-                                <h3>lion</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-lake.jpg" />
-                            <div className="text">
-                                <h3>lake</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-friend.jpg" />
-                            <div className="text">
-                                <h3>friend</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-cereals.jpg" />
-                            <div className="text">
-                                <h3>cereals</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-castle.jpg" />
-                            <div className="text">
-                                <h3>castle</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-canyon.jpg" />
-                            <div className="text">
-                                <h3>canyon</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-cafe.jpg" />
-                            <div className="text">
-                                <h3>cafe</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-artichoke.jpg" />
-                            <div className="text">
-                                <h3>artichoke</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-write.jpg" />
-                            <div className="text">
-                                <h3>write</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-snow.jpg" />
-                            <div className="text">
-                                <h3>snow</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-rasp.jpg" />
-                            <div className="text">
-                                <h3>rasp</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-pug.jpg" />
-                            <div className="text">
-                                <h3>pug</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-moth.jpg" />
-                            <div className="text">
-                                <h3>moth</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-lion.jpg" />
-                            <div className="text">
-                                <h3>lion</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-lake.jpg" />
-                            <div className="text">
-                                <h3>lake</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-friend.jpg" />
-                            <div className="text">
-                                <h3>friend</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-cereals.jpg" />
-                            <div className="text">
-                                <h3>cereals</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-castle.jpg" />
-                            <div className="text">
-                                <h3>castle</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-canyon.jpg" />
-                            <div className="text">
-                                <h3>canyon</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-cafe.jpg" />
-                            <div className="text">
-                                <h3>cafe</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-artichoke.jpg" />
-                            <div className="text">
-                                <h3>artichoke</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-write.jpg" />
-                            <div className="text">
-                                <h3>write</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-snow.jpg" />
-                            <div className="text">
-                                <h3>snow</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-rasp.jpg" />
-                            <div className="text">
-                                <h3>rasp</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-pug.jpg" />
-                            <div className="text">
-                                <h3>pug</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-moth.jpg" />
-                            <div className="text">
-                                <h3>moth</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-lion.jpg" />
-                            <div className="text">
-                                <h3>lion</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-lake.jpg" />
-                            <div className="text">
-                                <h3>lake</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-friend.jpg" />
-                            <div className="text">
-                                <h3>friend</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-cereals.jpg" />
-                            <div className="text">
-                                <h3>cereals</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-castle.jpg" />
-                            <div className="text">
-                                <h3>castle</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-canyon.jpg" />
-                            <div className="text">
-                                <h3>canyon</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-cafe.jpg" />
-                            <div className="text">
-                                <h3>cafe</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-artichoke.jpg" />
-                            <div className="text">
-                                <h3>artichoke</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-write.jpg" />
-                            <div className="text">
-                                <h3>write</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-snow.jpg" />
-                            <div className="text">
-                                <h3>snow</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-rasp.jpg" />
-                            <div className="text">
-                                <h3>rasp</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-pug.jpg" />
-                            <div className="text">
-                                <h3>pug</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-moth.jpg" />
-                            <div className="text">
-                                <h3>moth</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-lion.jpg" />
-                            <div className="text">
-                                <h3>lion</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-lake.jpg" />
-                            <div className="text">
-                                <h3>lake</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-friend.jpg" />
-                            <div className="text">
-                                <h3>friend</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-cereals.jpg" />
-                            <div className="text">
-                                <h3>cereals</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-castle.jpg" />
-                            <div className="text">
-                                <h3>castle</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-canyon.jpg" />
-                            <div className="text">
-                                <h3>canyon</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-cafe.jpg" />
-                            <div className="text">
-                                <h3>cafe</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-artichoke.jpg" />
-                            <div className="text">
-                                <h3>artichoke</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-write.jpg" />
-                            <div className="text">
-                                <h3>write</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-snow.jpg" />
-                            <div className="text">
-                                <h3>snow</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-rasp.jpg" />
-                            <div className="text">
-                                <h3>rasp</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-pug.jpg" />
-                            <div className="text">
-                                <h3>pug</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-moth.jpg" />
-                            <div className="text">
-                                <h3>moth</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-lion.jpg" />
-                            <div className="text">
-                                <h3>lion</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-lake.jpg" />
-                            <div className="text">
-                                <h3>lake</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-friend.jpg" />
-                            <div className="text">
-                                <h3>friend</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-cereals.jpg" />
-                            <div className="text">
-                                <h3>cereals</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-castle.jpg" />
-                            <div className="text">
-                                <h3>castle</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-canyon.jpg" />
-                            <div className="text">
-                                <h3>canyon</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-cafe.jpg" />
-                            <div className="text">
-                                <h3>cafe</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-artichoke.jpg" />
-                            <div className="text">
-                                <h3>artichoke</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-write.jpg" />
-                            <div className="text">
-                                <h3>write</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-snow.jpg" />
-                            <div className="text">
-                                <h3>snow</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-rasp.jpg" />
-                            <div className="text">
-                                <h3>rasp</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-pug.jpg" />
-                            <div className="text">
-                                <h3>pug</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-moth.jpg" />
-                            <div className="text">
-                                <h3>moth</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-lion.jpg" />
-                            <div className="text">
-                                <h3>lion</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-lake.jpg" />
-                            <div className="text">
-                                <h3>lake</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-friend.jpg" />
-                            <div className="text">
-                                <h3>friend</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-cereals.jpg" />
-                            <div className="text">
-                                <h3>cereals</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-castle.jpg" />
-                            <div className="text">
-                                <h3>castle</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-canyon.jpg" />
-                            <div className="text">
-                                <h3>canyon</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-cafe.jpg" />
-                            <div className="text">
-                                <h3>cafe</h3></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"><TwicImg placeholder="none" ratio="4/3" mode="cover" src="image:codepen/tp-artichoke.jpg" />
-                            <div className="text">
-                                <h3>artichoke</h3></div>
-                        </a>
-                    </li>
+                    { images.map ( ( image, i ) => (
+                        <li key={ i }>
+                            <a href="#">
+                                <TwicImg placeholder="none" ratio="4/3" mode="cover" src={ image.url } />
+                                <div className="text">
+                                    <h3>{image.text}</h3></div>
+                            </a>
+                        </li>
+                     ) ) }
                 </ul>
             </div>
         </TwicWrapper>
