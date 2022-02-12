@@ -4,35 +4,48 @@ import { TwicWrapper } from '@twicpics/components-demo-wrapper/wrapper/react';
 import { TwicImg } from '@twicpics/components/react';
 
 /**
- * Displays images in grid with responsive rules setted on li width
- * Custom behaviour on twic done ( scale 0 to 1 rather than opacity )
- * No placeholder
+ * images list
  */
+const images = [
+    {
+        url:"codepen/tp-snow.jpg",
+        focus:"auto"
+    },
+    {
+        url:"codepen/tp-cafe.jpg",
+        focus:"auto"
+    },
+    {
+        url:"codepen/tp-castle.jpg",
+        focus:"auto"
+    },
+    {
+        url:"codepen/tp-doggy.jpg",
+        focus:"200x200"
+    },
+    {
+        url:"codepen/tp-lake.jpg",
+        focus:"auto"
+    },
+];
 
-
-function TwicSlideshow() {
+/**
+ * Displays a carousel of responsive images
+ */
+const TwicSlideshow = () => {
     return (
         <TwicWrapper redirect="www.twicpics.com" tags={["tag1", "tag2", "tag3"]}>
             <div className="twic-slideshow-container">
                 <Slideshow>
-                    <SlideshowItem>
-                        <TwicImg className='twic-slideshow-responsive' focus="auto" src="codepen/tp-snow.jpg"></TwicImg>
-                    </SlideshowItem>
-                    <SlideshowItem>
-                        <TwicImg className='twic-slideshow-responsive' focus="auto" src="codepen/tp-cafe.jpg"></TwicImg>
-                    </SlideshowItem>
-                    <SlideshowItem>
-                        <TwicImg className='twic-slideshow-responsive' focus="auto" src="codepen/tp-castle.jpg"></TwicImg>
-                    </SlideshowItem>
-                    <SlideshowItem>
-                        <TwicImg className='twic-slideshow-responsive' focus="auto" src="codepen/tp-cereals.jpg"></TwicImg>
-                    </SlideshowItem>
-                    <SlideshowItem>
-                        <TwicImg className='twic-slideshow-responsive' focus="200x200" src="codepen/tp-doggy.jpg"></TwicImg>
-                    </SlideshowItem>
-                    <SlideshowItem>
-                        <TwicImg className='twic-slideshow-responsive' focus="auto" src="codepen/tp-lake.jpg"></TwicImg>
-                    </SlideshowItem>
+                    { images.map ( ( image, i ) => (
+                        <SlideshowItem key={ i }>
+                            <TwicImg 
+                                className='twic-slideshow-responsive'
+                                focus={ image.focus } 
+                                src={ image.url }
+                            ></TwicImg>
+                        </SlideshowItem>
+                        ) ) }
                 </Slideshow>
             </div>
         </TwicWrapper>
