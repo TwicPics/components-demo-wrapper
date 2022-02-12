@@ -61,10 +61,10 @@ const Slideshow = ( { children } ) => {
                             })}
                         </div>
                         <ul className="slick-dots">
-                            {React.Children.map(children, (child, index) => {
+                            {React.Children.map(children, (_child, index) => {
                                 return (
                                     <li className={`${index === activeIndex ? "slick-active" : ""}`}>
-                                        <button onClick={ () => { updateIndex(index); } } > { index + 1 } </button>
+                                        <button onClick={ () => { updateIndex(index); } } ></button>
                                     </li>
                                 );
                             })}

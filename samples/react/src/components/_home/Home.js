@@ -11,6 +11,11 @@ function Home() {
           </NavLink>
         </li>
         <li>
+          <NavLink to="/slider">
+            Slider
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/slideshow">
             Slideshow
           </NavLink>
