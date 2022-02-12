@@ -83,7 +83,6 @@ const seed = [
  */
 const images = [...seed, ...seed, ...seed,...seed, ...seed, ...seed, ...seed, ...seed];
 
-
 /**
  * Displays images with a horizontal scroll bar
  */
@@ -92,10 +91,10 @@ const TwicSlider = () => {
         <TwicWrapper redirect="www.twicpics.com" tags={["tag1", "tag2", "tag3"]}>
               <div className="twic-slider-container">
                 <ul className="slider">
-                    { images.map( ( image, i) => (
+                    { images.map( ( image, i ) => (
                         <li className='slider-item' key={i}>
                             <figure className='card'>
-                                <TwicImg src={image.url}></TwicImg>
+                                <TwicImg src={image.url} focus="auto"></TwicImg>
                                 <figcaption>
                                     <p>{image.caption}</p>
                                 </figcaption>
