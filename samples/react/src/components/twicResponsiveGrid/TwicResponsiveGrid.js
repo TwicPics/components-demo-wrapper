@@ -74,12 +74,12 @@ const TwicResponsiveGrid = () => {
     return (
         <TwicWrapper redirect="www.twicpics.com" tags={["tag1", "tag2", "tag3"]}>
             <div className="responsive-grid-container">
-                <ul className="cbp-rfgrid">
+                <ul>
                     { images.map ( ( image, i ) => (
                         <li key={ i }>
                             <a href="#">
                                 <TwicImg placeholder="none" ratio="4/3" mode="cover" src={ image.url } />
-                                <div className="text">
+                                <div className="caption">
                                     <h3>{image.text}</h3></div>
                             </a>
                         </li>

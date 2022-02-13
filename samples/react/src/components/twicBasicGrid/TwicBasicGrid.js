@@ -1,4 +1,4 @@
-import './TwicBasicGrid.css';
+import './TwicBasicGrid.scss';
 import { TwicWrapper } from '@twicpics/components-demo-wrapper/wrapper/react';
 import { TwicImg } from '@twicpics/components/react';
 

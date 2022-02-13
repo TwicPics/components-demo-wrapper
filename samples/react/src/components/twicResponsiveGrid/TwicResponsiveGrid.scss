@@ -1,76 +1,72 @@
 .display-block-pointer {
+    cursor: pointer;
     display: block;
     width: 100%;
     height: 100%;
-    cursor: pointer;
 }
 
 .responsive-grid-container {
-    .cbp-rfgrid {
+    ul {
+        list-style: none;
         margin: 0;
         padding: 0;
-        list-style: none;
         position: relative;
         width: 100%;
-        & li {
-            float: left;
-            width: 16.6666667%;
-            width: calc(100% / 6);
-            & a {
-                @extend .display-block-pointer;
-                position: relative;
-                padding-bottom: 75%;
-                & div.text {
-                    position: absolute;
-                    left: 20px;
-                    top: 20px;
-                    right: 20px;
-                    bottom: 20px;
-                    background: rgba(0, 0, 0, 0.3);
-                    display: flex;
-                    align-items: center;
-                    text-align: center;
-                    opacity: 0;
-                    transition: .3s all ease-in-out;
-                    & h3 {
-                        width: 100%;
-                        color: #fff;
-                        text-transform: uppercase;
-                        font-size: 1.4em;
-                        letter-spacing: 2px;
-                        padding: 0 10px;
-                    }
-                }
-                &:hover {
-                    & div.text {
-                        opacity: 1;
-                    }
-                    & img.twic-done {
-                        transform: scale(1.2);
-                    }
-                }
-                & img {
-                    position: absolute;
-                    @extend .display-block-pointer;
-                }
-                & .twic-w {
-                    position: absolute;
-                }
+    }
+
+    li {
+        float: left;
+        width: 16.6666667%;
+        width: calc(100% / 6);
+    }
+
+    a {
+        @extend .display-block-pointer;
+        padding-bottom: 75%;
+        position: relative;
+        &:hover {
+            & .caption {
+                opacity: 1;
+            }
+            & img.twic-done {
+                transform: scale(1.2);
             }
         }
-    }
-
-    .twic-w>*{
-        transition-property: inherit !important;
-    }
-
-    img {
-        transform: scale(0);
-        transition: .3s all ease-in-out;
-        &.twic-done {
-            transform: scale(1);
+        & img {
+            @extend .display-block-pointer;
+            position: absolute;
+            transform: scale(0);
+            transition: .3s all ease-in-out;
+            &.twic-done {
+                transform: scale(1);
+            }
+        }
+        & .twic-w {
+            position: absolute;
         }
     }
+
+    .caption {
+        align-items: center;
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        opacity: 0;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        bottom: 20px;
+        left: 20px;
+        text-align: center;
+        transition: .3s all ease-in-out;
+        & h3 {
+            color: #fff;
+            font-size: 1.4em;
+            letter-spacing: 2px;
+            padding: 0 10px;
+            width: 100%;
+        }
+    }
+
 }
 
 .responsive-grid-container .cbp-rfgrid li{

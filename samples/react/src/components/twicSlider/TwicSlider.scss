@@ -1,15 +1,14 @@
 .twic-slider-container {
-    .slider
-    {
-        list-style: none;
+    .slider {
         display: flex;
+        list-style: none;
         overflow-x: scroll;
         padding: 1rem 0;
         scroll-snap-type: x mandatory;
     }
 
-    .slider-item{
-       flex-grow: 1;
+    .slider-item {
+        flex-grow: 1;
         flex-shrink: 0;
         margin-left: 1rem;
         scroll-snap-align: start;
@@ -19,14 +18,14 @@
         margin: unset;
         position: relative;
         & figcaption {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
             background-color: rgba(black, 0.5);
-            padding: 8px 0px;
-            font-size: 12px;
+            bottom: 0;
             color: white;
+            font-size: 12px;
+            padding: 8px 0px;
+            position: absolute;
             text-transform: uppercase;
+            width: 100%;
             & p {
                 margin: unset;
                 padding: 0 5px;
@@ -50,8 +49,8 @@
 }
 
 .slider-item {
-    --twic-ratio: calc(1);
     flex-basis: 100%;
+    --twic-ratio: calc(1);
 }
 
 .slider-item {
