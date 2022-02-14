@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 
-import "./Slideshow.scss";
+import "./index.scss";
 
 export const SlideshowItem = ( { children, width } ) => {
     return (

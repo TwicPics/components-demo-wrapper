@@ -1,5 +1,5 @@
-import './TwicSlideShow.scss';
-import Slideshow, { SlideshowItem } from "./slideshow/Slideshow";
+import './index.scss';
+import Slideshow, { SlideshowItem } from "./slideshow";
 import { TwicWrapper } from '@twicpics/components-demo-wrapper/src/react';
 import { TwicImg } from '@twicpics/components/react';
 

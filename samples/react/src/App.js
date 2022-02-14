@@ -1,10 +1,10 @@
 import './App.css';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from './components/_home/Home';
-import TwicBasicGrid from './components/twicBasicGrid/TwicBasicGrid';
-import TwicResponsiveGrid from './components/twicResponsiveGrid/TwicResponsiveGrid';
-import TwicSlideshow from './components/twicSlideshow/TwicSlideShow';
-import TwicSlider from './components/twicSlider/TwicSlider';
+import Home from './components/_home';
+import TwicBasicGrid from './components/twicBasicGrid';
+import TwicResponsiveGrid from './components/twicResponsiveGrid';
+import TwicSlideshow from './components/twicSlideshow';
+import TwicSlider from './components/twicSlider';
 
 function App() {
     return (
