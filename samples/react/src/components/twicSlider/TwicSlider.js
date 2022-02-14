@@ -1,5 +1,5 @@
 import './TwicSlider.scss';
-import { TwicWrapper } from '@twicpics/components-demo-wrapper/wrapper/react';
+import { TwicWrapper } from '@twicpics/components-demo-wrapper/src/react';
 import { TwicImg } from '@twicpics/components/react';
 
 /**
