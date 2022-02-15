@@ -1,6 +1,6 @@
 import './index.scss';
 import Slideshow, { SlideshowItem } from "./slideshow";
-import { TwicWrapper } from '@twicpics/components-demo-wrapper/src/react';
+import { TwicWrapper } from '@twicpics/components-demo-wrapper/react';
 import { TwicImg } from '@twicpics/components/react';
 
 /**

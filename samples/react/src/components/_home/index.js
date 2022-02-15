@@ -1,4 +1,4 @@
-import { TwicWrapper } from "@twicpics/components-demo-wrapper/src/react";
+import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
 import { NavLink } from "react-router-dom";
 
 function Home() {

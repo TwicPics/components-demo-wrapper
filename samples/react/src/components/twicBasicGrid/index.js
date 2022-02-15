@@ -1,5 +1,5 @@
 import './index.scss';
-import { TwicWrapper } from '@twicpics/components-demo-wrapper/src/react';
+import { TwicWrapper } from '@twicpics/components-demo-wrapper/react';
 import { TwicImg } from '@twicpics/components/react';
 
 function TwicBasicGrid() {

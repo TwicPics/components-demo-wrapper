@@ -1,5 +1,5 @@
 import { installTwicPics } from "@twicpics/components/react";
-import '@twicpics/components-demo-wrapper/src/_/style.css';
+import '@twicpics/components-demo-wrapper/style.css';
 import "@twicpics/components/style.css";
 import "./_app.css";
 

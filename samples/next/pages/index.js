@@ -1,4 +1,4 @@
-import { TwicWrapper } from '@twicpics/components-demo-wrapper/src/react';
+import { TwicWrapper } from '@twicpics/components-demo-wrapper/react';
 import Link from 'next/link'
 
 const Home = () => {

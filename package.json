@@ -20,5 +20,12 @@
     "dependencies": {
         "fs-extra": "10.0.0"
     },
-    "type": "module"
+    "scripts": {
+        "postinstall": "node ./build/postinstall.js"
+    },
+    "type": "module",
+    "exports" : {
+        "./style.css": "./style.css",
+        "./react": "./react"
+    }
 }
