@@ -1,10 +1,10 @@
-import styles from './index.module.scss';
-import { TwicWrapper } from '@twicpics/components-demo-wrapper/react';
-import { TwicImg } from '@twicpics/components/react';
+import React from "react";
+import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
+import { TwicImg } from "@twicpics/components/react";
 
 function TwicBasicGrid() {
     return (
-        <TwicWrapper redirect="www.twicpics.com" tags={["tag1", "tag2", "tag3"]}>
+        <TwicWrapper redirect="www.twicpics.com" tags={[ `tag1`, `tag2`, `tag3` ]}>
             <div className="twic-grid">
                 <TwicImg src="https://assets.twicpics.com/examples/football.jpg" />
                 <TwicImg

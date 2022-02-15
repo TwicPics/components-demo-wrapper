@@ -1,30 +1,74 @@
 {
     "author": "TwicPics <hello@twic.pics> (https://www.twicpics.com)",
     "bugs": {
-      "url": "https://github.com/TwicPics/components-demo-wrapper/issues"
+        "url": "https://github.com/TwicPics/components-demo-wrapper/issues"
     },
     "description": "A component to easily create formatted demos.",
     "homepage": "https://github.com/TwicPics/components-demo-wrapper",
     "keywords": [
-      "component library",
-      "react",
-      "twicpics"
+        "component library",
+        "react",
+        "twicpics"
     ],
     "license": "MIT",
     "name": "@twicpics/components-demo-wrapper",
     "repository": {
-      "type": "git",
-      "url": "git@github.com:TwicPics/components-demo-wrapper.git"
+        "type": "git",
+        "url": "git@github.com:TwicPics/components-demo-wrapper.git"
     },
     "version": "0.0.1",
     "dependencies": {
         "fs-extra": "10.0.0"
     },
+    "devDependencies": {
+        "eslint": "8.8.0",
+        "eslint-config-creative-area": "0.11.1",
+        "eslint-plugin-react": "^7.28.0"
+    },
+    "eslintConfig": {
+        "env": {
+            "browser": true
+        },
+        "extends": [
+            "eslint:recommended",
+            "creative-area/es2020/module"
+        ],
+        "overrides": [
+            {
+                "files": [
+                    "*.jsx"
+                ],
+                "extends": [
+                    "plugin:react/recommended",
+                    "creative-area/es2020/module"
+                ],
+                "rules": {
+                    "no-use-before-define": "off",
+                    "prefer-named-capture-group": "off",
+                    "react/prop-types": "off"
+                }
+            }
+        ],
+        "parserOptions": {
+            "ecmaVersion": 2022,
+            "parser": "@babel/eslint-parser"
+        },
+        "plugins": [],
+        "rules": {
+            "prefer-named-capture-group": "off"
+        },
+        "settings": {
+            "react": {
+                "version": "17"
+            }
+        }
+    },
     "scripts": {
+        "lint": "eslint .",
         "postinstall": "node ./build/postinstall.js"
     },
     "type": "module",
-    "exports" : {
+    "exports": {
         "./style.css": "./style.css",
         "./react": "./react"
     }
