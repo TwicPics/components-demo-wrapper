@@ -22,6 +22,11 @@ function Home() {
                     </NavLink>
                 </li>
                 <li>
+                    <NavLink to="/style-driven">
+            Style Driven
+                    </NavLink>
+                </li>
+                <li>
                     <NavLink to="/responsive-grid">
             Responsive Grid
                     </NavLink>

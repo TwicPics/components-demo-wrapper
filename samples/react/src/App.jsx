@@ -6,6 +6,7 @@ import TwicBasicGrid from './components/twicBasicGrid';
 import TwicResponsiveGrid from './components/twicResponsiveGrid';
 import TwicSlideshow from './components/twicSlideshow';
 import TwicSlider from './components/twicSlider';
+import TwicStyleDriven from "./components/twicStyleDriven";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                     <Route exact path="/basic-grid" component={TwicBasicGrid} />
                     <Route exact path="/slider" component={TwicSlider} />
                     <Route exact path="/slideshow" component={TwicSlideshow} />
+                    <Route exact path="/style-driven" component={TwicStyleDriven} />
                     <Route exact path="/responsive-grid" component={TwicResponsiveGrid} />
                 </>
             </Router>

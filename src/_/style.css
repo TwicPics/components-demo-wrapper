@@ -101,8 +101,14 @@ body {
 
 .twic-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax( 300px, 1fr));
   grid-gap: 1rem;
+  /* variables */
+  grid-template-columns: repeat(auto-fill, minmax( var( --twic-grid-columns-width, 300px ) , 1fr));
+}
+
+.twic-separator {
+    height: 2rem;
 }
 
 @media screen and (min-width: 768px) {
