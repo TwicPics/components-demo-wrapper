@@ -1,30 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 62.5%;
+} */
+
 body {
-    font-family: 'Montserrat', sans-serif;
-    color: #454446;
-  }
+  font-family: "Montserrat", sans-serif;
+  color: #5b595c;
+}
 
 #twic-demo-wrapper {
-
 }
 
-#twic-header{
+#twic-header {
+  position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 5px 0 8px 0;
-  background-color: #9002ff;
+  padding: 30px;
+  border-bottom: 1px solid #e3e3e4;
+  background-color: #f9fafb;
 }
 
-#twic-header img {
-    width: 140px;
+#twic-header .heading-primary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+#twic-header .twicpics-logo {
+  width: 140px;
+}
+
+#twic-header .react-logo {
+  width: 120px;
+}
+
+#twic-header .heading-secondary {
+  margin: 10px 0;
+  font-size: 1.4em;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+  color: #111827;
+}
+
+#twic-header .tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+#twic-header .tag {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  color: #8f00ff;
+  background-color: #06ffa3;
+}
+
+#twic-header .tag--bg-purple-rain {
+  color: #fff;
+  background-color: #8f00ff;
+}
+
+#twic-header .documentation-link:link,
+#twic-header .documentation-link:visited {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+#twic-header .documentation-link:hover,
+#twic-header .documentation-link:active {
+  transform: translateY(-5px);
+  box-shadow: 0 9px 4px rgba(0, 0, 0, 0.09);
+  background: linear-gradient(to right, #06ffa3, #8f00ff);
+}
+
+#twic-header .documentation-link-icon {
+  width: 20px;
+  height: 20px;
 }
 
 #twic-demo-container {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .twic-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  #twic-header .heading-secondary {
+    margin: 0;
+  }
+
+  #twic-header .tags-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
 }
