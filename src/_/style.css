@@ -99,6 +99,12 @@ body {
   margin: 1rem 0;
 }
 
+
+.twic-intro {
+    max-width: 1000px;
+    margin: 0 auto 2rem;
+}
+
 .twic-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax( 300px, 1fr));

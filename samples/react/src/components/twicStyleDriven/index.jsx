@@ -7,12 +7,14 @@ import { TwicImg } from "@twicpics/components/react";
 const imgUrl = `codepen/tp-moth.jpg`;
 
 /**
- * displays images with a horizontal scroll bar
+ * demonstrates how you can set up components using pure CSS and the power of CSS variables.
  */
 const TwicStyleDriven = () => (
     <TwicWrapper redirect="www.twicpics.com" tags={[ `tag1`, `tag2`, `tag3` ]}>
         <div className="twic-style-driven-container">
-            <h1>You can set up components using pure CSS and the power of CSS variables.</h1>
+            <div className="twic-intro">
+                <p>You can set up components using pure CSS and the power of CSS variables.</p>
+            </div>
             <h2>display ratio with `--twic-ratio`</h2>
             <div className="twic-grid">
                 <div className="twic-item landscape">
