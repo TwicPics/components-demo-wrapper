@@ -93,12 +93,12 @@ body {
 }
 
 #twic-demo-wrapper #twic-demo-container {
-    margin: 2rem 2rem 0;
+    margin: 2rem 2rem;
     max-width: 1500px;
 }
 
 #twic-demo-wrapper.twic-wide #twic-demo-container {
-    margin: 2rem 0 0;
+    margin: 2rem 0;
     max-width: initial;
 }
  
@@ -122,6 +122,16 @@ body {
   grid-template-columns: repeat(auto-fill, minmax( var( --twic-grid-columns-width, 300px ) , 1fr));
 }
 
+.twic-testing-container {
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.twic-button {
+    margin: 1rem;
+}
+
 .twic-separator {
     height: 2rem;
 }
@@ -142,7 +152,7 @@ body {
 
 @media screen and (min-width: 1536px) {
     #twic-demo-wrapper #twic-demo-container {
-        margin: 2rem auto 0;
+        margin: 2rem auto;
     }
 }
 

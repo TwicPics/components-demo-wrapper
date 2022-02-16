@@ -8,6 +8,7 @@ import TwicSlideshow from './components/twicSlideshow';
 import TwicSlider from './components/twicSlider';
 import TwicStyleDriven from "./components/twicStyleDriven";
 import TwicResponsiveDesign from "./components/twicResponsiveDesign";
+import TwicFocus from "./components/twicFocus";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/basic-grid" component={TwicBasicGrid} />
+                    <Route exact path="/focus" component={TwicFocus} />
                     <Route exact path="/slider" component={TwicSlider} />
                     <Route exact path="/slideshow" component={TwicSlideshow} />
                     <Route exact path="/style-driven" component={TwicStyleDriven} />
