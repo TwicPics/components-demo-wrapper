@@ -45,7 +45,6 @@ const TwicPlaceholder = () => {
                         Nothing else is needed to implement the `Low Quality Image Placeholder`
                     </p>
                 </div>
-                <div className="twic-separator"></div>
                 <div className="twic-testing-container">
                     <button className="twic-button" onClick={ togglePlaceholder }>
                         {showPlaceholder ? `Click to show images` : `Click to reveal placeholders` }

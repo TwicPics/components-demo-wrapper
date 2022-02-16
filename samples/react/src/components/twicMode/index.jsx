@@ -42,27 +42,26 @@ const TwicMode = () => {
                 <div className="twic-separator"></div>
                 <div className="twic-testing-container">
                     <button className="twic-button" onClick={changeMode}>Click to change mode</button>
+                </div>
+                <div className="twic-grid">
                     <div className="twic-item">
                         <TwicImg
                             src={ `${ imgUrl }?${ modeIndex }`} // tip to force image reload
-                            ratio="3/4" mode={ modesArray[ modeIndex ] }
+                            mode={ modesArray[ modeIndex ] }
                         >
                         </TwicImg>
                         <span>mode = {modesArray[ modeIndex ] }</span>
                     </div>
-                </div>
-                <div className="twic-separator"></div>
-                <div className="twic-grid">
                     <div className="twic-item">
-                        <TwicImg src={imgUrl} ratio="3/4"></TwicImg>
+                        <TwicImg src={imgUrl}></TwicImg>
                         <span>no mode setted (cover by default)</span>
                     </div>
                     <div className="twic-item">
-                        <TwicImg src={imgUrl} ratio="3/4" mode="cover"></TwicImg>
+                        <TwicImg src={imgUrl} mode="cover"></TwicImg>
                         <span>mode = cover</span>
                     </div>
                     <div className="twic-item">
-                        <TwicImg src={imgUrl} ratio="3/4" mode="contain"></TwicImg>
+                        <TwicImg src={imgUrl} mode="contain"></TwicImg>
                         <span>mode = contain</span>
                     </div>
                 </div>

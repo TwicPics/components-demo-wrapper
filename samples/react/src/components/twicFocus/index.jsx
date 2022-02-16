@@ -46,27 +46,38 @@ const TwicFocus = () => {
                         If `auto` is used the focus point will be chosen automagically for you!
                     </p>
                 </div>
-                <div className="twic-separator"></div>
                 <div className="twic-testing-container">
                     <button className="twic-button" onClick={ changeFocus }>Click to change focus</button>
-                    <div className="twic-item">
-                        <TwicImg src={imgUrl} ratio="3/4" focus={focusArray[ focusIndex ]}></TwicImg>
-                        <span>focus = {focusArray[ focusIndex ] ? focusArray[ focusIndex ] : `none (default)`}</span>
-                    </div>
                 </div>
-                <div className="twic-separator"></div>
-
                 <div className="twic-grid">
                     <div className="twic-item">
-                        <TwicImg src={imgUrl} ratio="3/4"></TwicImg>
+                        <TwicImg
+                            src={imgUrl} focus={focusArray[ focusIndex ]}
+                            ratio="3/4"
+                        ></TwicImg>
+                        <span>focus = {focusArray[ focusIndex ] ? focusArray[ focusIndex ] : `none (default)`}</span>
+                    </div>
+                    <div className="twic-item">
+                        <TwicImg
+                            src={imgUrl}
+                            ratio="3/4"
+                        ></TwicImg>
                         <span>focus = none (default)</span>
                     </div>
                     <div className="twic-item">
-                        <TwicImg src={imgUrl} ratio="3/4" focus="2080x50"></TwicImg>
+                        <TwicImg
+                            src={imgUrl}
+                            ratio="3/4"
+                            focus="2080x50"
+                        ></TwicImg>
                         <span>focus = 2080x50</span>
                     </div>
                     <div className="twic-item">
-                        <TwicImg src={imgUrl} ratio="3/4" focus="auto"></TwicImg>
+                        <TwicImg
+                            src={imgUrl}
+                            ratio="3/4"
+                            focus="auto"
+                        ></TwicImg>
                         <span>focus = auto</span>
                     </div>
                 </div>
