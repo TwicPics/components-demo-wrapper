@@ -4,7 +4,7 @@ import { default as TwicHeader } from "./twicHeader";
 import React, { useEffect } from "react";
 import WebFont from "webfontloader";
 
-const TwicWrapper = ( { title, tags, redirect, children } ) => {
+const TwicWrapper = ( { className, title, tags, redirect, children } ) => {
     useEffect( () => {
         WebFont.load( {
             "google": {
@@ -14,7 +14,7 @@ const TwicWrapper = ( { title, tags, redirect, children } ) => {
     }, [] );
 
     return (
-        <div id="twic-demo-wrapper">
+        <div id="twic-demo-wrapper" className={ className }>
             <TwicHeader title={title} tags={tags} redirect={redirect}></TwicHeader>
             <main id="twic-demo-container">{children}</main>
         </div>

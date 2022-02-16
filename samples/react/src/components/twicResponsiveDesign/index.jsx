@@ -14,13 +14,13 @@ const TwicResponsiveDesign = () => (
         <div className="twic-responsive-container">
             <div className="twic-abstract">
                 <h1>
-                    Setting up components using CSS enables hassle-free responsive designs.
+                    Setting up components using `CSS` enables hassle-free responsive designs.
                 </h1>
                 <p>
-                    <b>Change the width of the browser</b>: the image ratio adapts according to the css rules.
+                    You manage only one image in the template: TwicPics and the `CSS` do the rest.
                 </p>
                 <p>
-                    You manage only one image in the template: TwicPics and the CSS do the rest.
+                    <b>Change your browser's width</b>: the image ratio adapts according to the `CSS` rules.
                 </p>
             </div>
             <div className="twic-item style-driven-responsive">
