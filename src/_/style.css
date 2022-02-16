@@ -112,6 +112,7 @@ body {
 
 .twic-abstract p {
     margin-bottom: 0.5rem;
+    text-align: justify;
 }
 
 .twic-grid {

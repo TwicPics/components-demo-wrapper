@@ -1,0 +1,14 @@
+.twic-placeholder-container {
+    .show-placeholders {
+        img {
+            opacity: 0 !important;
+        }
+    }
+
+    .twic-item
+    {
+        .twic-w {
+            background-color: unset;
+        }
+    }
+}

@@ -2,7 +2,6 @@
 /* eslint-disable line-comment-position */
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState } from "react";
-import "./index.scss";
 import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 
@@ -14,18 +13,18 @@ const modesArray = [ `cover`, `contain` ];
  */
 const TwicMode = () => {
 
-    // in this sample we are going to change ratio on a button click
+    // in this sample we are going to change mode on a button click
     // --> we need state local management
     const [ modeIndex, setModeIndex ] = useState( 0 );
 
-    // user wants to change focus
+    // user wants to change mode
     const changeMode = () => {
         setModeIndex( ( modeIndex + 1 ) % modesArray.length );
     };
 
     return (
         <TwicWrapper redirect="www.twicpics.com" tags={ [ `tag1`, `tag2`, `tag3` ] }>
-            <div className="twic-focus-container">
+            <div className="twic-mode-container">
                 <div className="twic-abstract">
                     <h1>
                         Mode determines if the image fills or sits inside the aera
