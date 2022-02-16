@@ -8,37 +8,42 @@ function Home() {
             <ul>
                 <li>
                     <NavLink to="/basic-grid">
-            Basic Grid
+                        Basic Grid
                     </NavLink>
                 </li>
                 <li>
                     <NavLink to="/focus">
-            Focus
+                        Focus
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/mode">
+                        Mode
                     </NavLink>
                 </li>
                 <li>
                     <NavLink to="/slider">
-            Slider
+                        Slider
                     </NavLink>
                 </li>
                 <li>
                     <NavLink to="/slideshow">
-            Slideshow
+                        Slideshow
                     </NavLink>
                 </li>
                 <li>
                     <NavLink to="/style-driven">
-            Style Driven
+                        Style Driven
                     </NavLink>
                 </li>
                 <li>
                     <NavLink to="/responsive-design">
-            Responsive Design
+                        Responsive Design
                     </NavLink>
                 </li>
                 <li>
                     <NavLink to="/responsive-grid">
-            Responsive Grid
+                        Responsive Grid
                     </NavLink>
                 </li>
             </ul>
