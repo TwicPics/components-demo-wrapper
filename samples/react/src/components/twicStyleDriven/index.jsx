@@ -12,8 +12,8 @@ const imgUrl = `codepen/tp-moth.jpg`;
 const TwicStyleDriven = () => (
     <TwicWrapper redirect="www.twicpics.com" tags={[ `tag1`, `tag2`, `tag3` ]}>
         <div className="twic-style-driven-container">
-            <div className="twic-intro">
-                <p>You can set up components using pure CSS and the power of CSS variables.</p>
+            <div className="twic-abstract">
+                <h1>You can set up components using pure CSS and the power of CSS variables.</h1>
             </div>
             <h2>display ratio with `--twic-ratio`</h2>
             <div className="twic-grid">

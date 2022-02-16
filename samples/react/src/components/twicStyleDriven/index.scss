@@ -1,9 +1,5 @@
 .twic-style-driven-container {
 
-    .twic-grid {
-        --twic-grid-columns-width: 300px;
-    }
-
     .landscape {
         --twic-ratio: calc(4/3);
     }
@@ -41,17 +37,5 @@
     .sm {
         width: 100px;
     }
-}
-
-.twic-style-driven-container .twic-grid {
-
-    @media (min-width: 1024px) {
-        --twic-grid-columns-width: 380px;
-    }
-    
-    @media (min-width: 1536px) {
-        --twic-grid-columns-width: 490px;
-    }
-
 }
 

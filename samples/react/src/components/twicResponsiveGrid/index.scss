@@ -69,7 +69,7 @@
 
 }
 
-.responsive-grid-container .cbp-rfgrid li{
+.responsive-grid-container li{
     @media screen and (max-width: 1190px) {
         width: 20%;
         width: calc(100% / 5);

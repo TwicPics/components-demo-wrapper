@@ -12,12 +12,12 @@ const imgUrl = `leila_bekhti.jpg`;
 const TwicResponsiveDesign = () => (
     <TwicWrapper redirect="www.twicpics.com" tags={[ `tag1`, `tag2`, `tag3` ]}>
         <div className="twic-responsive-container">
-            <div className="twic-intro">
-                <p>
+            <div className="twic-abstract">
+                <h1>
                     Setting up components using CSS enables hassle-free responsive designs.
-                </p>
+                </h1>
                 <p>
-                    Change the width of the browser: the image ratio adapts according to the css rules.
+                    <b>Change the width of the browser</b>: the image ratio adapts according to the css rules.
                 </p>
                 <p>
                     You manage only one image in the template: TwicPics and the CSS do the rest.
