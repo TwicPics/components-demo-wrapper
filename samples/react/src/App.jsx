@@ -13,6 +13,7 @@ import TwicMode from "./components/twicMode";
 import TwicPlaceholder from "./components/twicPlaceholder";
 import TwicPosition from "./components/twicPosition";
 import TwicTransition from "./components/twicTransition";
+import TwicRatio from "./components/twicRatio";
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                     <Route exact path="/mode" component={TwicMode} />
                     <Route exact path="/positions" component={TwicPosition} />
                     <Route exact path="/placeholders" component={TwicPlaceholder} />
+                    <Route exact path="/ratio" component={TwicRatio} />
                     <Route exact path="/slider" component={TwicSlider} />
                     <Route exact path="/slideshow" component={TwicSlideshow} />
                     <Route exact path="/style-driven" component={TwicStyleDriven} />

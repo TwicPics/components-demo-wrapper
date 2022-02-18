@@ -32,6 +32,11 @@ function Home() {
                     </NavLink>
                 </li>
                 <li>
+                    <NavLink to="/ratio">
+                        Ratio
+                    </NavLink>
+                </li>
+                <li>
                     <NavLink to="/slider">
                         Slider
                     </NavLink>
