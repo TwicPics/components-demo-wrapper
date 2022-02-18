@@ -4,7 +4,7 @@ import { TwicImg } from "@twicpics/components/react";
 
 function TwicBasicGrid() {
     return (
-        <TwicWrapper redirect="www.twicpics.com" tags={[ `tag1`, `tag2`, `tag3` ]}>
+        <TwicWrapper>
             <div className="twic-grid">
                 <TwicImg src="https://assets.twicpics.com/examples/football.jpg" />
                 <TwicImg

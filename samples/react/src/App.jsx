@@ -11,6 +11,7 @@ import TwicResponsiveDesign from "./components/twicResponsiveDesign";
 import TwicFocus from "./components/twicFocus";
 import TwicMode from "./components/twicMode";
 import TwicPlaceholder from "./components/twicPlaceholder";
+import TwicPosition from "./components/twicPosition";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                     <Route exact path="/basic-grid" component={TwicBasicGrid} />
                     <Route exact path="/focus" component={TwicFocus} />
                     <Route exact path="/mode" component={TwicMode} />
+                    <Route exact path="/positions" component={TwicPosition} />
                     <Route exact path="/placeholders" component={TwicPlaceholder} />
                     <Route exact path="/slider" component={TwicSlider} />
                     <Route exact path="/slideshow" component={TwicSlideshow} />

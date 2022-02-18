@@ -5,7 +5,6 @@ import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 
 const imgUrl = `codepen/tp-canyon.jpg`;
-const focusArray = [ null, `2080x50`, `auto` ];
 
 /**
  * demonstrates placeholders features
@@ -22,7 +21,7 @@ const TwicPlaceholder = () => {
     };
 
     return (
-        <TwicWrapper redirect="www.twicpics.com" tags={[ `tag1`, `tag2`, `tag3` ]}>
+        <TwicWrapper>
             <div className="twic-placeholder-container">
                 <div className="twic-abstract">
                     <h1>

@@ -22,15 +22,12 @@ const TwicFocus = () => {
     };
 
     return (
-        <TwicWrapper redirect="www.twicpics.com" tags={[ `tag1`, `tag2`, `tag3` ]}>
+        <TwicWrapper>
             <div className="twic-focus-container">
                 <div className="twic-abstract">
                     <h1>
-                        Focus point coordinates (only useful in cover mode)
+                        Focus will set the focus point coordinates. (only useful in cover mode)
                     </h1>
-                    <p>
-                        Focus will set the focus point coordinates.
-                    </p>
                     <p>
                         By default,
                         the focus point is in the middle of the image.

@@ -23,7 +23,7 @@ const TwicMode = () => {
     };
 
     return (
-        <TwicWrapper redirect="www.twicpics.com" tags={ [ `tag1`, `tag2`, `tag3` ] }>
+        <TwicWrapper redirect="www.twicpics.com">
             <div className="twic-mode-container">
                 <div className="twic-abstract">
                     <h1>
@@ -39,7 +39,6 @@ const TwicMode = () => {
                         `contain` : image sits inside the area with no cropping
                     </p>
                 </div>
-                <div className="twic-separator"></div>
                 <div className="twic-testing-container">
                     <button className="twic-button" onClick={changeMode}>Click to change mode</button>
                 </div>

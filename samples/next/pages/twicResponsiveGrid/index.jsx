@@ -85,7 +85,7 @@ const images = [
  * No placeholder
  */
 const TwicResponsiveGrid = () => (
-    <TwicWrapper redirect="www.twicpics.com" tags={[ `tag1`, `tag2`, `tag3` ]}>
+    <TwicWrapper>
         <div className={styles[ `responsive-grid-container` ]}>
             <ul>
                 { images.map( ( image, i ) => (

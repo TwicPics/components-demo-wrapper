@@ -10,7 +10,7 @@ const imgUrl = `leila_bekhti.jpg`;
  * demonstrates that setting up components using CSS enables hassle-free responsive designs.
  */
 const TwicResponsiveDesign = () => (
-    <TwicWrapper redirect="www.twicpics.com" tags={[ `tag1`, `tag2`, `tag3` ]}>
+    <TwicWrapper>
         <div className="twic-responsive-container">
             <div className="twic-abstract">
                 <h1>

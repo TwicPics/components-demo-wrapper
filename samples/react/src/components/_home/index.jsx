@@ -23,7 +23,12 @@ function Home() {
                 </li>
                 <li>
                     <NavLink to="/placeholders">
-                        Placeholders
+                        Placeholder
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/positions">
+                        Position
                     </NavLink>
                 </li>
                 <li>

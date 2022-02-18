@@ -34,7 +34,7 @@ const images = [
  * displays a carousel of responsive images
  */
 const TwicSlideshow = () => (
-    <TwicWrapper redirect="www.twicpics.com" tags={[ `tag1`, `tag2`, `tag3` ]}>
+    <TwicWrapper>
         <div className={styles[ `twic-slideshow-container` ]}>
             <Slideshow>
                 { images.map( ( image, i ) => (
