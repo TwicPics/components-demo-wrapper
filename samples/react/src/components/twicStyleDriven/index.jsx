@@ -11,9 +11,6 @@ const imgUrl = `codepen/tp-moth.jpg`;
  */
 const TwicStyleDriven = () => (
     <TwicWrapper
-        redirect="www.twicpics.com"
-        title="A Style Driven Approach"
-        tags={[ `tag1`, `tag2`, `tag3` ]}
     >
         <div className="twic-style-driven-container">
             <div className="twic-abstract">

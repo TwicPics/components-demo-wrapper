@@ -1,8 +1,10 @@
 .twic-flip-card-container
 {
     .flip-card {
+        position: relative;
         background-color: transparent;
         perspective: 1000px; /* Remove this if you don't want the 3D effect */
+        padding-top: 100%;
         & figure{
             margin: unset;
             position: relative;
@@ -24,9 +26,14 @@
       }
       
       .flip-card-inner {
-        position: relative;
+        position: absolute;
         transition: transform 0.8s;
         transform-style: preserve-3d;
+        display: block;
+        top:0;
+        right: 0;
+        left: 0;
+        bottom: 0;
       }
       
       .flip-card:hover .flip-card-inner {
