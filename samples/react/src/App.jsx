@@ -14,6 +14,7 @@ import TwicPlaceholder from "./components/twicPlaceholder";
 import TwicPosition from "./components/twicPosition";
 import TwicTransition from "./components/twicTransition";
 import TwicRatio from "./components/twicRatio";
+import TwicFlipCard from "./components/twicFlipCard";
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                 <>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/basic-grid" component={TwicBasicGrid} />
+                    <Route exact path="/flip" component={TwicFlipCard} />
                     <Route exact path="/focus" component={TwicFocus} />
                     <Route exact path="/mode" component={TwicMode} />
                     <Route exact path="/positions" component={TwicPosition} />

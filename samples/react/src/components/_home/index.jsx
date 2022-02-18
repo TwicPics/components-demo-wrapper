@@ -12,6 +12,11 @@ function Home() {
                     </NavLink>
                 </li>
                 <li>
+                    <NavLink to="/flip">
+                        Flip Card
+                    </NavLink>
+                </li>
+                <li>
                     <NavLink to="/focus">
                         Focus
                     </NavLink>
