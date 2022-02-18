@@ -30,8 +30,8 @@ const TwicPosition = () => {
     };
 
     return (
-        <TwicWrapper redirect="www.twicpics.com">
-            <div className="twic-mode-container">
+        <TwicWrapper>
+            <div className="twic-position-container">
                 <div className="twic-abstract">
                     <h1>
                         Position locates the image inside the aera (only useful in `contain`mode)

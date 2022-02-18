@@ -49,7 +49,6 @@ const TwicPlaceholder = () => {
                         {showPlaceholder ? `Click to show images` : `Click to reveal placeholders` }
                     </button>
                 </div>
-                <div className="twic-separator"></div>
                 <div className={`twic-grid ${ showPlaceholder ? `show-placeholders` : `` } `}>
                     <div className="twic-item">
                         <TwicImg src={imgUrl} placeholder="preview"></TwicImg>

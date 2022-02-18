@@ -23,7 +23,7 @@ const TwicMode = () => {
     };
 
     return (
-        <TwicWrapper redirect="www.twicpics.com">
+        <TwicWrapper>
             <div className="twic-mode-container">
                 <div className="twic-abstract">
                     <h1>

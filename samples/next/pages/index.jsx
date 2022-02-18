@@ -3,7 +3,7 @@ import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
 import Link from 'next/link';
 
 const Home = () => (
-    <TwicWrapper redirect="www.twicpics.com">
+    <TwicWrapper>
         <ul>
             <li>
                 <Link href="/twicBasicGrid">

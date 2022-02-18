@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 function Home() {
     return (
-        <TwicWrapper redirect="www.twicpics.com">
+        <TwicWrapper>
             <ul>
                 <li>
                     <NavLink to="/basic-grid">
@@ -44,6 +44,11 @@ function Home() {
                 <li>
                     <NavLink to="/style-driven">
                         Style Driven
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/transition">
+                        Transition
                     </NavLink>
                 </li>
                 <li>
