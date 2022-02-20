@@ -47,7 +47,7 @@ const TwicModal = () => {
                 </div>
                 <div className="twic-grid">
                     { images.map( ( image, i ) => (
-                        <div className="twic-item" key={i}>
+                        <div key={i}>
                             <figure className="poster-wrapper" onClick={ () => openModal( i )}>
                                 <TwicImg
                                     src={ image.url }>
