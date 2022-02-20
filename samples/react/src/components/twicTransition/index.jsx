@@ -7,7 +7,7 @@ import { TwicImg } from "@twicpics/components/react";
 const imgUrl = `codepen/tp-canyon.jpg`;
 
 /**
- * demonstrates placeholders features
+ * demonstrates transition features
  */
 const TwicTransition = () => {
 

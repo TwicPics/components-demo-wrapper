@@ -54,7 +54,7 @@ const TwicFlipCard = () => (
         <div className="twic-flip-card-container">
             <div className="twic-abstract">
                 <h1>
-                        A flip card
+                        A Flip Card
                 </h1>
                 <p>Move your mouse over images below</p>
             </div>

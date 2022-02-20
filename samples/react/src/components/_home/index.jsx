@@ -22,6 +22,11 @@ function Home() {
                     </NavLink>
                 </li>
                 <li>
+                    <NavLink to="/modal">
+                        Modal
+                    </NavLink>
+                </li>
+                <li>
                     <NavLink to="/mode">
                         Mode
                     </NavLink>
