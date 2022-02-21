@@ -26,7 +26,7 @@ const TwicFocus = () => {
             <div className="twic-focus-container">
                 <div className="twic-abstract">
                     <h1>
-                        Focus will set the focus point coordinates. (only useful in cover mode)
+                        Focus will set the focus point coordinates (only useful in cover mode).
                     </h1>
                     <p>
                         By default,
