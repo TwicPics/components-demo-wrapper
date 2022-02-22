@@ -1,6 +1,40 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 
+const LOGOS_PATH = `https://assets.twicpics.com/demo/@twicpics-components/logos/`;
+
+const FrameworkLogo = ( { framework = `react` } ) => {
+    const REACT = [
+        `react.png`,
+        `react-logo`,
+        `React logo`,
+    ];
+    const NEXT = [
+        `next.png`,
+        `next-logo`,
+        `Next logo`,
+    ];
+    let logo = ``;
+    let cssClass = ``;
+    let alt = ``;
+    switch ( framework ) {
+        case `react`:
+            [ logo, cssClass, alt ] = REACT;
+            break;
+        case `next`:
+            [ logo, cssClass, alt ] = NEXT;
+            break;
+        default:
+    }
+    return (
+        <img
+            src={`${ LOGOS_PATH }${ logo }`}
+            className={cssClass}
+            alt={alt}
+        />
+    );
+};
+
 const TwicHeader = ( { title = ``,
     tags = [],
     redirect = `https://www.twicpics.com/docs/getting-started/overview` } ) => (
@@ -8,16 +42,11 @@ const TwicHeader = ( { title = ``,
         <h1 className="heading-primary">
             <img
                 className="twicpics-logo"
-                // eslint-disable-next-line max-len
-                src="https://assets.website-files.com/5ec5244ea1611d6855cdc471/615dc545a7fa485a4df0ea0a_Horizontal%403x.png"
+                src={`${ LOGOS_PATH }twicpics.svg`}
                 alt="TwicPics logo"
             />
             <span>x</span>
-            <img
-                className="react-logo"
-                src="https://assets.twicpics.com/demo/@twicpics-components/framework-logos/react.png"
-                alt="React logo"
-            />
+            <FrameworkLogo framework="react" />
         </h1>
         <h2 className="heading-secondary">{title}</h2>
         <div className="tags-container">

@@ -36,7 +36,13 @@ body {
 }
 
 #twic-header .react-logo {
+  aspect-ratio: 5000/1679;
   width: 120px;
+}
+
+#twic-header .next-logo {
+  aspect-ratio: 800/479;
+  width: 90px;
 }
 
 #twic-header .heading-secondary {
