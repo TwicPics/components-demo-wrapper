@@ -6,42 +6,34 @@ import "./index.scss";
 const cards = [
     {
         "front": {
-            "url": `codepen/eiffel-tower.jpg`,
-            "caption": `eiffel tower`,
+            "url": `components/flip/orange-1.jpg`,
         },
         "back": {
-            "url": `codepen/hot-air-balloons.jpg`,
-            "caption": `hot air balloons`,
+            "url": `components/flip/orange-2.jpg`,
         },
     },
     {
         "front": {
-            "url": `codepen/look-at-the-sky.jpg`,
-            "caption": `look at the sky`,
+            "url": `components/flip/fig-1.jpg`,
         },
         "back": {
-            "url": `codepen/man-on-the-moon.jpg`,
-            "caption": `man to the moon`,
+            "url": `components/flip/fig-2.jpg`,
         },
     },
     {
         "front": {
-            "url": `codepen/tp-canyon.jpg`,
-            "caption": `canyon`,
+            "url": `components/flip/cherry-3.jpg`,
         },
         "back": {
-            "url": `codepen/tp-lake.jpg`,
-            "caption": `lake`,
+            "url": `components/flip/cherry-2.jpg`,
         },
     },
     {
         "front": {
-            "url": `codepen/tp-moth.jpg`,
-            "caption": `moth`,
+            "url": `components/flip/melon-1.jpg`,
         },
         "back": {
-            "url": `codepen/tp-rasp.jpg`,
-            "caption": `rasp`,
+            "url": `components/flip/melon-2.jpg`,
         },
     },
 ];
@@ -66,10 +58,8 @@ const TwicFlipCard = () => (
                                 <figure className="twic-item">
                                     <TwicImg
                                         src={ `${ card.front.url }`}
+                                        focus="auto"
                                     ></TwicImg>
-                                    <figcaption>
-                                        <p>{card.front.caption}</p>
-                                    </figcaption>
                                 </figure>
                             </div>
                             <div className="flip-card-back">
@@ -77,9 +67,6 @@ const TwicFlipCard = () => (
                                     <TwicImg
                                         src={ `${ card.back.url }`}
                                     ></TwicImg>
-                                    <figcaption>
-                                        <p>{card.back.caption}</p>
-                                    </figcaption>
                                 </figure>
                             </div>
                         </div>
