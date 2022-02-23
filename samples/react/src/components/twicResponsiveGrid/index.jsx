@@ -85,7 +85,12 @@ const images = [
  * No placeholder
  */
 const TwicResponsiveGrid = () => (
-    <TwicWrapper className="twic-wide" >
+    <TwicWrapper>
+        <div className="twic-abstract">
+            <h1>
+                A responsive grid
+            </h1>
+        </div>
         <div className="responsive-grid-container">
             <ul>
                 { images.map( ( image, i ) => (

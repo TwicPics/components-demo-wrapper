@@ -30,16 +30,34 @@ const TwicRatio = () => {
             <div className="twic-ratio-container">
                 <div className="twic-abstract">
                     <h1>
-                        Ratio determines the value of the height/width ratio of the image display area
+                        <span className="twic-code">ratio</span> property
                     </h1>
                     <p>
-                        Can be a number (1.85, 2, 0.5...) or a string (`4/3`, `16/9`...)
+                        The <span className="twic-code">ratio</span> property determines the value
+                        of the height/width ratio of the image display area.
                     </p>
                     <p>
-                        A square area (ratio = 1 ) will be created by default
+                        The property can take as a value:
+                        <ul>
+                            <li>
+                                a number: <span className="twic-code">
+                                1.85</span>, <span className="twic-code">
+                                2</span>, <span className="twic-code">
+                                0.5</span> and so on.
+                            </li>
+                            <li>
+                                or a string: <span className="twic-code">
+                                4/3</span>, <span className="twic-code">
+                                16/9</span>, etc.
+                            </li>
+                        </ul>
                     </p>
                     <p>
-                    Important: it is the width of the zone coupled with the ratio
+                        A square area (<span className="twic-code">
+                        ratio=`1`</span>) will be created by default.
+                    </p>
+                    <p>
+                    Note that it is the width of the zone coupled with the image ratio
                     that allow to calculate the reserved height
                     (and this while the image is not yet loaded).
                     </p>
@@ -56,7 +74,7 @@ const TwicRatio = () => {
                         >
                         </TwicImg>
                         <span>
-                            ratio = {ratiosArray[ ratioIndex ] ? ratiosArray[ ratioIndex ] : `1 (default)`} (cover)
+                            ratio={ratiosArray[ ratioIndex ] ? ratiosArray[ ratioIndex ] : `1 (default)`} (cover)
                         </span>
                     </div>
                     <div className="twic-item">
@@ -67,7 +85,7 @@ const TwicRatio = () => {
                         >
                         </TwicImg>
                         <span>
-                            ratio = {ratiosArray[ ratioIndex ] ? ratiosArray[ ratioIndex ] : `1 (default)`} (contain)
+                            ratio={ratiosArray[ ratioIndex ] ? ratiosArray[ ratioIndex ] : `1 (default)`} (contain)
                         </span>
                     </div>
                 </div>

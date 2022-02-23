@@ -41,14 +41,16 @@ const TwicModal = () => {
             <div className="twic-modal-container">
                 <div className="twic-abstract">
                     <h1>
-                        A Modal Revealer
+                        A modal revealer
                     </h1>
-                    <p>Move your mouse over images below</p>
+                    <p>
+                        Click on the image of your choice to reveal a modal.
+                    </p>
                 </div>
                 <div className="twic-grid">
                     { images.map( ( image, i ) => (
                         <div key={i}>
-                            <figure className="poster-wrapper" onClick={ () => openModal( i )}>
+                            <figure className="poster-wrapper twic-item" onClick={ () => openModal( i )}>
                                 <TwicImg
                                     src={ image.url }>
                                 </TwicImg>

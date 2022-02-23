@@ -83,11 +83,16 @@ const images = [ ...seed, ...seed, ...seed, ...seed, ...seed, ...seed, ...seed, 
  */
 const TwicSlider = () => (
     <TwicWrapper>
+        <div className="twic-abstract">
+            <h1>
+                A slider
+            </h1>
+        </div>
         <div className="twic-slider-container">
             <ul className="slider">
                 { images.map( ( image, i ) => (
                     <li className="slider-item" key={i}>
-                        <figure className="card">
+                        <figure className="card twic-item">
                             <TwicImg src={image.url} focus="auto"></TwicImg>
                             <figcaption>
                                 <p>{image.caption}</p>

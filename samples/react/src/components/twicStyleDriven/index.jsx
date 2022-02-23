@@ -14,7 +14,8 @@ const TwicStyleDriven = () => (
     >
         <div className="twic-style-driven-container">
             <div className="twic-abstract">
-                <h1>You can set up components using pure CSS and the power of CSS variables.</h1>
+                <h1>CSS styles driven</h1>
+                <p>You can set up the TwicPics components using pure CSS and the power of CSS variables.</p>
             </div>
             <h2>display ratio with `--twic-ratio`</h2>
             <div className="twic-grid">

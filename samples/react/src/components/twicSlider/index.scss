@@ -10,7 +10,7 @@
     .slider-item {
         flex-grow: 1;
         flex-shrink: 0;
-        margin-left: 1rem;
+        margin-left: 1.6rem;
         scroll-snap-align: start;
     }
 
@@ -19,13 +19,13 @@
         position: relative;
         & figcaption {
             background-color: rgba(black, 0.5);
-            bottom: 0;
+            bottom: 12px;
             color: white;
             font-size: 12px;
-            padding: 8px 0px;
+            padding: 8px 4px;
             position: absolute;
             text-transform: uppercase;
-            width: 100%;
+            width: calc(100% - 24px);
             & p {
                 margin: unset;
                 padding: 0 5px;

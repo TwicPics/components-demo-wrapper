@@ -36,7 +36,7 @@ const FrameworkLogo = ( { framework = `react` } ) => {
 };
 
 const TwicHeader = ( { title = ``,
-    tags = [],
+    tags = [ `@twicpics-components` ],
     redirect = `https://www.twicpics.com/docs/getting-started/overview` } ) => (
     <header id="twic-header">
         <h1 className="heading-primary">

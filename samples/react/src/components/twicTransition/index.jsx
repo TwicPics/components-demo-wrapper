@@ -25,22 +25,30 @@ const TwicTransition = () => {
             <div className="twic-transition-container">
                 <div className="twic-abstract">
                     <h1>
-                        The transition functions allow you to customize the effects of revealing images
-                        once they have been loaded
+                        <span className="twic-code">transition</span> properties
                     </h1>
                     <p>
-                        transition: whether or not to reveal images with a fade in effect
-                        (default = true)
+                        The <span className="twic-code">transition</span> properties allow you
+                        to customize the effects of revealing images once they have been loaded.
                     </p>
-                    <p>
-                        transitionDelay: transition delay of the transition effect (default = 0ms)
-                    </p>
-                    <p>
-                        transitionDuration: duration of the transition effect (default = 400ms)
-                    </p>
-                    <p>
-                        transitionTimingFunction: CSS timing function applied to the transition effect (default = ease)
-                    </p>
+                    <ul>
+                        <li>
+                            <span className="twic-code">transition</span>: whether or not to reveal
+                            images with a <em>fade in</em> effect (default: <span className="twic-code">true</span>).
+                        </li>
+                        <li>
+                            <span className="twic-code">transitionDelay</span>: transition delay of
+                            the transition effect (default: <span className="twic-code">0ms</span>).
+                        </li>
+                        <li>
+                            <span className="twic-code">transitionDuration</span>: duration of the transition effect
+                            (default: <span className="twic-code">400ms</span>).
+                        </li>
+                        <li>
+                            <span className="twic-code">transitionTimingFunction</span>: CSS timing function applied
+                            to the transition effect (default: <span className="twic-code">ease</span>).
+                        </li>
+                    </ul>
                 </div>
                 <div className="twic-testing-container">
                     <button className="twic-button" onClick={ togglePlaceholder }>
@@ -63,7 +71,7 @@ const TwicTransition = () => {
                             placeholder="preview"
                         >
                         </TwicImg>
-                        <span>transition = "false"</span>
+                        <span>transition=`false`</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
@@ -72,7 +80,7 @@ const TwicTransition = () => {
                             placeholder="preview"
                         >
                         </TwicImg>
-                        <span>transitionDuration = "2000ms"</span>
+                        <span>transitionDuration=`2000ms`</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
@@ -82,7 +90,7 @@ const TwicTransition = () => {
                             placeholder="preview"
                         >
                         </TwicImg>
-                        <span>transitionDuration = "2000ms" and transitionTimingFunction = "linear"</span>
+                        <span>transitionDuration=`2000ms` and transitionTimingFunction=`linear`</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
@@ -92,7 +100,7 @@ const TwicTransition = () => {
                             placeholder="preview"
                         >
                         </TwicImg>
-                        <span>transitionDelay = "2000ms"</span>
+                        <span>transitionDelay=`2000ms`</span>
                     </div>
                 </div>
             </div>

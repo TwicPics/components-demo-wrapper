@@ -27,41 +27,51 @@ const TwicMode = () => {
             <div className="twic-mode-container">
                 <div className="twic-abstract">
                     <h1>
-                        Mode determines if the image fills or sits inside the aera
+                        <span className="twic-code">mode</span> property
                     </h1>
                     <p>
-                        Can be `cover` (default) or `contain`
+                        <span>The </span>
+                        <span className="twic-code">mode</span>
+                        <span> property determines if the image fills or sits inside the aera.</span>
                     </p>
                     <p>
-                        `cover` : image fills the area and is cropped accordingly
+                        Here are the two accepted values:
+                        <ul>
+                            <li>
+                                <span className="twic-code">cover</span>:
+                                <span> the image fills the area and is cropped accordingly.</span>
+                            </li>
+                            <li>
+                                <span className="twic-code">contain</span>:
+                                <span> the image sits inside the area with no cropping.</span>
+                            </li>
+                        </ul>
                     </p>
-                    <p>
-                        `contain` : image sits inside the area with no cropping
-                    </p>
-                </div>
-                <div className="twic-testing-container">
-                    <button className="twic-button" onClick={changeMode}>Click to change mode</button>
                 </div>
                 <div className="twic-grid">
                     <div className="twic-item">
+                        <button
+                            className="twic-button"
+                            onClick={changeMode}>Click to change the mode value
+                        </button>
                         <TwicImg
                             src={ `${ imgUrl }?${ modeIndex }`} // tip to force image reload
                             mode={ modesArray[ modeIndex ] }
                         >
                         </TwicImg>
-                        <span>mode = {modesArray[ modeIndex ] }</span>
+                        <span>mode=`{modesArray[ modeIndex ] }`</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg src={imgUrl}></TwicImg>
-                        <span>no mode setted (cover by default)</span>
+                        <span>No mode setted (cover by default)</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg src={imgUrl} mode="cover"></TwicImg>
-                        <span>mode = cover</span>
+                        <span>mode=`cover`</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg src={imgUrl} mode="contain"></TwicImg>
-                        <span>mode = contain</span>
+                        <span>mode=`contain`</span>
                     </div>
                 </div>
             </div>

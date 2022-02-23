@@ -22,44 +22,57 @@ const TwicFocus = () => {
     };
 
     return (
-        <TwicWrapper>
+        <TwicWrapper
+            redirect="https://www.twicpics.com/docs/api/transformations#focus"
+        >
             <div className="twic-focus-container">
                 <div className="twic-abstract">
                     <h1>
-                        Focus will set the focus point coordinates (only useful in cover mode).
+                        <span className="twic-code">focus</span> property
                     </h1>
                     <p>
-                        By default,
-                        the focus point is in the middle of the image.
+                        The <span className="twic-code">focus</span> property will change
+                        the focus point coordinates of the image (only useful with <span className="twic-code">
+                            mode=`cover`</span>).
                     </p>
                     <p>
-                        You can change its coordinates by using `coordinates` or `auto`.
+                        You can set the focus by using <em>coordinates </em>
+                        or <span className="twic-code">auto</span> values:
+                        <ul>
+                            <li>
+                                <em>Coordinates</em> represent a point in the image, specified as a couple of
+                                positive lengths, separated by the character <span className="twic-code">x</span>:
+                                <br/>the first length is the coordinate along the x-axis
+                                (following the width of the image), and the second length
+                                is the coordinate along the y-axis (following the height of the image).
+                            </li>
+                            <li>
+                                If <span className="twic-code">auto</span> is used in place of actual coordinates,
+                                the focus point will be chosen automagically for you!
+                            </li>
+                        </ul>
                     </p>
-                    <p>
-                        Coordinates represent a point in the <u>origin image</u>,
-                        specified as a couple of positive lengths separated by the character x (eg 100x100)
-                    </p>
-                    <p>
-                        If `auto` is used the focus point will be chosen automagically for you!
-                    </p>
-                </div>
-                <div className="twic-testing-container">
-                    <button className="twic-button" onClick={ changeFocus }>Click to change focus</button>
                 </div>
                 <div className="twic-grid">
                     <div className="twic-item">
+                        <button
+                            className="twic-button"
+                            onClick={ changeFocus }
+                        >
+                            Click to change the focus point
+                        </button>
                         <TwicImg
                             src={imgUrl} focus={focusArray[ focusIndex ]}
                             ratio="3/4"
                         ></TwicImg>
-                        <span>focus = {focusArray[ focusIndex ] ? focusArray[ focusIndex ] : `none (default)`}</span>
+                        <span>focus={focusArray[ focusIndex ] ? focusArray[ focusIndex ] : `none (default)`}</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
                             src={imgUrl}
                             ratio="3/4"
                         ></TwicImg>
-                        <span>focus = none (default)</span>
+                        <span>focus=`none` (default)</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
@@ -67,7 +80,7 @@ const TwicFocus = () => {
                             ratio="3/4"
                             focus="2080x50"
                         ></TwicImg>
-                        <span>focus = 2080x50</span>
+                        <span>focus=`2080x50`</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
@@ -75,7 +88,7 @@ const TwicFocus = () => {
                             ratio="3/4"
                             focus="auto"
                         ></TwicImg>
-                        <span>focus = auto</span>
+                        <span>focus=`auto`</span>
                     </div>
                 </div>
             </div>

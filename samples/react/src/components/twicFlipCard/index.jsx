@@ -54,16 +54,16 @@ const TwicFlipCard = () => (
         <div className="twic-flip-card-container">
             <div className="twic-abstract">
                 <h1>
-                        A Flip Card
+                    Flip cards
                 </h1>
-                <p>Move your mouse over images below</p>
+                <p>Move your mouse over the images below.</p>
             </div>
             <div className="twic-grid">
                 { cards.map( ( card, i ) => (
                     <div className="flip-card" key={i}>
                         <div className="flip-card-inner">
                             <div className="flip-card-front">
-                                <figure>
+                                <figure className="twic-item">
                                     <TwicImg
                                         src={ `${ card.front.url }`}
                                     ></TwicImg>
@@ -73,7 +73,7 @@ const TwicFlipCard = () => (
                                 </figure>
                             </div>
                             <div className="flip-card-back">
-                                <figure>
+                                <figure className="twic-item">
                                     <TwicImg
                                         src={ `${ card.back.url }`}
                                     ></TwicImg>

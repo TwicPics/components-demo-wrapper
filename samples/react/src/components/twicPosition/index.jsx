@@ -34,15 +34,24 @@ const TwicPosition = () => {
             <div className="twic-position-container">
                 <div className="twic-abstract">
                     <h1>
-                        Position locates the image inside the aera (only useful in `contain`mode)
+                        <span className="twic-code">position</span> property
                     </h1>
                     <p>
-                        Syntax is the same as for CSS position properties like `background-position`
-                        or `object-position`
+                        The <span className="twic-code">position</span> property
+                        locates the image inside the aera (only useful with <span className="twic-code">
+                        mode=`contain`</span>).
                     </p>
                     <p>
-                        Useful values are `top`, `bottom`, `left`, `right`...
-                        (it depends on original image ratio)
+                        The syntax is the same as for CSS position properties (e.g. <span className="twic-code">
+                        background-position</span> or <span className="twic-code">
+                        object-position</span>).
+                    </p>
+                    <p>
+                        Useful values are <span className="twic-code">
+                            top</span>, <span className="twic-code">
+                            bottom</span>, <span className="twic-code">
+                            left</span>, <span className="twic-code">
+                            right</span> etc.
                     </p>
                 </div>
                 <div className="twic-testing-container">
@@ -56,7 +65,7 @@ const TwicPosition = () => {
                             position={ vPositionArray[ vPositionIndex ] }
                         >
                         </TwicImg>
-                        <span>position = {vPositionArray[ vPositionIndex ] }</span>
+                        <span>position=`{vPositionArray[ vPositionIndex ] }`</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
@@ -65,7 +74,7 @@ const TwicPosition = () => {
                             position={ hPositionArray[ hPositionIndex ] }
                         >
                         </TwicImg>
-                        <span>position = {hPositionArray[ hPositionIndex ] }</span>
+                        <span>position=`{hPositionArray[ hPositionIndex ] }`</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
@@ -73,7 +82,7 @@ const TwicPosition = () => {
                             mode="contain"
                         >
                         </TwicImg>
-                        <span>no position setted (center by default)</span>
+                        <span>No position setted (center by default)</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
@@ -81,7 +90,7 @@ const TwicPosition = () => {
                             mode="contain"
                         >
                         </TwicImg>
-                        <span>no position setted (center by default)</span>
+                        <span>No position setted (center by default)</span>
                     </div>
                 </div>
             </div>
