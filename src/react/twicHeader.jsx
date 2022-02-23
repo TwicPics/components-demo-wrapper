@@ -60,7 +60,7 @@ const TwicHeader = ( { title = ``,
                 target="_blank"
                 className="documentation-link tag tag--bg-purple-rain" rel="noreferrer"
             >
-          TwicPics documentation
+                Documentation
             </a>
         </div>
     </header>
