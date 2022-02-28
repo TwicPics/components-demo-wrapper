@@ -16,21 +16,6 @@
 
     .card {
         margin: unset;
-        position: relative;
-        & figcaption {
-            background-color: rgba(black, 0.5);
-            bottom: 12px;
-            color: white;
-            font-size: 12px;
-            padding: 8px 4px;
-            position: absolute;
-            text-transform: uppercase;
-            width: calc(100% - 24px);
-            & p {
-                margin: unset;
-                padding: 0 5px;
-            }
-        }
     }
 
     ::-webkit-scrollbar-track {
@@ -50,12 +35,13 @@
 
 .slider-item {
     flex-basis: 100%;
-    --twic-ratio: calc(1);
+    --twic-ratio: calc(4/5);
 }
 
 .slider-item {
     @media (min-width: 768px) {
         flex-basis: 50%;
+        --twic-ratio: calc(1);
     }
     
     @media (min-width: 1024px) {
@@ -64,10 +50,6 @@
     
     @media (min-width: 1280px) {
         flex-basis: 30%;
-    }
-    
-    @media (min-width: 1536px) {
-        --twic-ratio: calc(16/9);
     }
 }
 

@@ -3,7 +3,7 @@ import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 import "./index.scss";
 
-const imgUrl = `codepen/tp-canyon.jpg`;
+const imgUrl = `components/woman-and-winter.jpg`;
 const ratiosArray = [ `2.39`, `16/9`, `4/3`, null, `0.75` ];
 
 /**

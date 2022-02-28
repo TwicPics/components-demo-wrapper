@@ -4,8 +4,8 @@ import "./index.scss";
 import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 
-const imgUrl = `https://assets.twicpics.com/examples/football.jpg`;
-const focusArray = [ null, `2080x50`, `auto` ];
+const imgUrl = `components/puppy.jpg`;
+const focusArray = [ null, `1920x1282`, `auto` ];
 
 /**
  * demonstrates focus features
@@ -63,29 +63,29 @@ const TwicFocus = () => {
                         </button>
                         <TwicImg
                             src={imgUrl} focus={focusArray[ focusIndex ]}
-                            ratio="3/4"
+                            ratio="4/5"
                         ></TwicImg>
                         <span>focus={focusArray[ focusIndex ] ? focusArray[ focusIndex ] : `none (default)`}</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
                             src={imgUrl}
-                            ratio="3/4"
+                            ratio="4/5"
                         ></TwicImg>
                         <span>focus=`none` (default)</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
                             src={imgUrl}
-                            ratio="3/4"
-                            focus="2080x50"
+                            ratio="4/5"
+                            focus="1920x1282"
                         ></TwicImg>
-                        <span>focus=`2080x50`</span>
+                        <span>focus=`1920x1282`</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
                             src={imgUrl}
-                            ratio="3/4"
+                            ratio="4/5"
                             focus="auto"
                         ></TwicImg>
                         <span>focus=`auto`</span>

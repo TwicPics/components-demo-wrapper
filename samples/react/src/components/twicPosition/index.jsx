@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
+import "./index.scss";
 
-const landscapeImgUrl = `https://assets.twicpics.com/demo/fake-websites/homepage/home-page-01-feature-section-01.jpeg`;
-const portraitImgUrl = `https://assets.twicpics.com/demo/fake-websites/homepage/home-page-01-category-03.jpeg`;
+const landscapeImgUrl = `components/position/horse.jpg`;
+const portraitImgUrl = `components/position/forest.jpg`;
 const vPositionArray = [ `top`, `bottom`, `center` ];
 const hPositionArray = [ `left`, `right`, `center` ];
 

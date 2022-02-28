@@ -4,8 +4,9 @@
 import React, { useState } from "react";
 import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
+import "./index.scss";
 
-const imgUrl = `codepen/tp-doggy.jpg`;
+const imgUrl = `components/fox.jpg`;
 const modesArray = [ `cover`, `contain` ];
 
 /**

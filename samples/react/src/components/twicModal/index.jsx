@@ -7,20 +7,20 @@ import Modal from "./modal";
 
 const images = [
     {
-        "url": `codepen/tp-canyon.jpg`,
-        "caption": `canyon`,
+        "url": `components/modal/seagull.jpg`,
+        "caption": `seagulls`,
     },
     {
-        "url": `codepen/eiffel-tower.jpg`,
-        "caption": `eiffel tower`,
+        "url": `components/modal/shell.jpg`,
+        "caption": `shell`,
     },
     {
-        "url": `codepen/tp-lake.jpg`,
-        "caption": `lake`,
+        "url": `components/modal/jelly-fish.jpg`,
+        "caption": `jelly fish`,
     },
     {
-        "url": `codepen/tp-rasp.jpg`,
-        "caption": `rasp`,
+        "url": `components/modal/turtle.jpg`,
+        "caption": `turtle`,
     },
 ];
 
@@ -52,10 +52,12 @@ const TwicModal = () => {
                         <div key={i}>
                             <figure className="poster-wrapper twic-item" onClick={ () => openModal( i )}>
                                 <TwicImg
-                                    src={ image.url }>
+                                    src={ image.url }
+                                    focus="auto"
+                                    ratio="0.95">
                                 </TwicImg>
                                 <figcaption>
-                                    <p>Click me</p>
+                                    <p>Click</p>
                                 </figcaption>
                             </figure>
                             <Modal

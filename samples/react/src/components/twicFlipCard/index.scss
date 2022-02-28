@@ -7,21 +7,6 @@
         padding-top: 100%;
         & figure{
             margin: unset;
-            position: relative;
-            & figcaption {
-                background-color: rgba(0, 0, 0, 0.5);
-                bottom: 12px;
-                color: #fff;
-                font-size: 12px;
-                padding: 8px 4px;
-                position: absolute;
-                text-transform: uppercase;
-                width: calc(100% - 24px);
-                & p {
-                    margin: unset;
-                    padding: 0 5px;
-                }
-            }
         }
       }
       
