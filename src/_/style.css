@@ -32,26 +32,18 @@ body {
 }
 
 #twic-header .twicpics-logo {
+  aspect-ratio: 140/39;
   width: 140px;
 }
 
 #twic-header .react-logo {
-  aspect-ratio: 5000/1679;
+  aspect-ratio: 3/1;
   width: 120px;
 }
 
 #twic-header .next-logo {
   aspect-ratio: 800/479;
   width: 90px;
-}
-
-#twic-header .heading-secondary {
-  margin: 10px 0;
-  font-size: 1.4em;
-  font-weight: 700;
-  line-height: 1.5;
-  text-align: center;
-  color: #111827;
 }
 
 #twic-header .tags-container {
@@ -198,11 +190,6 @@ body {
     width: 100%;
 }
 
-.twic-item .twic-w {
-    background-color: #00FFA3;
-    display: block;
-}
-
 .twic-item > span {
     display: block;
     margin-top: 12px;
@@ -213,10 +200,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  #twic-header .heading-secondary {
-    margin: 0;
-  }
-
   #twic-header .tags-container {
     position: absolute;
     bottom: 0;
