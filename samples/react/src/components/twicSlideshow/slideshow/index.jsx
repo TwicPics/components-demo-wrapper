@@ -52,34 +52,36 @@ const Slideshow = ( { children } ) => {
             <button className="slick-prev slick-arrow" onClick={ () => {
                 updateIndex( activeIndex - 1 );
             } }>&#8249;</button>
-            <div className="slideshow-inner-container">
-                <div
-                    {...handlers}
-                    onMouseEnter={() => setPaused( true )}
-                    onMouseLeave={() => setPaused( false )}
-                >
-                    <div
-                        className="inner"
-                        style={{
-                            // eslint-disable-next-line no-magic-numbers
-                            "transform": `translateX(-${ activeIndex * 100 }%)`,
-                        }}
+            <div className="twic-item">
+                <div className="slideshow-inner-container">
+                    <div className=""
+                        {...handlers}
+                        onMouseEnter={() => setPaused( true )}
+                        onMouseLeave={() => setPaused( false )}
                     >
-                        {React.Children.map( children, child => React.cloneElement( child, {
-                            "width": `100%`,
-                        } ) )}
+                        <div
+                            className="inner"
+                            style={{
+                                // eslint-disable-next-line no-magic-numbers
+                                "transform": `translateX(-${ activeIndex * 100 }%)`,
+                            }}
+                        >
+                            {React.Children.map( children, child => React.cloneElement( child, {
+                                "width": `100%`,
+                            } ) )}
+                        </div>
                     </div>
-                    <ul className="slick-dots">
-                        {React.Children.map( children, ( _child, index ) => (
-                            <li className={`${ index === activeIndex ? `slick-active` : `` }`}>
-                                <button onClick={ () => {
-                                    updateIndex( index );
-                                } } ></button>
-                            </li>
-                        ) )}
-                    </ul>
                 </div>
             </div>
+            <ul className="slick-dots">
+                {React.Children.map( children, ( _child, index ) => (
+                    <li className={`${ index === activeIndex ? `slick-active` : `` }`}>
+                        <button onClick={ () => {
+                            updateIndex( index );
+                        } } ></button>
+                    </li>
+                ) )}
+            </ul>
             <button className="slick-next slick-arrow" onClick={ () => {
                 updateIndex( activeIndex + 1 );
             } }>&#8250;</button>

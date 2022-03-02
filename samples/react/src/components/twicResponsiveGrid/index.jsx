@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import React from "react";
 import "./index.scss";
 import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
@@ -8,56 +9,196 @@ import { TwicImg } from "@twicpics/components/react";
  */
 const seed = [
     {
-        "url": `codepen/tp-write.jpg`,
-        "text": `write`,
+        "url": `components/portraits/woman-1.jpg`,
+        "focus": `50px45p`,
     },
     {
-        "url": `codepen/tp-snow.jpg`,
-        "text": `snow`,
+        "url": `components/portraits/man-1.jpg`,
+        "focus": `50px40p`,
     },
     {
-        "url": `codepen/tp-rasp.jpg`,
-        "text": `rasp`,
+        "url": `components/portraits/woman-2.jpg`,
+        "focus": `50px30p`,
     },
     {
-        "url": `codepen/tp-pug.jpg`,
-        "text": `pug`,
+        "url": `components/portraits/man-2.jpg`,
+        "focus": ``,
     },
     {
-        "url": `codepen/tp-moth.jpg`,
-        "text": `moth`,
+        "url": `components/portraits/woman-3.jpg`,
+        "focus": ``,
     },
     {
-        "url": `codepen/tp-lion.jpg`,
-        "text": `lion`,
+        "url": `components/portraits/man-3.jpg`,
+        "focus": ``,
     },
     {
-        "url": `codepen/tp-lake.jpg`,
-        "text": `lake`,
+        "url": `components/portraits/woman-4.jpg`,
+        "focus": ``,
     },
     {
-        "url": `codepen/tp-friend.jpg`,
-        "text": `friend`,
+        "url": `components/portraits/man-4.jpg`,
+        "focus": ``,
     },
     {
-        "url": `codepen/tp-cereals.jpg`,
-        "text": `cereals`,
+        "url": `components/portraits/woman-5.jpg`,
+        "focus": ``,
     },
     {
-        "url": `codepen/tp-castle.jpg`,
-        "text": `castle`,
+        "url": `components/portraits/man-5.jpg`,
+        "focus": `50px0p`,
     },
     {
-        "url": `codepen/tp-canyon.jpg`,
-        "text": `canyon`,
+        "url": `components/portraits/woman-6.jpg`,
+        "focus": ``,
     },
     {
-        "url": `codepen/tp-cafe.jpg`,
-        "text": `cafe`,
+        "url": `components/portraits/man-6.jpg`,
+        "focus": ``,
     },
     {
-        "url": `codepen/tp-artichoke.jpg`,
-        "text": `artichoke`,
+        "url": `components/portraits/woman-7.jpg`,
+        "focus": ``,
+    },
+    {
+        "url": `components/portraits/man-7.jpg`,
+        "focus": ``,
+    },
+    {
+        "url": `components/portraits/woman-8.jpg`,
+        "focus": ``,
+    },
+    {
+        "url": `components/portraits/man-8.jpg`,
+        "focus": `50px100p`,
+    },
+    {
+        "url": `components/portraits/woman-9.jpg`,
+        "focus": `50px30p`,
+    },
+    {
+        "url": `components/portraits/man-9.jpg`,
+        "focus": `50px30p`,
+    },
+    {
+        "url": `components/portraits/woman-10.jpg`,
+        "focus": `50px55p`,
+    },
+    {
+        "url": `components/portraits/man-10.jpg`,
+        "focus": ``,
+    },
+    {
+        "url": `components/portraits/woman-11.jpg`,
+        "focus": `50px40p`,
+    },
+    {
+        "url": `components/portraits/man-11.jpg`,
+        "focus": `50px35p`,
+    },
+    {
+        "url": `components/portraits/woman-12.jpg`,
+        "focus": `50px30p`,
+    },
+    {
+        "url": `components/portraits/man-12.jpg`,
+        "focus": ``,
+    },
+    {
+        "url": `components/portraits/woman-13.jpg`,
+        "focus": ``,
+    },
+    {
+        "url": `components/portraits/man-13.jpg`,
+        "focus": ``,
+    },
+    {
+        "url": `components/portraits/woman-14.jpg`,
+        "focus": `50px40p`,
+    },
+    {
+        "url": `components/portraits/man-14.jpg`,
+        "focus": ``,
+    },
+    {
+        "url": `components/portraits/woman-15.jpg`,
+        "focus": `50px30p`,
+    },
+    {
+        "url": `components/portraits/man-15.jpg`,
+        "focus": ``,
+    },
+    {
+        "url": `components/portraits/woman-16.jpg`,
+        "focus": `50px55p`,
+    },
+    {
+        "url": `components/portraits/man-16.jpg`,
+        "focus": ``,
+    },
+    {
+        "url": `components/portraits/woman-17.jpg`,
+        "focus": ``,
+    },
+    {
+        "url": `components/portraits/man-17.jpg`,
+        "focus": `50px60p`,
+    },
+    {
+        "url": `components/portraits/woman-18.jpg`,
+        "focus": ``,
+    },
+    {
+        "url": `components/portraits/man-18.jpg`,
+        "focus": `50px40p`,
+    },
+    {
+        "url": `components/portraits/woman-19.jpg`,
+        "focus": `50px60p`,
+    },
+    {
+        "url": `components/portraits/man-19.jpg`,
+        "focus": `50px20p`,
+    },
+    {
+        "url": `components/portraits/woman-20.jpg`,
+        "focus": `50px40p`,
+    },
+    {
+        "url": `components/portraits/woman-21.jpg`,
+        "focus": `50px45p`,
+    },
+    {
+        "url": `components/portraits/woman-22.jpg`,
+        "focus": `50px55p`,
+    },
+    {
+        "url": `components/portraits/man-22.jpg`,
+        "focus": `50px35p`,
+    },
+    {
+        "url": `components/portraits/woman-23.jpg`,
+        "focus": `50px45p`,
+    },
+    {
+        "url": `components/portraits/man-26.jpg`,
+        "focus": `50px45p`,
+    },
+    {
+        "url": `components/portraits/woman-25.jpg`,
+        "focus": `50px40p`,
+    },
+    {
+        "url": `components/portraits/man-24.jpg`,
+        "focus": `50px40p`,
+    },
+    {
+        "url": `components/portraits/woman-26.jpg`,
+        "focus": `50px40p`,
+    },
+    {
+        "url": `components/portraits/man-25.jpg`,
+        "focus": `50px40p`,
     },
 ];
 
@@ -65,15 +206,6 @@ const seed = [
  * list of images to display
  */
 const images = [
-    ...seed,
-    ...seed,
-    ...seed,
-    ...seed,
-    ...seed,
-    ...seed,
-    ...seed,
-    ...seed,
-    ...seed,
     ...seed,
     ...seed,
     ...seed,
@@ -92,13 +224,14 @@ const TwicResponsiveGrid = () => (
             </h1>
         </div>
         <div className="responsive-grid-container">
-            <ul>
+            <ul className="">
                 { images.map( ( image, i ) => (
-                    <li key={ i }>
+                    <li className="twic-item" key={ i }>
                         <a href="#">
-                            <TwicImg placeholder="none" ratio="4/3" mode="cover" src={ image.url } />
-                            <div className="caption">
-                                <h3>{image.text}</h3></div>
+                            <TwicImg
+                                src={ image.url } focus={ image.focus }
+                                placeholder="none" ratio="4/3" mode="cover"
+                            />
                         </a>
                     </li>
                 ) ) }

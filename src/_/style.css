@@ -27,6 +27,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 10px;
   font-size: 1.2em;
   font-weight: 400;
 }
@@ -108,6 +109,10 @@ body {
 
 .twic-abstract h1 {
     margin-bottom: 1rem;
+}
+
+.twic-abstract h2 {
+  margin-bottom: 1rem;
 }
 
 .twic-abstract p {
@@ -200,6 +205,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  #twic-header .heading-primary {
+    margin-bottom: 0;
+  }
+
   #twic-header .tags-container {
     position: absolute;
     bottom: 0;

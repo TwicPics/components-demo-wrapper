@@ -4,7 +4,7 @@ import "./index.scss";
 import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 
-const imgUrl = `codepen/tp-canyon.jpg`;
+const imgUrl = `components/peacock.jpg`;
 
 /**
  * demonstrates transition features

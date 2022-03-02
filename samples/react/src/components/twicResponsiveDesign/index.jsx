@@ -4,7 +4,7 @@ import "./index.scss";
 import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 
-const imgUrl = `leila_bekhti.jpg`;
+const imgUrl = `components/greece.jpg`;
 
 /**
  * demonstrates that setting up components using CSS enables hassle-free responsive designs.
@@ -26,7 +26,7 @@ const TwicResponsiveDesign = () => (
                 </p>
             </div>
             <div className="twic-item style-driven-responsive">
-                <TwicImg src={imgUrl} class="style-driven-responsive" focus="auto">
+                <TwicImg src={imgUrl} class="style-driven-responsive" focus="48px100p">
                 </TwicImg>
             </div>
         </div>

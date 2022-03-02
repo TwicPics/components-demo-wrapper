@@ -9,24 +9,24 @@ import { TwicImg } from "@twicpics/components/react";
  */
 const images = [
     {
-        "url": `codepen/tp-snow.jpg`,
-        "focus": `auto`,
+        "url": `components/slideshow/space-1.jpg`,
+        "focus": ``,
     },
     {
-        "url": `codepen/tp-cafe.jpg`,
-        "focus": `auto`,
+        "url": `components/slideshow/space-2.jpg`,
+        "focus": `50px100p`,
     },
     {
-        "url": `codepen/tp-castle.jpg`,
-        "focus": `auto`,
+        "url": `components/slideshow/space-3.jpg`,
+        "focus": `50px100p`,
     },
     {
-        "url": `codepen/tp-doggy.jpg`,
-        "focus": `200x200`,
+        "url": `components/slideshow/space-4.jpg`,
+        "focus": `50px100p`,
     },
     {
-        "url": `codepen/tp-lake.jpg`,
-        "focus": `auto`,
+        "url": `components/slideshow/space-5.jpg`,
+        "focus": `50px100p`,
     },
 ];
 
