@@ -216,14 +216,28 @@ const images = [
  * Custom behaviour on twic done ( scale 0 to 1 rather than opacity )
  * No placeholder
  */
-const TwicResponsiveGrid = () => (
-    <TwicWrapper>
+const TwicLifeCycle = () => (
+    <TwicWrapper redirect="https://www.twicpics.com/docs/script/dynamic#life-cycles">
         <div className="twic-abstract">
             <h1>
-                A responsive grid
+                TwicPics Life Cycle
             </h1>
+            <p>
+                It may be necessary to apply specific behavior to an image depending on its processing state.
+            </p>
+            <p>
+                To help you, the TwicPics script tags elements with specific classes as part of a life cycle
+                (follow documentation link above)
+            </p>
+            <p>
+                In this example, we apply a scale 0 -> 1 transition when the image is ready to be displayed
+            <span className="twic-code" >class=twic-done</span>.
+            </p>
+            <p>
+                Scroll down to experience lazy loading in action.
+            </p>
         </div>
-        <div className="responsive-grid-container">
+        <div className="twic-life-cycle">
             <ul className="">
                 { images.map( ( image, i ) => (
                     <li className="twic-item" key={ i }>
@@ -239,4 +253,4 @@ const TwicResponsiveGrid = () => (
         </div>
     </TwicWrapper>
 );
-export default TwicResponsiveGrid;
+export default TwicLifeCycle;

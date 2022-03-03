@@ -5,7 +5,7 @@
     height: 100%;
 }
 
-.responsive-grid-container {
+.twic-life-cycle {
     ul {
         display: grid;
         gap: 1rem;
@@ -38,7 +38,7 @@
     }
 }
 
-.responsive-grid-container ul {
+.twic-life-cycle ul {
     @media screen and (min-width: 425px) {
         grid-template-columns: repeat(2, 1fr);
     }

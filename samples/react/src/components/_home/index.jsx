@@ -22,6 +22,11 @@ function Home() {
                     </NavLink>
                 </li>
                 <li>
+                    <NavLink to="/life-cycle">
+                        Life cycle
+                    </NavLink>
+                </li>
+                <li>
                     <NavLink to="/modal">
                         Modal
                     </NavLink>
@@ -64,11 +69,6 @@ function Home() {
                 <li>
                     <NavLink to="/transition">
                         Transition
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/responsive-design">
-                        Responsive Design
                     </NavLink>
                 </li>
                 <li>
