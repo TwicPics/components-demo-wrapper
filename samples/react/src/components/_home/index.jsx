@@ -12,6 +12,11 @@ function Home() {
                     </NavLink>
                 </li>
                 <li>
+                    <NavLink to="/art-direction">
+                        Art direction
+                    </NavLink>
+                </li>
+                <li>
                     <NavLink to="/flip">
                         Flip Card
                     </NavLink>
@@ -69,11 +74,6 @@ function Home() {
                 <li>
                     <NavLink to="/transition">
                         Transition
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/responsive-grid">
-                        Responsive Grid
                     </NavLink>
                 </li>
             </ul>

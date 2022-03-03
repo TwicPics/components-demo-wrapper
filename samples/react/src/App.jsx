@@ -6,7 +6,6 @@ import TwicBasicGrid from './components/twicBasicGrid';
 import TwicSlideshow from './components/twicSlideshow';
 import TwicSlider from './components/twicSlider';
 import TwicStyleDriven from "./components/twicStyleDriven";
-import TwicResponsiveDesign from "./components/twicResponsiveDesign";
 import TwicFocus from "./components/twicFocus";
 import TwicMode from "./components/twicMode";
 import TwicPlaceholder from "./components/twicPlaceholder";
@@ -16,6 +15,7 @@ import TwicRatio from "./components/twicRatio";
 import TwicFlipCard from "./components/twicFlipCard";
 import TwicModal from "./components/twicModal";
 import TwicLifeCycle from "./components/twicLifeCycle";
+import TwicArtDirection from "./components/twicArtDirection";
 
 function App() {
     return (
@@ -24,6 +24,7 @@ function App() {
                 <>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/basic-grid" component={TwicBasicGrid} />
+                    <Route exact path="/art-direction" component={TwicArtDirection} />
                     <Route exact path="/flip" component={TwicFlipCard} />
                     <Route exact path="/focus" component={TwicFocus} />
                     <Route exact path="/life-cycle" component={TwicLifeCycle} />
@@ -36,7 +37,6 @@ function App() {
                     <Route exact path="/slideshow" component={TwicSlideshow} />
                     <Route exact path="/style-driven" component={TwicStyleDriven} />
                     <Route exact path="/transition" component={TwicTransition} />
-                    <Route exact path="/responsive-design" component={TwicResponsiveDesign} />
                 </>
             </Router>
         </div>

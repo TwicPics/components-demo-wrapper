@@ -9,12 +9,12 @@ const imgUrl = `components/greece.jpg`;
 /**
  * demonstrates that setting up components using CSS enables hassle-free responsive designs.
  */
-const TwicResponsiveDesign = () => (
+const TwicArtDirection = () => (
     <TwicWrapper>
-        <div className="twic-responsive-container">
+        <div className="twic-art-direction-container">
             <div className="twic-abstract">
                 <h1>
-                    Art Direction Images with CSS Media Queries
+                    Art Direction with CSS Media Queries
                 </h1>
                 <p>Setting up components using CSS enables hassle-free responsive designs.</p>
                 <p>
@@ -36,4 +36,4 @@ const TwicResponsiveDesign = () => (
     </TwicWrapper>
 );
 
-export default TwicResponsiveDesign;
+export default TwicArtDirection;
