@@ -14,11 +14,14 @@ const TwicResponsiveDesign = () => (
         <div className="twic-responsive-container">
             <div className="twic-abstract">
                 <h1>
-                    Responsive design
+                    Art Direction Images with CSS Media Queries
                 </h1>
                 <p>Setting up components using CSS enables hassle-free responsive designs.</p>
                 <p>
-                    You only need to manage one image in the template: TwicPics handles your CSS to do the rest.
+                    You do not need to create a set of images from the original.
+                </p>
+                <p>
+                    You only need to manage a master image in your template: TwicPics handles your CSS to do the rest.
                 </p>
                 <p>
                     <strong>Change the width of your browser</strong> to see the image ratio adapts according to
