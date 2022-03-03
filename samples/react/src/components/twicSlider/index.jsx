@@ -4,9 +4,9 @@ import { TwicImg } from "@twicpics/components/react";
 import "./index.scss";
 
 /**
- * list of unit images
+ * list of images to display in slider
  */
-const seed = [
+const images = [
     {
         "url": `components/slider/pantone.jpg`,
     },
@@ -56,11 +56,6 @@ const seed = [
         "url": `components/slider/woman-and-sand.jpg`,
     },
 ];
-
-/**
- * list of images to display
- */
-const images = [ ...seed ];
 
 /**
  * displays images with a horizontal scroll bar
