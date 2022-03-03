@@ -22,7 +22,7 @@ const Slideshow = ( { children } ) => {
         let _newIndex = newIndex;
         if ( newIndex < 0 ) {
             _newIndex = nbElement;
-        } else if ( newIndex >= nbElement ) {
+        } else if ( newIndex > nbElement ) {
             _newIndex = 0;
         }
         setActiveIndex( _newIndex );
