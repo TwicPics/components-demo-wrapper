@@ -66,6 +66,13 @@ const TwicSlider = () => (
             <h1>
                 A slider
             </h1>
+            <p>
+                A simple slider and TwicPics components : lazy-loading, CLS, art direction...
+            </p>
+            <p>
+                <strong>Change the width of your browser</strong> to see the image ratio adapts according to
+                    the CSS rules.
+            </p>
         </div>
         <div className="twic-slider-container">
             <ul className="slider">

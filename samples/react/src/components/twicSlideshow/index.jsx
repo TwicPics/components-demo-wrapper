@@ -36,6 +36,18 @@ const images = [
 const TwicSlideshow = () => (
     <TwicWrapper>
         <div className="twic-slideshow-container">
+            <div className="twic-abstract">
+                <h1>
+                    A Picture Carousel
+                </h1>
+                <p>
+                   Lazy-loading, CLS, art direction...
+                </p>
+                <p>
+                    <strong>Change the width of your browser</strong> to see the image ratio adapts according to
+                    the CSS rules.
+                </p>
+            </div>
             <Slideshow>
                 { images.map( ( image, i ) => (
                     <SlideshowItem key={ i }>
