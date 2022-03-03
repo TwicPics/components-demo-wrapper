@@ -1,11 +1,13 @@
+/* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
 import { default as TwicHeader } from "./twicHeader";
 
 import React, { useEffect } from "react";
-import WebFont from "webfontloader";
 
 const TwicWrapper = ( { className, tags, redirect, children } ) => {
+
     useEffect( () => {
+        const WebFont = require( `webfontloader` );
         WebFont.load( {
             "google": {
                 "families": [ `Montserrat:400,600,700` ],
