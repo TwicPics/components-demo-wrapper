@@ -8,7 +8,7 @@ function Home() {
             <ul>
                 <li>
                     <NavLink to="/basic-grid">
-                        Basic Grid
+                        Basic Example
                     </NavLink>
                 </li>
                 <li>

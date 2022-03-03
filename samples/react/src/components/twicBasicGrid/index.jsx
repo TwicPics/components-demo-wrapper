@@ -9,7 +9,7 @@ function TwicBasicGrid() {
             <div className="twic-basic-grid-container">
                 <div className="twic-abstract">
                     <h1>
-                        A basic grid
+                        A basic example
                     </h1>
                     <p>
                         TwicPics is a Responsive Image Service Solution <span className="twic-code">SaaS</span>
