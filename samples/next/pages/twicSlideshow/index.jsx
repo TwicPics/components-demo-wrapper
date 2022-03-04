@@ -1,5 +1,5 @@
+import styles from './index.module.scss';
 import React from "react";
-import styles from "./index.module.scss";
 import Slideshow, { SlideshowItem } from "./slideshow/Slideshow";
 import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
@@ -9,24 +9,24 @@ import { TwicImg } from "@twicpics/components/react";
  */
 const images = [
     {
-        "url": `codepen/tp-snow.jpg`,
-        "focus": `auto`,
+        "url": `components/slideshow/space-1.jpg`,
+        "focus": ``,
     },
     {
-        "url": `codepen/tp-cafe.jpg`,
-        "focus": `auto`,
+        "url": `components/slideshow/space-2.jpg`,
+        "focus": `50px100p`,
     },
     {
-        "url": `codepen/tp-castle.jpg`,
-        "focus": `auto`,
+        "url": `components/slideshow/space-3.jpg`,
+        "focus": `50px100p`,
     },
     {
-        "url": `codepen/tp-doggy.jpg`,
-        "focus": `200x200`,
+        "url": `components/slideshow/space-4.jpg`,
+        "focus": `50px100p`,
     },
     {
-        "url": `codepen/tp-lake.jpg`,
-        "focus": `auto`,
+        "url": `components/slideshow/space-5.jpg`,
+        "focus": `50px100p`,
     },
 ];
 
@@ -35,12 +35,24 @@ const images = [
  */
 const TwicSlideshow = () => (
     <TwicWrapper>
-        <div className={styles[ `twic-slideshow-container` ]}>
+        <div className={ styles[ `twic-slideshow-container` ] }>
+            <div className="twic-abstract">
+                <h1>
+                    A Picture Carousel
+                </h1>
+                <p>
+                   Lazy-loading, CLS, art direction...
+                </p>
+                <p>
+                    <strong>Change the width of your browser</strong> to see the image ratio adapts according to
+                    the CSS rules.
+                </p>
+            </div>
             <Slideshow>
                 { images.map( ( image, i ) => (
                     <SlideshowItem key={ i }>
                         <TwicImg
-                            className={styles[ `twic-slideshow-responsive` ]}
+                            className={ styles[ `twic-slideshow-responsive` ]}
                             focus={ image.focus }
                             src={ image.url }
                         ></TwicImg>

@@ -1,97 +1,85 @@
 import React from "react";
-import styles from "./index.module.scss";
 import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
+import styles from "./index.module.scss";
 
 /**
- * list of unit images
+ * list of images to display in slider
  */
-const seed = [
+const images = [
     {
-        "url": `codepen/eiffel-tower.jpg`,
-        "caption": `eiffel tower`,
+        "url": `components/slider/pantone.jpg`,
     },
     {
-        "url": `codepen/hot-air-balloons.jpg`,
-        "caption": `hot air balloons`,
+        "url": `components/slider/coffee.jpg`,
     },
     {
-        "url": `codepen/look-at-the-sky.jpg`,
-        "caption": `look at the sky`,
+        "url": `components/slider/reading.jpg`,
     },
     {
-        "url": `codepen/man-on-the-moon.jpg`,
-        "caption": `man on the moon`,
+        "url": `components/slider/cat-2.jpg`,
     },
     {
-        "url": `codepen/mountains-yoga.jpg`,
-        "caption": `mountains yoga`,
+        "url": `components/slider/mirror.jpg`,
     },
     {
-        "url": `codepen/tp-artichoke.jpg`,
-        "caption": `artichoke`,
+        "url": `components/slider/books.jpg`,
     },
     {
-        "url": `codepen/tp-cafe.jpg`,
-        "caption": `cafe`,
+        "url": `components/slider/sea.jpg`,
     },
     {
-        "url": `codepen/tp-canyon.jpg`,
-        "caption": `canyon`,
+        "url": `components/slider/frames.jpg`,
     },
     {
-        "url": `codepen/tp-castle.jpg`,
-        "caption": `castle`,
+        "url": `components/slider/dried-flower.jpg`,
     },
     {
-        "url": `codepen/tp-cereals.jpg`,
-        "caption": `cereals`,
+        "url": `components/slider/dune.jpg`,
     },
     {
-        "url": `codepen/tp-doggy.jpg`,
-        "caption": `doggy`,
+        "url": `components/slider/coffee-2.jpg`,
     },
     {
-        "url": `codepen/tp-friend.jpg`,
-        "caption": `friend`,
+        "url": `components/slider/yak.jpg`,
     },
     {
-        "url": `codepen/tp-lake.jpg`,
-        "caption": `lake`,
+        "url": `components/slider/dried-flower-2.jpg`,
     },
     {
-        "url": `codepen/tp-lion.jpg`,
-        "caption": `lion`,
+        "url": `components/slider/guitar.jpg`,
     },
     {
-        "url": `codepen/tp-moth.jpg`,
-        "caption": `moth`,
+        "url": `components/slider/field.jpg`,
     },
     {
-        "url": `codepen/tp-pug.jpg`,
-        "caption": `pug`,
+        "url": `components/slider/woman-and-sand.jpg`,
     },
 ];
-
-/**
- * list of images to display
- */
-const images = [ ...seed, ...seed, ...seed, ...seed, ...seed, ...seed, ...seed, ...seed ];
 
 /**
  * displays images with a horizontal scroll bar
  */
 const TwicSlider = () => (
     <TwicWrapper>
-        <div className={styles[ `twic-slider-container` ]}>
-            <ul className={styles.slider}>
+        <div className="twic-abstract">
+            <h1>
+                A slider
+            </h1>
+            <p>
+                A simple slider and TwicPics components : lazy-loading, CLS, art direction...
+            </p>
+            <p>
+                <strong>Change the width of your browser</strong> to see the image ratio adapts according to
+                    the CSS rules.
+            </p>
+        </div>
+        <div className={ styles[ `twic-slider-container` ] }>
+            <ul className= { styles.slider }>
                 { images.map( ( image, i ) => (
-                    <li className={styles[ `slider-item` ]} key={i}>
-                        <figure className={styles.card}>
-                            <TwicImg src={image.url} focus="auto"></TwicImg>
-                            <figcaption>
-                                <p>{image.caption}</p>
-                            </figcaption>
+                    <li className={ styles[ `slider-item` ] } key={i}>
+                        <figure className={ `${ styles.card } twic-item` }>
+                            <TwicImg src={image.url}></TwicImg>
                         </figure>
                     </li>
                 ) ) }
