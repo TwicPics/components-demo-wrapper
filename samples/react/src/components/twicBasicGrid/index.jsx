@@ -18,29 +18,29 @@ function TwicBasicGrid() {
                     <p>
                         TwicPics Components make it dead easy to unleash the power of TwicPics.
                     </p>
-                    <p>
+
                         Here the properties used in this example :
-                        <ul>
-                            <li>
-                                <span className="twic-code">ratio</span>:
-                                <span>
+                    <ul>
+                        <li>
+                            <span className="twic-code">ratio</span>:
+                            <span>
                                     determines the value of the height/width ratio
                                     of the image display area.</span>
-                            </li>
-                            <li>
-                                <span className="twic-code">mode</span>:
-                                <span>determines if the image fills or sits inside the aera.</span>
-                            </li>
-                            <li>
-                                <span className="twic-code">focus</span>:
-                                <span>changes the focus point coordinates of the image.</span>
-                            </li>
-                            <li>
-                                <span className="twic-code">placeholder</span>:
-                                <span>helps to optimize your CLS and implement the LQIP technique.</span>
-                            </li>
-                        </ul>
-                    </p>
+                        </li>
+                        <li>
+                            <span className="twic-code">mode</span>:
+                            <span>determines if the image fills or sits inside the aera.</span>
+                        </li>
+                        <li>
+                            <span className="twic-code">focus</span>:
+                            <span>changes the focus point coordinates of the image.</span>
+                        </li>
+                        <li>
+                            <span className="twic-code">placeholder</span>:
+                            <span>helps to optimize your CLS and implement the LQIP technique.</span>
+                        </li>
+                    </ul>
+
                 </div>
                 <div className="twic-grid">
                     <div className="twic-item">
