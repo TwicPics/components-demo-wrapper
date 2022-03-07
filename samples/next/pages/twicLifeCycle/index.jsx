@@ -217,7 +217,7 @@ const images = [
  * No placeholder
  */
 const TwicLifeCycle = () => (
-    <TwicWrapper redirect="https://www.twicpics.com/docs/script/dynamic#life-cycles">
+    <TwicWrapper>
         <div className="twic-abstract">
             <h1>
                 TwicPics Life Cycle

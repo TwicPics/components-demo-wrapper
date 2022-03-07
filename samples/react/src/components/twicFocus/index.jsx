@@ -22,9 +22,7 @@ const TwicFocus = () => {
     };
 
     return (
-        <TwicWrapper
-            redirect="https://www.twicpics.com/docs/api/transformations#focus"
-        >
+        <TwicWrapper>
             <div className="twic-focus-container">
                 <div className="twic-abstract">
                     <h1>

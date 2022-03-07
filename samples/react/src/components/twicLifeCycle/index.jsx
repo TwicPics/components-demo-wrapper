@@ -217,7 +217,7 @@ const images = [
  * No placeholder
  */
 const TwicLifeCycle = () => (
-    <TwicWrapper redirect="https://www.twicpics.com/docs/script/dynamic#life-cycles">
+    <TwicWrapper>
         <div className="twic-abstract">
             <h1>
                 TwicPics Life Cycle
@@ -227,7 +227,6 @@ const TwicLifeCycle = () => (
             </p>
             <p>
                 To help you, the TwicPics script tags elements with specific classes as part of a life cycle
-                (follow documentation link above)
             </p>
             <p>
                 In this example, we apply a scale 0 -> 1 transition when the image is ready to be displayed
