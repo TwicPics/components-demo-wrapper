@@ -229,8 +229,8 @@ const TwicLifeCycle = () => (
                 To help you, the TwicPics script tags elements with specific classes as part of a life cycle
             </p>
             <p>
-                In this example, we apply a scale 0 -> 1 transition when the image is ready to be displayed
-            <span className="twic-code" >class=twic-done</span>.
+                In this example, we apply a scale 0 to 1 transition when the image is ready to be displayed
+                <span className="twic-code" >class=twic-done</span>.
             </p>
             <p>
                 Scroll down to experience lazy loading in action.

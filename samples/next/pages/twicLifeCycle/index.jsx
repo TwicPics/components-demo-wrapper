@@ -230,8 +230,8 @@ const TwicLifeCycle = () => (
                 (follow documentation link above)
             </p>
             <p>
-                In this example, we apply a scale 0 -> 1 transition when the image is ready to be displayed
-            <span className="twic-code" >class=twic-done</span>.
+                In this example, we apply a scale 0 to 1 transition when the image is ready to be displayed
+                <span className="twic-code" >class=twic-done</span>.
             </p>
             <p>
                 Scroll down to experience lazy loading in action.
