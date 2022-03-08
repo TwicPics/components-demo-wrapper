@@ -25,12 +25,12 @@ function TwicBasicGrid() {
                         <li>
                             <span className="twic-code">ratio</span>:
                             <span>
-                                    determines the value of the height/width ratio
+                                    determines the value of the width/height ratio
                                     of the image display area.</span>
                         </li>
                         <li>
                             <span className="twic-code">mode</span>:
-                            <span>determines if the image fills or sits inside the aera.</span>
+                            <span>determines if the image fills or sits inside the area.</span>
                         </li>
                         <li>
                             <span className="twic-code">focus</span>:
@@ -38,7 +38,7 @@ function TwicBasicGrid() {
                         </li>
                         <li>
                             <span className="twic-code">placeholder</span>:
-                            <span>helps to optimize your CLS and implement the LQIP technique.</span>
+                            <span>helps optimize your CLS and implement the LQIP technique.</span>
                         </li>
                     </ul>
                 </TwicAbstract>
@@ -57,7 +57,7 @@ function TwicBasicGrid() {
                             placeholder="meancolor"
                         />
                         <span>
-                             ratio=16/9, image fills aera
+                             ratio=16/9, image fills area
                         </span>
                     </div>
                     <div className="twic-item">
@@ -68,7 +68,7 @@ function TwicBasicGrid() {
                             ratio="16/9"
                         />
                         <span>
-                             ratio=16/9, image sits inside aera
+                             ratio=16/9, image sits inside area
                         </span>
                     </div>
                     <div className="twic-item">
@@ -80,7 +80,7 @@ function TwicBasicGrid() {
                             placeholder="maincolor"
                         />
                         <span>
-                             ratio=2/3, image fills aera + focus auto
+                             ratio=2/3, image fills area + focus auto
                         </span>
                     </div>
                 </div>

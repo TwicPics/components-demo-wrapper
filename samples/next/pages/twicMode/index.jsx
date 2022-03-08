@@ -34,7 +34,7 @@ const TwicMode = () => {
                     <p>
                         <span>The </span>
                         <span className="twic-code">mode</span>
-                        <span> property determines if the image fills or sits inside the aera.</span>
+                        <span> property determines if the image fills or sits inside the area.</span>
                     </p>
                     <p>
                         Here are the two accepted values:

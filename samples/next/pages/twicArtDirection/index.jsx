@@ -18,14 +18,14 @@ const TwicArtDirection = () => (
                 codeSandBoxName="TwicPics x Next - Art Direction"
             >
                 <p>Setting up components using CSS enables hassle-free responsive designs.</p>
-                <p>You do not need to create a set of images from the original.</p>
+                <p>You do not need to create a set of images derived from the original.</p>
                 <p>
                     You only need to manage a master image in your template:
-                    TwicPics handles your CSS to do the rest.
+                    TwicPics understands your CSS and does the rest.
                 </p>
                 <p>
                     <strong>Change the width of your browser </strong>
-                    to see the image ratio adapts according to the CSS rules.
+                    to see the image ratio adapt according to the CSS rules.
                 </p>
             </TwicAbstract>
             <div className={ `${ styles[ `style-driven-responsive` ] } twic-item }`}>

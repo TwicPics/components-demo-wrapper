@@ -30,10 +30,10 @@ const TwicPlaceholder = () => {
                 >
                     <p>
                         The <span className="twic-code">placeholder</span> property
-                        helps to optimize your CLS and implement the LQIP technique.
+                        helps optimize your CLS and implement the LQIP technique.
                     </p>
                     <p>
-                        TwicPics Components automatically add a background placeholder
+                        TwicPics Components automatically adds a background placeholder
                         to your images: their size are reserved in the page before the images are actually loaded.
                     </p>
                     <p>

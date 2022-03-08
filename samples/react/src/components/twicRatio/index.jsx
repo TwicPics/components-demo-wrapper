@@ -35,37 +35,27 @@ const TwicRatio = () => {
                 >
                     <p>
                         The <span className="twic-code">ratio</span> property determines the value
-                        of the height/width ratio of the image display area.
+                        of the width/height ratio of the image display area.
                     </p>
                     <p>
-                        The property can take as a value:
-                        <ul>
-                            <li>
-                                a number: <span className="twic-code">
-                                1.85</span>, <span className="twic-code">
-                                2</span>, <span className="twic-code">
-                                0.5</span> and so on.
-                            </li>
-                            <li>
-                                or a string: <span className="twic-code">
-                                4/3</span>, <span className="twic-code">
-                                16/9</span>, etc.
-                            </li>
-                        </ul>
+                        Value can be:
                     </p>
+                    <ul>
+                        <li>
+                            a ratio expression of the form width/height like 4/3, 16/9 or 1/1.
+                        </li>
+                        <li>
+                            a number that is the result of such an expression like 1.85, 2 or 0.5.
+                        </li>
+                    </ul>
                     <p>
                         A square area (<span className="twic-code">
                         ratio=`1`</span>) will be created by default.
                     </p>
-                    <p>
-                    Note that it is the width of the zone coupled with the image ratio
-                    that allow to calculate the reserved height
-                    (and this while the image is not yet loaded).
-                    </p>
                 </TwicAbstract>
                 <div className="twic-testing-container">
                     <button className="twic-button" onClick={changeRatio}>Click to change ratio</button>
-                    <button className="twic-button" onClick={changeAeraWidth}>Click to change aera width</button>
+                    <button className="twic-button" onClick={changeAeraWidth}>Click to change area width</button>
                 </div>
                 <div className={`twic-grid ${ fullWidthAera ? `full-width` : `half-width` } `}>
                     <div className="twic-item">

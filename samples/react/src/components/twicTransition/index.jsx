@@ -30,7 +30,7 @@ const TwicTransition = () => {
                 >
                     <p>
                         The <span className="twic-code">transition</span> properties allow you
-                        to customize the effects of revealing images once they have been loaded.
+                        to customize the effect used to reveal the image once it has been loaded.
                     </p>
                     <ul>
                         <li>

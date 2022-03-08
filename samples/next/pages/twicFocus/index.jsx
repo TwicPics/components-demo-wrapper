@@ -29,13 +29,15 @@ const TwicFocus = () => {
                     codeSandBoxName="TwicPics x Next - Focus"
                 >
                     <p>
-                            The <span className="twic-code">focus</span> property will change
-                            the focus point coordinates of the image (only useful with <span className="twic-code">
-                                mode=`cover`</span>).
+                        The <span className="twic-code">focus</span> property will change
+                        the focus point coordinates of the image (only useful with
+                        <span className="twic-code">mode=`cover`</span>).
+                        <br/>
+                        It allows to determine what should be visible when the image is cropped.
                     </p>
                     <p>
-                            You can set the focus by using <em>coordinates </em>
-                            or <span className="twic-code">auto</span> values:
+                        You can set the focus by using <em>coordinates </em>
+                        or <span className="twic-code">auto</span> values:
                     </p>
                     <ul>
                         <li>
@@ -66,14 +68,14 @@ const TwicFocus = () => {
                             src={imgUrl} focus={focusArray[ focusIndex ]}
                             ratio="4/5"
                         ></TwicImg>
-                        <span>focus={focusArray[ focusIndex ] ? focusArray[ focusIndex ] : `none (default)`}</span>
+                        <span>focus={focusArray[ focusIndex ] ? focusArray[ focusIndex ] : `'none' (default)`}</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
                             src={imgUrl}
                             ratio="4/5"
                         ></TwicImg>
-                        <span>focus=`none` (default)</span>
+                        <span>focus='none' (default)</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
@@ -81,7 +83,7 @@ const TwicFocus = () => {
                             ratio="4/5"
                             focus="1920x1282"
                         ></TwicImg>
-                        <span>focus=`1920x1282`</span>
+                        <span>focus='1920x1282'</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
@@ -89,7 +91,7 @@ const TwicFocus = () => {
                             ratio="4/5"
                             focus="auto"
                         ></TwicImg>
-                        <span>focus=`auto`</span>
+                        <span>focus='auto'</span>
                     </div>
                 </div>
             </div>

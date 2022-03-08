@@ -39,9 +39,8 @@ const TwicPosition = () => {
                     codeSandBoxName="TwicPics x React - Position"
                 >
                     <p>
-                        The <span className="twic-code">position</span> property
-                        locates the image inside the aera (only useful with <span className="twic-code">
-                        mode=`contain`</span>).
+                        In <span className="twic-code">contain</span> mode,
+                        the position property changes the location of the image inside the area of the component.
                     </p>
                     <p>
                         The syntax is the same as for CSS position properties (e.g. <span className="twic-code">
@@ -53,7 +52,7 @@ const TwicPosition = () => {
                             top</span>, <span className="twic-code">
                             bottom</span>, <span className="twic-code">
                             left</span>, <span className="twic-code">
-                            right</span> etc.
+                            right</span> but all valid CSS position values are valid.
                     </p>
                 </TwicAbstract>
                 <div className="twic-testing-container">
@@ -84,7 +83,7 @@ const TwicPosition = () => {
                             mode="contain"
                         >
                         </TwicImg>
-                        <span>No position setted (center by default)</span>
+                        <span>No position set (center by default)</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
@@ -92,7 +91,7 @@ const TwicPosition = () => {
                             mode="contain"
                         >
                         </TwicImg>
-                        <span>No position setted (center by default)</span>
+                        <span>No position set (center by default)</span>
                     </div>
                 </div>
             </div>

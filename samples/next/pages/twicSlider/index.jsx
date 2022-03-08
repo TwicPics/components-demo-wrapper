@@ -68,10 +68,11 @@ const TwicSlider = () => (
             codeSandBoxName="TwicPics x Next - Slider"
         >
             <p>
-                A simple slider and TwicPics components : lazy-loading, CLS, art direction...
+                A simple slider that uses TwicPics for automatic lazy-loading,
+                CLS optimization and art direction adaptation.
             </p>
             <p>
-                <strong>Change the width of your browser</strong> to see the image ratio adapts according to
+                <strong>Change the width of your browser</strong> to see the image ratio adapt according to
                     the CSS rules.
             </p>
         </TwicAbstract>

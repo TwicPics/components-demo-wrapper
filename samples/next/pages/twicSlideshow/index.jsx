@@ -42,10 +42,10 @@ const TwicSlideshow = () => (
                 codeSandBoxName="TwicPics x Next - Picture Carousel"
             >
                 <p>
-                   Lazy-loading, CLS, art direction...
+                    Use TwicPics for automatic lazy-loading, CLS optimization and art direction adaptation.
                 </p>
                 <p>
-                    <strong>Change the width of your browser</strong> to see the image ratio adapts according to
+                    <strong>Change the width of your browser</strong> to see the image ratio adapt according to
                     the CSS rules.
                 </p>
             </TwicAbstract>
