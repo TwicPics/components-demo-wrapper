@@ -39,15 +39,17 @@ const TwicHeader = ( { tags = [ `@twicpics-components` ],
     redirect = `https://github.com/TwicPics/components/tree/main/documentation#twicpics-components`,
     framework } ) => (
     <header id="twic-header">
-        <h1 className="heading-primary">
-            <img
-                className="twicpics-logo"
-                src={`${ LOGOS_PATH }twicpics.svg`}
-                alt="TwicPics logo"
-            />
-            <span>x</span>
-            <FrameworkLogo framework={ framework } />
-        </h1>
+        <a href="/" title="Home">
+            <h1 className="heading-primary">
+                <img
+                    className="twicpics-logo"
+                    src={`${ LOGOS_PATH }twicpics.svg`}
+                    alt="TwicPics logo"
+                />
+                <span>x</span>
+                <FrameworkLogo framework={ framework } />
+            </h1>
+        </a>
         <div className="tags-container">
             {tags.map( ( tag, i ) => (
                 <div key={i} className="tag">

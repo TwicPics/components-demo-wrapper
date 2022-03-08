@@ -23,6 +23,11 @@ body {
   background-color: #f9fafb;
 }
 
+#twic-header a {
+  text-decoration:none;
+  color:initial;
+}
+
 #twic-header .heading-primary {
   display: flex;
   align-items: center;
