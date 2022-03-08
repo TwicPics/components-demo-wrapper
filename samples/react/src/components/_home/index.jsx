@@ -9,41 +9,6 @@ const categories = [
         "title": `Use cases`,
         "items": [
             {
-                "route": `/focus`,
-                "imgSrc": `components/puppy.jpg`,
-                "title": `Focus`,
-            },
-            {
-                "route": `/mode`,
-                "imgSrc": `components/fox.jpg`,
-                "title": `Mode`,
-            },
-            {
-                "route": `/placeholders`,
-                "imgSrc": `components/cat.jpg`,
-                "title": `Placeholders`,
-            },
-            {
-                "route": `/positions`,
-                "imgSrc": `components/position/horse.jpg`,
-                "title": `Positions`,
-            },
-            {
-                "route": `/ratio`,
-                "imgSrc": `components/woman-and-winter.jpg`,
-                "title": `Ratio`,
-            },
-            {
-                "route": `/transition`,
-                "imgSrc": `components/peacock.jpg`,
-                "title": `Transition`,
-            },
-        ],
-    },
-    {
-        "title": `Components properties`,
-        "items": [
-            {
                 "route": `/basic-grid`,
                 "imgSrc": `https://assets.twicpics.com/examples/football.jpg`,
                 "title": `Basic Example`,
@@ -82,6 +47,41 @@ const categories = [
                 "route": `/style-driven`,
                 "imgSrc": `components/horse.jpg`,
                 "title": `Style Driven`,
+            },
+        ],
+    },
+    {
+        "title": `Components properties`,
+        "items": [
+            {
+                "route": `/focus`,
+                "imgSrc": `components/puppy.jpg`,
+                "title": `Focus`,
+            },
+            {
+                "route": `/mode`,
+                "imgSrc": `components/fox.jpg`,
+                "title": `Mode`,
+            },
+            {
+                "route": `/placeholders`,
+                "imgSrc": `components/cat.jpg`,
+                "title": `Placeholders`,
+            },
+            {
+                "route": `/positions`,
+                "imgSrc": `components/position/horse.jpg`,
+                "title": `Positions`,
+            },
+            {
+                "route": `/ratio`,
+                "imgSrc": `components/woman-and-winter.jpg`,
+                "title": `Ratio`,
+            },
+            {
+                "route": `/transition`,
+                "imgSrc": `components/peacock.jpg`,
+                "title": `Transition`,
             },
         ],
     },
