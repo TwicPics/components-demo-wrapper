@@ -37,7 +37,7 @@ const TwicModal = () => {
     };
 
     return (
-        <TwicWrapper>
+        <TwicWrapper framework="next">
             <div className={ styles[ `twic-modal-container` ] }>
                 <div className="twic-abstract">
                     <h1>

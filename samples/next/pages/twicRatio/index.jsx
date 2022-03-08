@@ -26,7 +26,7 @@ const TwicRatio = () => {
     };
 
     return (
-        <TwicWrapper>
+        <TwicWrapper framework="next">
             <div className={ styles[ `twic-ratio-container` ] }>
                 <div className="twic-abstract">
                     <h1>

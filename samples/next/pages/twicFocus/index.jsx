@@ -21,7 +21,7 @@ const TwicFocus = () => {
     };
 
     return (
-        <TwicWrapper>
+        <TwicWrapper framework="next">
             <div className="twic-focus-container">
                 <div className="twic-abstract">
                     <h1>

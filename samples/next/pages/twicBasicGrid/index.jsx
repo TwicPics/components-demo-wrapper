@@ -5,7 +5,7 @@ import { TwicImg } from "@twicpics/components/react";
 
 function TwicBasicGrid() {
     return (
-        <TwicWrapper>
+        <TwicWrapper framework="next">
             <div className={styles[ `twic-basic-grid-container` ]}>
                 <div className="twic-abstract">
                     <h1>

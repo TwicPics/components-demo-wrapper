@@ -10,7 +10,7 @@ const imgUrl = `components/greece.jpg`;
  * demonstrates that setting up components using CSS enables hassle-free responsive designs.
  */
 const TwicArtDirection = () => (
-    <TwicWrapper>
+    <TwicWrapper framework="next">
         <div className={ styles[ `twic-art-direction-container` ] }>
             <div className="twic-abstract">
                 <h1>

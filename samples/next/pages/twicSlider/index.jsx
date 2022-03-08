@@ -61,7 +61,7 @@ const images = [
  * displays images with a horizontal scroll bar
  */
 const TwicSlider = () => (
-    <TwicWrapper>
+    <TwicWrapper framework="next">
         <div className="twic-abstract">
             <h1>
                 A slider

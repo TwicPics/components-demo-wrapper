@@ -36,7 +36,8 @@ const FrameworkLogo = ( { framework = `react` } ) => {
 };
 
 const TwicHeader = ( { tags = [ `@twicpics-components` ],
-    redirect = `https://github.com/TwicPics/components/tree/main/documentation#twicpics-components` } ) => (
+    redirect = `https://github.com/TwicPics/components/tree/main/documentation#twicpics-components`,
+    framework } ) => (
     <header id="twic-header">
         <h1 className="heading-primary">
             <img
@@ -45,7 +46,7 @@ const TwicHeader = ( { tags = [ `@twicpics-components` ],
                 alt="TwicPics logo"
             />
             <span>x</span>
-            <FrameworkLogo framework="react" />
+            <FrameworkLogo framework={ framework } />
         </h1>
         <div className="tags-container">
             {tags.map( ( tag, i ) => (

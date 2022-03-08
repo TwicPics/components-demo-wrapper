@@ -34,7 +34,7 @@ const images = [
  * displays a carousel of responsive images
  */
 const TwicSlideshow = () => (
-    <TwicWrapper>
+    <TwicWrapper framework="next">
         <div className={ styles[ `twic-slideshow-container` ] }>
             <div className="twic-abstract">
                 <h1>

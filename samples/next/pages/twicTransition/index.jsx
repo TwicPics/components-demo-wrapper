@@ -21,7 +21,7 @@ const TwicTransition = () => {
     };
 
     return (
-        <TwicWrapper>
+        <TwicWrapper framework="next">
             <div className={ styles[ `twic-transition-container` ] }>
                 <div className="twic-abstract">
                     <h1>

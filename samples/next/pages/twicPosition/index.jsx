@@ -31,7 +31,7 @@ const TwicPosition = () => {
     };
 
     return (
-        <TwicWrapper>
+        <TwicWrapper framework="next">
             <div className={ styles[ `twic-position-container` ] }>
                 <div className="twic-abstract">
                     <h1>

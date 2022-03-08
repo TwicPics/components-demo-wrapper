@@ -42,7 +42,7 @@ const cards = [
  * demonstrates how to implement a flip effect
  */
 const TwicFlipCard = () => (
-    <TwicWrapper>
+    <TwicWrapper framework="next">
         <div className={ styles[ `twic-flip-card-container` ] }>
             <div className="twic-abstract">
                 <h1>

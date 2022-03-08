@@ -217,7 +217,7 @@ const images = [
  * No placeholder
  */
 const TwicLifeCycle = () => (
-    <TwicWrapper>
+    <TwicWrapper framework="next">
         <div className="twic-abstract">
             <h1>
                 TwicPics Life Cycle

@@ -24,7 +24,7 @@ const TwicMode = () => {
     };
 
     return (
-        <TwicWrapper>
+        <TwicWrapper framework="next">
             <div className={ styles[ `twic-mode-container` ] }>
                 <div className="twic-abstract">
                     <h1>
