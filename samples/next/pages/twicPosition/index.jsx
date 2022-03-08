@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
+import { TwicWrapper, TwicAbstract } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 import styles from "./index.module.scss";
 
@@ -33,10 +33,11 @@ const TwicPosition = () => {
     return (
         <TwicWrapper framework="next">
             <div className={ styles[ `twic-position-container` ] }>
-                <div className="twic-abstract">
-                    <h1>
-                        <span className="twic-code">position</span> property
-                    </h1>
+                <TwicAbstract
+                    title="position property"
+                    codeSandUrl="https://codesandbox.io/s/twicpics-x-next-position-feature-0c0cs2"
+                    codeSandBoxName="TwicPics x Next - Position"
+                >
                     <p>
                         The <span className="twic-code">position</span> property
                         locates the image inside the aera (only useful with <span className="twic-code">
@@ -54,7 +55,7 @@ const TwicPosition = () => {
                             left</span>, <span className="twic-code">
                             right</span> etc.
                     </p>
-                </div>
+                </TwicAbstract>
                 <div className="twic-testing-container">
                     <button className="twic-button" onClick={changePosition}>Click to change position</button>
                 </div>

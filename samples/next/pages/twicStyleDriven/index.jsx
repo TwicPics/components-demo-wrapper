@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import styles from "./index.module.scss";
-import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
+import { TwicWrapper, TwicAbstract } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 
 const imgUrl = `components/horse.jpg`;
@@ -13,12 +13,15 @@ const TwicStyleDriven = () => (
     <TwicWrapper
     >
         <div className={ styles[ `twic-style-driven-container` ] }>
-            <div className="twic-abstract">
-                <h1>CSS styles driven</h1>
+            <TwicAbstract
+                title="CSS style driven"
+                codeSandUrl="https://codesandbox.io/s/twicpics-x-next-style-driven-oe5bzn"
+                codeSandBoxName="TwicPics x Next - Style Driven"
+            >
                 <p>
                     You can set up the TwicPics components using pure CSS and the power of CSS variables.
                 </p>
-            </div>
+            </TwicAbstract>
             <h2>
                 1. Display ratio with <span className="twic-code">--twic-ratio</span>
             </h2>

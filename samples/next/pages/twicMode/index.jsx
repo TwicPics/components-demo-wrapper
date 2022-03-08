@@ -2,7 +2,7 @@
 /* eslint-disable line-comment-position */
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState } from "react";
-import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
+import { TwicWrapper, TwicAbstract } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 import styles from "./index.module.scss";
 
@@ -26,10 +26,11 @@ const TwicMode = () => {
     return (
         <TwicWrapper framework="next">
             <div className={ styles[ `twic-mode-container` ] }>
-                <div className="twic-abstract">
-                    <h1>
-                        <span className="twic-code">mode</span> property
-                    </h1>
+                <TwicAbstract
+                    title="mode property"
+                    codeSandUrl="https://codesandbox.io/s/twicpics-x-next-mode-feature-3iz23j"
+                    codeSandBoxName="TwicPics x Next - Mode Property"
+                >
                     <p>
                         <span>The </span>
                         <span className="twic-code">mode</span>
@@ -48,7 +49,7 @@ const TwicMode = () => {
                             </li>
                         </ul>
                     </p>
-                </div>
+                </TwicAbstract>
                 <div className="twic-grid">
                     <div className="twic-item">
                         <button

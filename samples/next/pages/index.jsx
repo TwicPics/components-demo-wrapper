@@ -44,7 +44,7 @@ const categories = [
                 "title": `Slideshow`,
             },
             {
-                "route": `/style-driven`,
+                "route": `/twicStyleDriven`,
                 "imgSrc": `components/horse.jpg`,
                 "title": `Style Driven`,
             },

@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import styles from "./index.module.scss";
-import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
+import { TwicWrapper, TwicAbstract } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 
 const imgUrl = `components/greece.jpg`;
@@ -12,22 +12,22 @@ const imgUrl = `components/greece.jpg`;
 const TwicArtDirection = () => (
     <TwicWrapper framework="next">
         <div className={ styles[ `twic-art-direction-container` ] }>
-            <div className="twic-abstract">
-                <h1>
-                    Art Direction with CSS Media Queries
-                </h1>
+            <TwicAbstract
+                title="Art Direction with CSS Media Queries"
+                codeSandUrl="https://codesandbox.io/s/twicpics-x-next-art-direction-ps2zj"
+                codeSandBoxName="TwicPics x Next - Art Direction"
+            >
                 <p>Setting up components using CSS enables hassle-free responsive designs.</p>
+                <p>You do not need to create a set of images from the original.</p>
                 <p>
-                    You do not need to create a set of images from the original.
+                    You only need to manage a master image in your template:
+                    TwicPics handles your CSS to do the rest.
                 </p>
                 <p>
-                    You only need to manage a master image in your template: TwicPics handles your CSS to do the rest.
+                    <strong>Change the width of your browser </strong>
+                    to see the image ratio adapts according to the CSS rules.
                 </p>
-                <p>
-                    <strong>Change the width of your browser</strong> to see the image ratio adapts according to
-                    the CSS rules.
-                </p>
-            </div>
+            </TwicAbstract>
             <div className={ `${ styles[ `style-driven-responsive` ] } twic-item }`}>
                 <TwicImg src={imgUrl} className={ styles[ `style-driven-responsive` ] } focus="48px100p">
                 </TwicImg>

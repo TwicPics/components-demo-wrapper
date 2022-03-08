@@ -1,5 +1,5 @@
 import React from "react";
-import { TwicWrapper, TwicAbstract } from "@twicpics/components-demo-wrapper/react";
+import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
 import { NavLink } from "react-router-dom";
 import { TwicImg } from "@twicpics/components/react";
 import "./index.scss";

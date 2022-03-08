@@ -26,7 +26,7 @@ const TwicTransition = () => {
                 <TwicAbstract
                     title="transition property"
                     codeSandUrl="https://codesandbox.io/s/twicpics-x-react-transition-yi7he5"
-                    codeSandBoxName="TwicPics x React - Modal"
+                    codeSandBoxName="TwicPics x React - Transition"
                 >
                     <p>
                         The <span className="twic-code">transition</span> properties allow you

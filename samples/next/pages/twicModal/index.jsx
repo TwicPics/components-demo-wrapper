@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState } from "react";
 import styles from "./index.module.scss";
-import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
+import { TwicWrapper, TwicAbstract } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 import Modal from "./modal";
 
@@ -39,14 +39,15 @@ const TwicModal = () => {
     return (
         <TwicWrapper framework="next">
             <div className={ styles[ `twic-modal-container` ] }>
-                <div className="twic-abstract">
-                    <h1>
-                        A modal revealer
-                    </h1>
+                <TwicAbstract
+                    title="A modal revealer"
+                    codeSandUrl="https://codesandbox.io/s/twicpics-x-next-modal-07jbxj"
+                    codeSandBoxName="TwicPics x Next - Modal"
+                >
                     <p>
                         Click on the image of your choice to reveal a modal.
                     </p>
-                </div>
+                </TwicAbstract>
                 <div className="twic-grid">
                     { images.map( ( image, i ) => (
                         <div key={i}>

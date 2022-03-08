@@ -1,7 +1,7 @@
 /* eslint-disable max-lines */
 import React from "react";
 import styles from "./index.module.scss";
-import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
+import { TwicWrapper, TwicAbstract } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 
 /**
@@ -218,16 +218,16 @@ const images = [
  */
 const TwicLifeCycle = () => (
     <TwicWrapper framework="next">
-        <div className="twic-abstract">
-            <h1>
-                TwicPics Life Cycle
-            </h1>
+        <TwicAbstract
+            title="TwicPics Life Cycle"
+            codeSandUrl="https://codesandbox.io/s/twicpics-x-next-life-cycle-txzc3z"
+            codeSandBoxName="TwicPics x Next - Life"
+        >
             <p>
                 It may be necessary to apply specific behavior to an image depending on its processing state.
             </p>
             <p>
                 To help you, the TwicPics script tags elements with specific classes as part of a life cycle
-                (follow documentation link above)
             </p>
             <p>
                 In this example, we apply a scale 0 to 1 transition when the image is ready to be displayed
@@ -236,7 +236,7 @@ const TwicLifeCycle = () => (
             <p>
                 Scroll down to experience lazy loading in action.
             </p>
-        </div>
+        </TwicAbstract>
         <div className={ styles[ `twic-life-cycle` ] }>
             <ul className="">
                 { images.map( ( image, i ) => (

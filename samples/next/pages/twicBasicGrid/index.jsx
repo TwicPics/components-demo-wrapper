@@ -1,16 +1,17 @@
 import React from "react";
 import styles from "./index.module.scss";
-import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
+import { TwicWrapper, TwicAbstract } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 
 function TwicBasicGrid() {
     return (
         <TwicWrapper framework="next">
             <div className={styles[ `twic-basic-grid-container` ]}>
-                <div className="twic-abstract">
-                    <h1>
-                        A basic example
-                    </h1>
+                <TwicAbstract
+                    title="A basic example"
+                    codeSandUrl="https://codesandbox.io/s/twicpics-x-next-basic-example-xe9spg"
+                    codeSandBoxName="TwicPics x Next - A basic example"
+                >
                     <p>
                         TwicPics is a Responsive Image Service Solution <span className="twic-code">SaaS</span>
                         that enables on-demand responsive image generation.
@@ -40,8 +41,7 @@ function TwicBasicGrid() {
                             <span>helps to optimize your CLS and implement the LQIP technique.</span>
                         </li>
                     </ul>
-
-                </div>
+                </TwicAbstract>
                 <div className="twic-grid">
                     <div className={styles[ `twic-item` ]}>
                         <TwicImg src="https://assets.twicpics.com/examples/football.jpg" />
