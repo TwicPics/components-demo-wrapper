@@ -65,7 +65,7 @@ const TwicMode = () => {
                     </div>
                     <div className="twic-item">
                         <TwicImg src={imgUrl}></TwicImg>
-                        <span>No mode setted (cover by default)</span>
+                        <span>No mode set (cover by default)</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg src={imgUrl} mode="cover"></TwicImg>

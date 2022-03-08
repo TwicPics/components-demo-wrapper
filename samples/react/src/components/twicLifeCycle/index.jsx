@@ -212,7 +212,7 @@ const images = [
 ];
 
 /**
- * displays images in grid with responsive rules setted on li width
+ * displays images in grid with responsive rules set on li width
  * Custom behaviour on twic done ( scale 0 to 1 rather than opacity )
  * No placeholder
  */

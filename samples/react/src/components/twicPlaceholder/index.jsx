@@ -52,7 +52,7 @@ const TwicPlaceholder = () => {
                         then to replace it with the full version later on.
                     </p>
                     <p>
-                        When setted to <span className="twic-code">preview</span> (the default value),
+                        When set to <span className="twic-code">preview</span> (the default value),
                         a blurry version of your image is used as a background image.
                     </p>
                 </TwicAbstract>
