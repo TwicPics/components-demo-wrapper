@@ -1,81 +1,117 @@
 import React from "react";
 import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
 import Link from 'next/link';
+import { TwicImg } from "@twicpics/components/react";
+import styles from "./index.module.scss";
+
+const categories = [
+    {
+        "title": `Use cases`,
+        "items": [
+            {
+                "route": `/twicBasicGrid`,
+                "imgSrc": `https://assets.twicpics.com/examples/football.jpg`,
+                "title": `Basic Example`,
+            },
+            {
+                "route": `/twicArtDirection`,
+                "imgSrc": `components/greece.jpg`,
+                "title": `Art direction`,
+            },
+            {
+                "route": `/twicFlipCard`,
+                "imgSrc": `components/flip/orange-1.jpg`,
+                "title": `Flip Card`,
+            },
+            {
+                "route": `/twicLifeCycle`,
+                "imgSrc": `components/portraits/woman-1.jpg`,
+                "title": `Life cycle`,
+            },
+            {
+                "route": `/twicModal`,
+                "imgSrc": `components/modal/seagull.jpg`,
+                "title": `Modal`,
+            },
+            {
+                "route": `/twicSlider`,
+                "imgSrc": `components/slider/pantone.jpg`,
+                "title": `Slider`,
+            },
+            {
+                "route": `/twicSlideshow`,
+                "imgSrc": `components/slideshow/space-1.jpg`,
+                "title": `Slideshow`,
+            },
+            {
+                "route": `/style-driven`,
+                "imgSrc": `components/horse.jpg`,
+                "title": `Style Driven`,
+            },
+        ],
+    },
+    {
+        "title": `Components propreties`,
+        "items": [
+            {
+                "route": `/twicFocus`,
+                "imgSrc": `components/puppy.jpg`,
+                "title": `Focus`,
+            },
+            {
+                "route": `/twicMode`,
+                "imgSrc": `components/fox.jpg`,
+                "title": `Mode`,
+            },
+            {
+                "route": `/twicPlaceholder`,
+                "imgSrc": `components/cat.jpg`,
+                "title": `Placeholders`,
+            },
+            {
+                "route": `/twicPosition`,
+                "imgSrc": `components/position/horse.jpg`,
+                "title": `Positions`,
+            },
+            {
+                "route": `/twicRatio`,
+                "imgSrc": `components/woman-and-winter.jpg`,
+                "title": `Ratio`,
+            },
+            {
+                "route": `/twicTransition`,
+                "imgSrc": `components/peacock.jpg`,
+                "title": `Transition`,
+            },
+        ],
+    },
+];
 
 const Home = () => (
-    <TwicWrapper>
-        <ul>
-            <li>
-                <Link href="/twicBasicGrid">
-                    Basic Example
-                </Link>
-            </li>
-            <li>
-                <Link href="/twicArtDirection">
-                    Art direction
-                </Link>
-            </li>
-            <li>
-                <Link href="/twicFlipCard">
-                    Flip Card
-                </Link>
-            </li>
-            <li>
-                <Link href="/twicFocus">
-                    Focus
-                </Link>
-            </li>
-            <li>
-                <Link href="/twicLifeCycle">
-                    Life cycle
-                </Link>
-            </li>
-            <li>
-                <Link href="/twicModal">
-                    Modal
-                </Link>
-            </li>
-            <li>
-                <Link href="/twicMode">
-                    Mode
-                </Link>
-            </li>
-            <li>
-                <Link href="/twicPlaceholder">
-                    Placeholders
-                </Link>
-            </li>
-            <li>
-                <Link href="/twicPosition">
-                    Position
-                </Link>
-            </li>
-            <li>
-                <Link href="/twicRatio">
-                    Ratio
-                </Link>
-            </li>
-            <li>
-                <Link href="/twicSlider">
-                    Slider
-                </Link>
-            </li>
-            <li>
-                <Link href="/twicSlideshow">
-                    Slideshow
-                </Link>
-            </li>
-            <li>
-                <Link href="/twicStyleDriven">
-                    Style Driven
-                </Link>
-            </li>
-            <li>
-                <Link href="/twicTransition">
-                    Transition
-                </Link>
-            </li>
-        </ul>
+    <TwicWrapper framework="next">
+        <div className={ styles[ `home-container` ] }>
+            { categories.map( ( category, i ) => (
+                <div className="twic-panel" key={`category ${ i }`}>
+                    <h3>{ category.title }</h3>
+                    <div className="twic-grid">
+                        { category.items.map( ( item, i ) => (
+                            <Link href={ item.route } key={`useCase ${ i }`}>
+                                <figure className="twic-item">
+                                    <TwicImg
+                                        src={ item.imgSrc }
+                                        focus="auto"
+                                        ratio="0.95">
+                                    </TwicImg>
+                                    <figcaption>
+                                        <p>{ item.title }</p>
+                                    </figcaption>
+                                </figure>
+                            </Link>
+                        ) ) }
+                    </div>
+                </div>
+            ) )}
+        </div>
     </TwicWrapper>
 );
 
