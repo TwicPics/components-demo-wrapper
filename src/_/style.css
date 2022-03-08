@@ -111,6 +111,21 @@ body {
     margin-bottom: 1rem;
 }
 
+
+.twic-abstract > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.codesandbox-container {
+    flex-grow: 1;
+    text-align: right;
+}
+
 .twic-abstract h2 {
   margin-bottom: 1rem;
 }

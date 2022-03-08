@@ -1,5 +1,5 @@
 import React from "react";
-import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
+import { TwicWrapper, TwicAbstract } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 import "./index.scss";
 
@@ -44,12 +44,13 @@ const cards = [
 const TwicFlipCard = () => (
     <TwicWrapper>
         <div className="twic-flip-card-container">
-            <div className="twic-abstract">
-                <h1>
-                    Flip cards
-                </h1>
+            <TwicAbstract
+                title="Flip cards"
+                codeSandUrl="https://codesandbox.io/s/twicpics-x-react-flip-cards-jq4hn2"
+                codeSandBoxName="TwicPics x React - Flip Cards"
+            >
                 <p>Move your mouse over the images below.</p>
-            </div>
+            </TwicAbstract>
             <div className="twic-grid">
                 { cards.map( ( card, i ) => (
                     <div className="flip-card" key={i}>

@@ -1,7 +1,7 @@
 /* eslint-disable max-lines */
 import React from "react";
 import "./index.scss";
-import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
+import { TwicWrapper, TwicAbstract } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 
 /**
@@ -218,10 +218,11 @@ const images = [
  */
 const TwicLifeCycle = () => (
     <TwicWrapper>
-        <div className="twic-abstract">
-            <h1>
-                TwicPics Life Cycle
-            </h1>
+        <TwicAbstract
+            title="TwicPics Life Cycle"
+            codeSandUrl="https://codesandbox.io/s/twicpics-x-react-life-cycle-4eq9x"
+            codeSandBoxName="TwicPics x React - Life Cycle"
+        >
             <p>
                 It may be necessary to apply specific behavior to an image depending on its processing state.
             </p>
@@ -235,7 +236,7 @@ const TwicLifeCycle = () => (
             <p>
                 Scroll down to experience lazy loading in action.
             </p>
-        </div>
+        </TwicAbstract>
         <div className="twic-life-cycle">
             <ul className="">
                 { images.map( ( image, i ) => (

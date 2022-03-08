@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState } from "react";
 import "./index.scss";
-import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
+import { TwicWrapper, TwicAbstract } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 
 const imgUrl = `components/peacock.jpg`;
@@ -23,10 +23,11 @@ const TwicTransition = () => {
     return (
         <TwicWrapper>
             <div className="twic-transition-container">
-                <div className="twic-abstract">
-                    <h1>
-                        <span className="twic-code">transition</span> properties
-                    </h1>
+                <TwicAbstract
+                    title="transition property"
+                    codeSandUrl="https://codesandbox.io/s/twicpics-x-react-transition-yi7he5"
+                    codeSandBoxName="TwicPics x React - Modal"
+                >
                     <p>
                         The <span className="twic-code">transition</span> properties allow you
                         to customize the effects of revealing images once they have been loaded.
@@ -49,7 +50,7 @@ const TwicTransition = () => {
                             to the transition effect (default: <span className="twic-code">ease</span>).
                         </li>
                     </ul>
-                </div>
+                </TwicAbstract>
                 <div className="twic-testing-container">
                     <button className="twic-button" onClick={ togglePlaceholder }>
                         Click to reveal transition

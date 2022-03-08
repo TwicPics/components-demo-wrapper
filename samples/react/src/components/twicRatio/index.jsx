@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
+import { TwicWrapper, TwicAbstract } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 import "./index.scss";
 
@@ -28,10 +28,11 @@ const TwicRatio = () => {
     return (
         <TwicWrapper>
             <div className="twic-ratio-container">
-                <div className="twic-abstract">
-                    <h1>
-                        <span className="twic-code">ratio</span> property
-                    </h1>
+                <TwicAbstract
+                    title="ratio property"
+                    codeSandUrl="https://codesandbox.io/s/twicpics-x-react-ratio-3jkxy7"
+                    codeSandBoxName="TwicPics x React - Ratio"
+                >
                     <p>
                         The <span className="twic-code">ratio</span> property determines the value
                         of the height/width ratio of the image display area.
@@ -61,7 +62,7 @@ const TwicRatio = () => {
                     that allow to calculate the reserved height
                     (and this while the image is not yet loaded).
                     </p>
-                </div>
+                </TwicAbstract>
                 <div className="twic-testing-container">
                     <button className="twic-button" onClick={changeRatio}>Click to change ratio</button>
                     <button className="twic-button" onClick={changeAeraWidth}>Click to change aera width</button>

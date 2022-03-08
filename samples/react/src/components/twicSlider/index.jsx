@@ -1,5 +1,5 @@
 import React from "react";
-import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
+import { TwicWrapper, TwicAbstract } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 import "./index.scss";
 
@@ -62,10 +62,11 @@ const images = [
  */
 const TwicSlider = () => (
     <TwicWrapper>
-        <div className="twic-abstract">
-            <h1>
-                A slider
-            </h1>
+        <TwicAbstract
+            title="A slider"
+            codeSandUrl="https://codesandbox.io/s/twicpics-x-react-responsive-image-slider-leulp"
+            codeSandBoxName="TwicPics x React - Slider"
+        >
             <p>
                 A simple slider and TwicPics components : lazy-loading, CLS, art direction...
             </p>
@@ -73,7 +74,7 @@ const TwicSlider = () => (
                 <strong>Change the width of your browser</strong> to see the image ratio adapts according to
                     the CSS rules.
             </p>
-        </div>
+        </TwicAbstract>
         <div className="twic-slider-container">
             <ul className="slider">
                 { images.map( ( image, i ) => (

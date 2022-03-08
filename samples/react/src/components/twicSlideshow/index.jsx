@@ -1,7 +1,7 @@
 import './index.scss';
 import React from "react";
 import Slideshow, { SlideshowItem } from "./slideshow";
-import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
+import { TwicWrapper, TwicAbstract } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 
 /**
@@ -36,10 +36,11 @@ const images = [
 const TwicSlideshow = () => (
     <TwicWrapper>
         <div className="twic-slideshow-container">
-            <div className="twic-abstract">
-                <h1>
-                    A Picture Carousel
-                </h1>
+            <TwicAbstract
+                title="A Picture Carousel"
+                codeSandUrl="https://codesandbox.io/s/twicpics-x-react-responsive-slideshow-y23mt"
+                codeSandBoxName="TwicPics x React - Picture Carousel"
+            >
                 <p>
                    Lazy-loading, CLS, art direction...
                 </p>
@@ -47,7 +48,7 @@ const TwicSlideshow = () => (
                     <strong>Change the width of your browser</strong> to see the image ratio adapts according to
                     the CSS rules.
                 </p>
-            </div>
+            </TwicAbstract>
             <Slideshow>
                 { images.map( ( image, i ) => (
                     <SlideshowItem key={ i }>

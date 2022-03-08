@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState } from "react";
 import "./index.scss";
-import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
+import { TwicWrapper, TwicAbstract } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 
 const imgUrl = `components/cat.jpg`;
@@ -23,10 +23,11 @@ const TwicPlaceholder = () => {
     return (
         <TwicWrapper>
             <div className="twic-placeholder-container">
-                <div className="twic-abstract">
-                    <h1>
-                        <span className="twic-code">placeholder</span> property
-                    </h1>
+                <TwicAbstract
+                    title="placeholder property"
+                    codeSandUrl="https://codesandbox.io/s/twicpics-x-react-placeholders-feature-xemz6i"
+                    codeSandBoxName="TwicPics x React - Modal"
+                >
                     <p>
                         The <span className="twic-code">placeholder</span> property
                         helps to optimize your CLS and implement the LQIP technique.
@@ -54,7 +55,7 @@ const TwicPlaceholder = () => {
                         When setted to <span className="twic-code">preview</span> (the default value),
                         a blurry version of your image is used as a background image.
                     </p>
-                </div>
+                </TwicAbstract>
                 <div className="twic-testing-container">
                     <button className="twic-button" onClick={ togglePlaceholder }>
                         {showPlaceholder ? `Click to show images` : `Click to reveal placeholders` }

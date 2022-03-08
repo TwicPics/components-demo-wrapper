@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState } from "react";
 import "./index.scss";
-import { TwicWrapper } from "@twicpics/components-demo-wrapper/react";
+import { TwicWrapper, TwicAbstract } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 
 const imgUrl = `components/puppy.jpg`;
@@ -24,33 +24,37 @@ const TwicFocus = () => {
     return (
         <TwicWrapper>
             <div className="twic-focus-container">
-                <div className="twic-abstract">
-                    <h1>
-                        <span className="twic-code">focus</span> property
-                    </h1>
+                <TwicAbstract
+                    title="focus property"
+                    codeSandUrl="https://codesandbox.io/s/twicpics-x-react-focus-feature-bpv3mm"
+                    codeSandBoxName="TwicPics x React - Focus"
+                >
                     <p>
-                        The <span className="twic-code">focus</span> property will change
-                        the focus point coordinates of the image (only useful with <span className="twic-code">
-                            mode=`cover`</span>).
+                            The <span className="twic-code">focus</span> property will change
+                            the focus point coordinates of the image (only useful with <span className="twic-code">
+                                mode=`cover`</span>).
                     </p>
                     <p>
-                        You can set the focus by using <em>coordinates </em>
-                        or <span className="twic-code">auto</span> values:
-                        <ul>
-                            <li>
-                                <em>Coordinates</em> represent a point in the image, specified as a couple of
-                                positive lengths, separated by the character <span className="twic-code">x</span>:
-                                <br/>the first length is the coordinate along the x-axis
-                                (following the width of the image), and the second length
-                                is the coordinate along the y-axis (following the height of the image).
-                            </li>
-                            <li>
-                                If <span className="twic-code">auto</span> is used in place of actual coordinates,
-                                the focus point will be chosen automagically for you!
-                            </li>
-                        </ul>
+                            You can set the focus by using <em>coordinates </em>
+                            or <span className="twic-code">auto</span> values:
                     </p>
-                </div>
+                    <ul>
+                        <li>
+                            <em>Coordinates</em> represent a point in the image, specified as a couple of
+                                    positive lengths, separated by the character
+                            <span className="twic-code">x</span>.
+                            <br/>
+                            <i>eg</i> : 1920x1282
+                            <br/>1920 is the coordinate along the x-axis
+                                    (following the width of the image),<br/>1282
+                                    is the coordinate along the y-axis (following the height of the image).
+                        </li>
+                        <li>
+                                    If <span className="twic-code">auto</span> is used in place of actual coordinates,
+                                    the focus point will be chosen automagically for you!
+                        </li>
+                    </ul>
+                </TwicAbstract>
                 <div className="twic-grid">
                     <div className="twic-item">
                         <button
