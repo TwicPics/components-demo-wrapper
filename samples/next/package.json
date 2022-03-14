@@ -18,7 +18,7 @@
     },
     "license": "MIT",
     "scripts": {
-        "build": "node ../../build && $npm_execpath install && next build && next export",
+        "build": "node ../../build && $npm_execpath install && next build",
         "serve": "node ../../build && $npm_execpath install && next -p 3000",
         "start": "node ../../build && $npm_execpath install && next build && next start -p 3000"
     }
