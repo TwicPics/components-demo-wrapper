@@ -1,5 +1,6 @@
 /samples/**/.next
 /samples/**/build
+/samples/**/out
 /samples/**/package-lock.json
 /samples/**/yarn.lock
 *.log
