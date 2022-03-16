@@ -27,8 +27,8 @@ const TwicArtDirection = () => (
                     to see the image ratio adapt according to the CSS rules.
                 </p>
             </TwicAbstract>
-            <div className="twic-item style-driven-responsive">
-                <TwicImg src={ imgUrl } class="style-driven-responsive" focus="48px100p">
+            <div>
+                <TwicImg src={ imgUrl } className="style-driven-responsive" focus="48px100p">
                 </TwicImg>
             </div>
         </div>
