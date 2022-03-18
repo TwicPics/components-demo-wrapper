@@ -52,6 +52,11 @@ body {
   width: 90px;
 }
 
+#twic-header .gatsby-logo {
+    aspect-ratio: unset;
+    width: 130px;
+  }
+
 #twic-header .tags-container {
   display: flex;
   flex-wrap: wrap;

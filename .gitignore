@@ -3,6 +3,8 @@
 /samples/**/out
 /samples/**/package-lock.json
 /samples/**/yarn.lock
+/samples/gatsby/public
+/samples/gatsby/.cache
 *.log
 .DS_Store
 .history
@@ -10,3 +12,4 @@
 .vscode
 node_modules
 **/*.bak
+

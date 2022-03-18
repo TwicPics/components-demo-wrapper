@@ -14,6 +14,11 @@ const FrameworkLogo = ( { framework = `react` } ) => {
         `next-logo`,
         `Next logo`,
     ];
+    const GATSBY = [
+        `gatsby.svg`,
+        `gatsby-logo`,
+        `Gatsby logo`,
+    ];
     let logo = ``;
     let cssClass = ``;
     let alt = ``;
@@ -23,6 +28,9 @@ const FrameworkLogo = ( { framework = `react` } ) => {
             break;
         case `next`:
             [ logo, cssClass, alt ] = NEXT;
+            break;
+        case `gatsby`:
+            [ logo, cssClass, alt ] = GATSBY;
             break;
         default:
     }
