@@ -1,0 +1,7 @@
+.twic-placeholder-container {
+    .show-placeholders {
+        :global(img) {
+            opacity: 0 !important;
+        }
+    }
+}
