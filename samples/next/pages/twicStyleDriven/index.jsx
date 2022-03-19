@@ -10,7 +10,7 @@ const imgUrl = `components/horse.jpg`;
  * demonstrates how you can set up components using pure CSS and the power of CSS variables.
  */
 const TwicStyleDriven = () => (
-    <TwicWrapper framework="gatsby">
+    <TwicWrapper framework="next">
         <div className={ styles[ `twic-style-driven-container` ] }>
             <TwicAbstract
                 title="CSS style driven"
