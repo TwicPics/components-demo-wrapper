@@ -94,8 +94,8 @@ const Home = () => (
                 <div className="twic-panel" key={`category ${ i }`}>
                     <h3>{ category.title }</h3>
                     <div className="twic-grid">
-                        { category.items.map( ( item, i ) => (
-                            <Link to={ item.route } key={`useCase ${ i }`}>
+                        { category.items.map( ( item, j ) => (
+                            <Link to={ item.route } key={`useCase ${ j }`}>
                                 <figure className="twic-item">
                                     <TwicImg
                                         src={ item.imgSrc }
