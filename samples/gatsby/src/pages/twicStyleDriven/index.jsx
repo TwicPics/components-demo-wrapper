@@ -1,8 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import styles from "./index.module.scss";
 import { TwicWrapper, TwicAbstract } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
+import { twicStyleDrivenContainer,
+    landscape,
+    square,
+    portrait,
+    contain,
+    left,
+    right,
+    cover,
+    lg,
+    sm,
+    md } from "./index.module.scss";
 
 const imgUrl = `components/horse.jpg`;
 
@@ -11,7 +21,7 @@ const imgUrl = `components/horse.jpg`;
  */
 const TwicStyleDriven = () => (
     <TwicWrapper framework="gatsby">
-        <div className={ styles[ `twic-style-driven-container` ] }>
+        <div className={ twicStyleDrivenContainer }>
             <TwicAbstract
                 title="CSS style driven"
                 codeSandUrl="https://codesandbox.io/s/twicpics-x-next-style-driven-oe5bzn"
@@ -25,15 +35,15 @@ const TwicStyleDriven = () => (
                 1. Display ratio with <span className="twic-code">--twic-ratio</span>
             </h2>
             <div className="twic-grid">
-                <div className={ `${ styles.landscape } twic-item` }>
+                <div className={ `${ landscape } twic-item` }>
                     <TwicImg src={imgUrl}></TwicImg>
                     <span>class landscape</span>
                 </div>
-                <div className={ ` ${ styles.square } twic-item` }>
+                <div className={ ` ${ square } twic-item` }>
                     <TwicImg src={imgUrl}></TwicImg>
                     <span>class square</span>
                 </div>
-                <div className={ ` ${ styles.portrait } twic-item` }>
+                <div className={ ` ${ portrait } twic-item` }>
                     <TwicImg src={imgUrl}></TwicImg>
                     <span>class portrait</span>
                 </div>
@@ -44,30 +54,30 @@ const TwicStyleDriven = () => (
                     twic-position</span>
             </h2>
             <div className="twic-grid">
-                <div className={ `${ styles.contain } ${ styles.left } twic-item` }>
+                <div className={ `${ contain } ${ left } twic-item` }>
                     <TwicImg src={imgUrl} ratio="16/9"></TwicImg>
                     <span>class contain + class left</span>
                 </div>
-                <div className={ `${ styles.contain } ${ styles.right } twic-item` }>
+                <div className={ `${ contain } ${ right } twic-item` }>
                     <TwicImg src={imgUrl} ratio="16/9"></TwicImg>
                     <span>class contain + class right</span>
                 </div>
-                <div className={ `${ styles.cover } twic-item` }>
+                <div className={ `${ cover } twic-item` }>
                     <TwicImg src={imgUrl} focus="50px100p" ratio="16/9"></TwicImg>
                     <span>class cover</span>
                 </div>
             </div>
             <h2>3. Other classical settings (here with <span className="twic-code">width</span>)</h2>
             <div className="twic-grid">
-                <div className={ `${ styles.lg } twic-item` }>
+                <div className={ `${ lg } twic-item` }>
                     <TwicImg src={imgUrl}></TwicImg>
                     <span>class lg</span>
                 </div>
-                <div className={ `${ styles.md } twic-item` }>
+                <div className={ `${ md } twic-item` }>
                     <TwicImg src={imgUrl}></TwicImg>
                     <span>class md</span>
                 </div>
-                <div className={ `${ styles.sm } twic-item` }>
+                <div className={ `${ sm } twic-item` }>
                     <TwicImg src={imgUrl}></TwicImg>
                     <span>class sm</span>
                 </div>

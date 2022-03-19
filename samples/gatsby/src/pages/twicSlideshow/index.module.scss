@@ -1,0 +1,28 @@
+.twic-slideshow-container {
+    margin: auto;
+    width: 75%;
+}
+
+.twic-slideshow-responsive {
+    --twic-ratio: calc(1);
+}
+
+.twic-slideshow-responsive {
+    
+    @media (min-width: 768px) {
+        --twic-ratio: calc(4/3);
+    }
+    
+    @media (min-width: 1024px) {
+       --twic-ratio: calc(16/9);
+    }
+    
+    @media (min-width: 1280px) {
+        --twic-ratio: calc(1.85);
+    }
+    
+    @media (min-width: 1536px) {
+        --twic-ratio: calc(21/9);
+    }
+}
+
