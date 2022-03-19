@@ -53,7 +53,7 @@ body {
 }
 
 #twic-header .gatsby-logo {
-    aspect-ratio: unset;
+    aspect-ratio: 400/111;
     width: 130px;
   }
 
