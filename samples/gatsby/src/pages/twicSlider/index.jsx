@@ -1,7 +1,7 @@
 import React from "react";
 import { TwicWrapper, TwicAbstract } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
-import { twicSliderContainer, slider, sliderItem, card, twicItem } from "./index.module.scss";
+import { twicSliderContainer, slider, sliderItem, card } from "./index.module.scss";
 
 /**
  * list of images to display in slider
@@ -80,7 +80,7 @@ const TwicSlider = () => (
             <ul className= { slider }>
                 { images.map( ( image, i ) => (
                     <li className={ sliderItem } key={i}>
-                        <figure className={` ${ card } ${ twicItem }`}>
+                        <figure className={` ${ card } twicItem }`}>
                             <TwicImg src={image.url}></TwicImg>
                         </figure>
                     </li>
