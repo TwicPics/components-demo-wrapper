@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import { installTwicPics } from "@twicpics/components/react";
 import '@twicpics/components-demo-wrapper/style.css';
 import "@twicpics/components/style.css";
@@ -11,7 +12,15 @@ installTwicPics( {
 } );
 
 function MyApp( { Component, pageProps } ) {
-    return <Component {...pageProps} />;
+    return (
+        <>
+            <Head>
+                <title>Next App</title>
+                <link rel="shortcut icon" href="/favicon.ico" />
+            </Head>
+            <Component {...pageProps} />
+        </>
+    );
 }
 
 export default MyApp;
