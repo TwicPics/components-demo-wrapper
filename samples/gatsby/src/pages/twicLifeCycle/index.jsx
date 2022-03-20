@@ -220,8 +220,8 @@ const TwicLifeCycle = () => (
     <TwicWrapper framework="gatsby">
         <TwicAbstract
             title="TwicPics Life Cycle"
-            codeSandUrl="https://codesandbox.io/s/twicpics-x-next-life-cycle-txzc3z"
-            codeSandBoxName="TwicPics x Next - Life"
+            codeSandUrl="https://codesandbox.io/s/twicpics-x-gatsby-life-cycle-led4rf"
+            codeSandBoxName="TwicPics x Gatsby - Life"
         >
             <p>
                 It may be necessary to apply specific behavior to an image depending on its processing state.

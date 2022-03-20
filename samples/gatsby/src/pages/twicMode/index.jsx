@@ -28,8 +28,8 @@ const TwicMode = () => {
             <div className={ twicModeContainer }>
                 <TwicAbstract
                     title="mode property"
-                    codeSandUrl="https://codesandbox.io/s/twicpics-x-next-mode-feature-3iz23j"
-                    codeSandBoxName="TwicPics x Next - Mode Property"
+                    codeSandUrl="https://codesandbox.io/s/twicpics-x-gatsby-mode-feature-k7p0u9"
+                    codeSandBoxName="TwicPics x Gatsby - Mode Property"
                 >
                     <p>
                         <span>The </span>

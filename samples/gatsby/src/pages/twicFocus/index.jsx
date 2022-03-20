@@ -25,8 +25,8 @@ const TwicFocus = () => {
             <div className="twic-focus-container">
                 <TwicAbstract
                     title="focus property"
-                    codeSandUrl="https://codesandbox.io/s/twicpics-x-next-focus-qxhubm"
-                    codeSandBoxName="TwicPics x Next - Focus"
+                    codeSandUrl="https://codesandbox.io/s/twicpics-x-gatsby-focus-feature-9zqn0i"
+                    codeSandBoxName="TwicPics x Gatsby - Focus"
                 >
                     <p>
                         The <span className="twic-code">focus</span> property will change

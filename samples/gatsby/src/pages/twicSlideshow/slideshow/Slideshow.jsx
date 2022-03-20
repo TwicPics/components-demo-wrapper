@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
-import { inner,
+import {
+    inner,
     slideshowItem,
     slideshowContainer,
     slickArrow,
@@ -8,15 +9,19 @@ import { inner,
     slickNext,
     slickPrev,
     slideshowInnerContainer,
-    slickDots } from "./Slideshow.module.scss";
+    slickDots,
+} from "./Slideshow.module.scss";
 
 const timerDuration = 3000;
 
 export const SlideshowItem = ( { children, width } ) => (
-    <div className={ slideshowItem } style={ {
-        width,
-    } }>
-        { children }
+    <div
+        className={slideshowItem}
+        style={{
+            width,
+        }}
+    >
+        {children}
     </div>
 );
 
@@ -55,43 +60,56 @@ const Slideshow = ( { children } ) => {
     } );
 
     return (
-        <div className={ slideshowContainer }>
-            <button className={ `${ slickPrev } ${ slickArrow }`} onClick={ () => {
-                updateIndex( activeIndex - 1 );
-            } }>&#8249;</button>
+        <div className={slideshowContainer}>
+            <button
+                className={`${ slickPrev } ${ slickArrow }`}
+                onClick={() => {
+                    updateIndex( activeIndex - 1 );
+                }}
+            >
+        &#8249;
+            </button>
             <div className="twic-item">
-                <div className={ slideshowInnerContainer }>
+                <div className={slideshowInnerContainer}>
                     <div
                         {...handlers}
                         onMouseEnter={() => setPaused( true )}
                         onMouseLeave={() => setPaused( false )}
                     >
                         <div
-                            className={ inner }
+                            className={inner}
                             style={{
-                            // eslint-disable-next-line no-magic-numbers
+                                // eslint-disable-next-line no-magic-numbers
                                 "transform": `translateX(-${ activeIndex * 100 }%)`,
                             }}
                         >
-                            {React.Children.map( children, child => React.cloneElement( child, {
-                                "width": `100%`,
-                            } ) )}
+                            {React.Children.map( children, child =>
+                                React.cloneElement( child, {
+                                    "width": `100%`,
+                                } ) )}
                         </div>
-                        <ul className={ slickDots }>
+                        <ul className={slickDots}>
                             {React.Children.map( children, ( _child, index ) => (
                                 <li className={`${ index === activeIndex ? slickActive : `` }`}>
-                                    <button onClick={ () => {
-                                        updateIndex( index );
-                                    } } ></button>
+                                    <button
+                                        onClick={() => {
+                                            updateIndex( index );
+                                        }}
+                                    ></button>
                                 </li>
                             ) )}
                         </ul>
                     </div>
                 </div>
             </div>
-            <button className={ `${ slickNext } ${ slickArrow }`} onClick={ () => {
-                updateIndex( activeIndex + 1 );
-            } }>&#8250;</button>
+            <button
+                className={`${ slickNext } ${ slickArrow }`}
+                onClick={() => {
+                    updateIndex( activeIndex + 1 );
+                }}
+            >
+        &#8250;
+            </button>
         </div>
     );
 };

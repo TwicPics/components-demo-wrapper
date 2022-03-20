@@ -50,8 +50,8 @@ const TwicFlipCard = () => (
         <div className={ twicFlipCardContainer }>
             <TwicAbstract
                 title="Flip cards"
-                codeSandUrl="https://codesandbox.io/s/twicpics-x-next-flip-cards-xkijtp"
-                codeSandBoxName="TwicPics x React - Flip Cards"
+                codeSandUrl="https://codesandbox.io/s/twicpics-x-gatsby-flip-cards-18bz3h"
+                codeSandBoxName="TwicPics x Gatsby - Flip Cards"
             >
                 <p>Move your mouse over the images below.</p>
             </TwicAbstract>

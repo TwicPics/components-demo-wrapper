@@ -41,8 +41,8 @@ const TwicModal = () => {
             <div className={ twicModalContainer }>
                 <TwicAbstract
                     title="A modal revealer"
-                    codeSandUrl="https://codesandbox.io/s/twicpics-x-next-modal-07jbxj"
-                    codeSandBoxName="TwicPics x Next - Modal"
+                    codeSandUrl="https://codesandbox.io/s/twicpics-x-gatsby-modal-043qel"
+                    codeSandBoxName="TwicPics x Gatsby - Modal"
                 >
                     <p>
                         Click on the image of your choice to reveal a modal.

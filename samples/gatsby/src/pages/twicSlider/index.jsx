@@ -64,8 +64,8 @@ const TwicSlider = () => (
     <TwicWrapper framework="gatsby">
         <TwicAbstract
             title="A slider"
-            codeSandUrl="https://codesandbox.io/s/twicpics-x-next-responsive-image-slider-56cf9b"
-            codeSandBoxName="TwicPics x Next - Slider"
+            codeSandUrl="https://codesandbox.io/s/twicpics-x-gatsby-responsive-image-slider-9xfktp"
+            codeSandBoxName="TwicPics x Gatsby - Slider"
         >
             <p>
                 A simple slider that uses TwicPics for automatic lazy-loading,

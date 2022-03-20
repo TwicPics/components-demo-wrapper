@@ -9,8 +9,7 @@ const Modal = props => {
     }
 
     return (
-        <div
-            className={ `${ modal } ${ show ? modalOpened : `` } }`}
+        <div className={ `${ modal } ${ show ? modalOpened : `` } }`}
             onClick={props.onClose}>
             <div className={ modalContent }>
                 <div className={ poster }>

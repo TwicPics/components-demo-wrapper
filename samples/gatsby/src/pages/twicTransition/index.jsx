@@ -25,8 +25,8 @@ const TwicTransition = () => {
             <div className={ twicTransitionContainer }>
                 <TwicAbstract
                     title="transition property"
-                    codeSandUrl="https://codesandbox.io/s/twicpics-x-next-transition-feature-rw9kcw"
-                    codeSandBoxName="TwicPics x Next - Transition"
+                    codeSandUrl="https://codesandbox.io/s/twicpics-x-gatsby-transition-feature-k1kec0"
+                    codeSandBoxName="TwicPics x Gatsby - Transition"
                 >
                     <p>
                         The <span className="twic-code">transition</span> properties allow you

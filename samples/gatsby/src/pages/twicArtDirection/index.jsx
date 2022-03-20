@@ -17,8 +17,8 @@ const TwicArtDirection = () => (
         <div className={ twicArtDirectionContainer }>
             <TwicAbstract
                 title="Art Direction with CSS Media Queries"
-                codeSandUrl="https://codesandbox.io/s/twicpics-x-next-art-direction-ps2zj"
-                codeSandBoxName="TwicPics x Next - Art Direction"
+                codeSandUrl="https://codesandbox.io/s/twicpics-x-gatsby-art-direction-k4n458"
+                codeSandBoxName="TwicPics x Gatsby - Art Direction"
             >
                 <p>Setting up components using CSS enables hassle-free responsive designs.</p>
                 <p>You do not need to create a set of images derived from the original.</p>

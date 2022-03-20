@@ -9,8 +9,8 @@ function TwicBasicGrid() {
             <div className={ twicBasicGridContainer }>
                 <TwicAbstract
                     title="A basic example"
-                    codeSandUrl="https://codesandbox.io/s/twicpics-x-next-basic-example-xe9spg"
-                    codeSandBoxName="TwicPics x Next - A basic example"
+                    codeSandUrl="https://codesandbox.io/s/twicpics-x-gatsby-basic-example-64cid1"
+                    codeSandBoxName="TwicPics x Gatsby - A basic example"
                 >
                     <p>
                         TwicPics is a Responsive Image Service Solution <span className="twic-code">SaaS</span>

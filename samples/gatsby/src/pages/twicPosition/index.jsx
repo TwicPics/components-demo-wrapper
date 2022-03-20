@@ -35,8 +35,8 @@ const TwicPosition = () => {
             <div className={ twicPositionContainer }>
                 <TwicAbstract
                     title="position property"
-                    codeSandUrl="https://codesandbox.io/s/twicpics-x-next-position-feature-0c0cs2"
-                    codeSandBoxName="TwicPics x Next - Position"
+                    codeSandUrl="https://codesandbox.io/s/twicpics-x-gatsby-position-feature-p32f1u"
+                    codeSandBoxName="TwicPics x Gatsby - Position"
                 >
                     <p>
                         In <span className="twic-code">contain</span> mode,
