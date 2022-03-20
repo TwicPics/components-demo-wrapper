@@ -15,15 +15,5 @@ module.exports = {
                 "test": /\.jsx$/,
             },
         },
-        {
-            "resolve": `@twicpics/components/gatsby`,
-            "options": {
-                "twicpics": {
-                    "domain": `https://demo.twic.pics`,
-                    "anticipation": 0.5,
-                    "step": 100,
-                },
-            },
-        },
     ],
 };
