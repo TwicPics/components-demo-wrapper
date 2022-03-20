@@ -9,6 +9,14 @@ module.exports = {
             "resolve": `gatsby-plugin-sass`,
         },
         {
+            "resolve": `gatsby-plugin-manifest`,
+            "options": {
+                "name": `Gatsby App`,
+                "short_name": `Gatsby App`,
+                "icon": `src/images/icon.png`,
+            },
+        },
+        {
             "resolve": `gatsby-plugin-compile-es6-packages`,
             "options": {
                 "modules": [ `@twicpics/components-demo-wrapper` ],

@@ -21,6 +21,7 @@
     "gatsby": "^4.10.0",
     "gatsby-cli": "^4.10.1",
     "gatsby-plugin-compile-es6-packages": "^2.1.1",
+    "gatsby-plugin-manifest": "^4.10.1",
     "gatsby-plugin-sass": "^5.10.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
