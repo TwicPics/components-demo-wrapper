@@ -10,7 +10,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build",
+    "build": "node ../../build && $npm_execpath install && gatsby build",
     "serve": "node ../../build && $npm_execpath install && gatsby clean && gatsby develop -p 3000",
     "serve_o": "gatsby serve",
     "clean": "gatsby clean"
