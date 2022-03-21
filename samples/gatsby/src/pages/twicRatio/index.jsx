@@ -30,7 +30,7 @@ const TwicRatio = () => {
             <div className={ twicRatioContainer }>
                 <TwicAbstract
                     title="ratio property"
-                    codeSandUrl="https://codesandbox.io/s/twicpics-x-gatsby-ratio-feature-3egi9j"
+                    codeSandUrl="https://codesandbox.io/s/twicpics-x-gatsby-ratio-features-lb6h2c"
                     codeSandBoxName="TwicPics x Gatsby - Ratio"
                 >
                     <p>
