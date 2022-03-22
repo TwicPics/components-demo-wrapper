@@ -1,10 +1,13 @@
+/samples/**/.angular
 /samples/**/.next
 /samples/**/build
 /samples/**/out
 /samples/**/package-lock.json
 /samples/**/yarn.lock
+/samples/angular/dist
 /samples/gatsby/public
 /samples/gatsby/.cache
+/src/angular/.angular/
 *.log
 .DS_Store
 .history

@@ -36,13 +36,25 @@
         "overrides": [
             {
                 "files": [
-                    "*.jsx"
+                    "*.jsx",
+                    "*.ts"
                 ],
                 "extends": [
                     "plugin:react/recommended",
+                    "plugin:@typescript-eslint/eslint-recommended",
+                    "plugin:@typescript-eslint/recommended",
                     "creative-area/es2020/module"
                 ],
                 "rules": {
+                    "@typescript-eslint/no-shadow": [
+                        "error"
+                    ],
+                    "@typescript-eslint/no-unused-vars": [
+                        "error"
+                    ],
+                    "@typescript-eslint/no-use-before-define": [
+                        "error"
+                    ],
                     "no-use-before-define": "off",
                     "prefer-named-capture-group": "off",
                     "react/prop-types": "off"
@@ -53,9 +65,29 @@
             "ecmaVersion": 2022,
             "parser": "@babel/eslint-parser"
         },
-        "plugins": [],
+        "plugins": [
+            "@typescript-eslint"
+        ],
         "rules": {
-            "prefer-named-capture-group": "off"
+            "prefer-named-capture-group": "off",
+            "new-cap": [
+                "error",
+                {
+                    "capIsNewExceptions": [
+                        "Directive",
+                        "HostBinding",
+                        "HostListener",
+                        "Injectable",
+                        "Input",
+                        "NgModule",
+                        "Output",
+                        "Pipe",
+                        "ViewChild",
+                        "ViewChildren",
+                        "Component"
+                    ]
+                }
+            ]
         },
         "settings": {
             "react": {
@@ -70,6 +102,14 @@
     "type": "module",
     "exports": {
         "./style.css": "./style.css",
-        "./react": "./react"
+        "./react": "./react",
+        "./angular/dist": {
+            "module": "./angular/dist/fesm2015/twicpics-components-demo-wrapper.mjs",
+            "es2020": "./angular/dist/fesm2020/twicpics-components-demo-wrapper.mjs",
+            "esm2020": "./angular/dist/esm2020/twicpics-components-demo-wrapper.mjs",
+            "fesm2020": "./angular/dist/fesm2020/twicpics-components-demo-wrapper.mjs",
+            "fesm2015": "./angular/dist/fesm2015/twicpics-components-demo-wrapper.mjs",
+            "typings": "./angular/dist/twicpics-components-demo-wrapper.d.ts"
+        }
     }
 }

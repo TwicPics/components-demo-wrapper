@@ -26,7 +26,7 @@ const TwicPlaceholder = () => {
                 <TwicAbstract
                     title="placeholder property"
                     codeSandUrl="https://codesandbox.io/s/twicpics-x-react-placeholders-feature-xemz6i"
-                    codeSandBoxName="TwicPics x React - Modal"
+                    codeSandBoxName="TwicPics x React - Placeholder"
                 >
                     <p>
                         The <span className="twic-code">placeholder</span> property

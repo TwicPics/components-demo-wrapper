@@ -1,0 +1,32 @@
+<div class="slideshow-container">
+  <button
+    class="slick-prev slick-arrow"
+    (click)="updateIndex( activeIndex - 1 )">
+    &#8249;
+  </button>
+  <div class="twic-item">
+    <div class="slideshow-inner-container">
+      <div (mouseenter)="setIsPaused()" (mouseleave)="setIsPaused()">
+        <div class="inner" [ngStyle]="{ transform: 'translateX(-' + (activeIndex * 100) + '%)' }">
+            <div class="slideshow-item" *ngFor="let img of images">
+                <TwicImg
+                  class="twic-slideshow-responsive"
+                  [src]="img.url"
+                  [focus]="img.focus"
+                ></TwicImg>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul class="slick-dots">
+    <li *ngFor="let img of images; let imgIndex=index;" [ngClass]="{ 'slick-active': imgIndex === activeIndex }">
+      <button (click)="updateIndex( imgIndex )"></button>
+    </li>
+  </ul>
+  <button
+    class="slick-next slick-arrow"
+    (click)="updateIndex( activeIndex + 1 )">
+    &#8250;
+  </button>
+</div>

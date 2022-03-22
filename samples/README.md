@@ -6,6 +6,7 @@ This directory contains sample projects for all supported frameworks.
 
 | subdirectory | content |
 | - | - |
+| `samples/angular` | [Angular 13](https://angular.io/) sample project |
 | `samples/gatsby` | [Gatsby.js](https://www.gatsbyjs.com/) sample project |
 | `samples/next` | [Next.js](https://nextjs.org/) sample project |
 | `samples/react` | [React](https://reactjs.org/) sample project |

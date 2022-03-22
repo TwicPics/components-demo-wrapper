@@ -1,0 +1,23 @@
+import { Component, Input } from '@angular/core';
+import * as i0 from "@angular/core";
+import * as i1 from "@angular/common";
+export class TwicAbstractComponent {
+    constructor() {
+        this.title = ``;
+    }
+    ngOnInit() {
+    }
+}
+TwicAbstractComponent.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "13.3.0", ngImport: i0, type: TwicAbstractComponent, deps: [], target: i0.ɵɵFactoryTarget.Component });
+TwicAbstractComponent.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "12.0.0", version: "13.3.0", type: TwicAbstractComponent, selector: "TwicAbstract", inputs: { title: "title", codeSandBoxName: "codeSandBoxName", codeSandBoxUrl: "codeSandBoxUrl" }, ngImport: i0, template: "<div class=\"twic-abstract\">\n    <h1>\n        {{ title }}\n    </h1>\n    <div>\n        <div>\n            <ng-content></ng-content>\n        </div>\n        <ng-template [ngIf]=\"codeSandBoxUrl\">\n            <div class=\"codesandbox-container\">\n                <a\n                    href=\"{{ codeSandBoxUrl }}?fontsize=14&hidenavigation=1&theme=dark\">\n                    <img src=\"https://codesandbox.io/static/img/play-codesandbox.svg\"/>\n                </a>\n            </div>\n        </ng-template>\n    </div>\n</div>\n", styles: [""], directives: [{ type: i1.NgIf, selector: "[ngIf]", inputs: ["ngIf", "ngIfThen", "ngIfElse"] }] });
+i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "13.3.0", ngImport: i0, type: TwicAbstractComponent, decorators: [{
+            type: Component,
+            args: [{ selector: 'TwicAbstract', template: "<div class=\"twic-abstract\">\n    <h1>\n        {{ title }}\n    </h1>\n    <div>\n        <div>\n            <ng-content></ng-content>\n        </div>\n        <ng-template [ngIf]=\"codeSandBoxUrl\">\n            <div class=\"codesandbox-container\">\n                <a\n                    href=\"{{ codeSandBoxUrl }}?fontsize=14&hidenavigation=1&theme=dark\">\n                    <img src=\"https://codesandbox.io/static/img/play-codesandbox.svg\"/>\n                </a>\n            </div>\n        </ng-template>\n    </div>\n</div>\n", styles: [""] }]
+        }], ctorParameters: function () { return []; }, propDecorators: { title: [{
+                type: Input
+            }], codeSandBoxName: [{
+                type: Input
+            }], codeSandBoxUrl: [{
+                type: Input
+            }] } });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidHdpYy1hYnN0cmFjdC5jb21wb25lbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi9wcm9qZWN0cy9kZW1vLXdyYXBwZXIvc3JjL2xpYi90d2ljLWFic3RyYWN0L3R3aWMtYWJzdHJhY3QuY29tcG9uZW50LnRzIiwiLi4vLi4vLi4vLi4vcHJvamVjdHMvZGVtby13cmFwcGVyL3NyYy9saWIvdHdpYy1hYnN0cmFjdC90d2ljLWFic3RyYWN0LmNvbXBvbmVudC5odG1sIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sRUFBRSxTQUFTLEVBQUMsS0FBSyxFQUFVLE1BQU0sZUFBZSxDQUFDOzs7QUFPeEQsTUFBTSxPQUFPLHFCQUFxQjtJQU05QjtRQUpTLFVBQUssR0FBQyxFQUFFLENBQUM7SUFJRixDQUFDO0lBRWpCLFFBQVE7SUFDUixDQUFDOztrSEFUUSxxQkFBcUI7c0dBQXJCLHFCQUFxQixzSkNQbEMsaWlCQWtCQTsyRkRYYSxxQkFBcUI7a0JBTGpDLFNBQVM7K0JBQ0ksY0FBYzswRUFNZixLQUFLO3NCQUFiLEtBQUs7Z0JBQ0csZUFBZTtzQkFBdkIsS0FBSztnQkFDRyxjQUFjO3NCQUF0QixLQUFLIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ29tcG9uZW50LElucHV0LCBPbkluaXQgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcblxuQENvbXBvbmVudCh7XG4gICAgc2VsZWN0b3I6ICdUd2ljQWJzdHJhY3QnLFxuICAgIHRlbXBsYXRlVXJsOiAnLi90d2ljLWFic3RyYWN0LmNvbXBvbmVudC5odG1sJyxcbiAgICBzdHlsZVVybHM6IFsnLi90d2ljLWFic3RyYWN0LmNvbXBvbmVudC5jc3MnXVxufSlcbmV4cG9ydCBjbGFzcyBUd2ljQWJzdHJhY3RDb21wb25lbnQgaW1wbGVtZW50cyBPbkluaXQge1xuXG4gICAgQElucHV0KCkgdGl0bGU9YGA7XG4gICAgQElucHV0KCkgY29kZVNhbmRCb3hOYW1lPzpzdHJpbmc7XG4gICAgQElucHV0KCkgY29kZVNhbmRCb3hVcmw/OnN0cmluZztcblxuICAgIGNvbnN0cnVjdG9yKCkgeyB9XG5cbiAgICBuZ09uSW5pdCgpOiB2b2lkIHtcbiAgICB9XG5cbn1cbiIsIjxkaXYgY2xhc3M9XCJ0d2ljLWFic3RyYWN0XCI+XG4gICAgPGgxPlxuICAgICAgICB7eyB0aXRsZSB9fVxuICAgIDwvaDE+XG4gICAgPGRpdj5cbiAgICAgICAgPGRpdj5cbiAgICAgICAgICAgIDxuZy1jb250ZW50PjwvbmctY29udGVudD5cbiAgICAgICAgPC9kaXY+XG4gICAgICAgIDxuZy10ZW1wbGF0ZSBbbmdJZl09XCJjb2RlU2FuZEJveFVybFwiPlxuICAgICAgICAgICAgPGRpdiBjbGFzcz1cImNvZGVzYW5kYm94LWNvbnRhaW5lclwiPlxuICAgICAgICAgICAgICAgIDxhXG4gICAgICAgICAgICAgICAgICAgIGhyZWY9XCJ7eyBjb2RlU2FuZEJveFVybCB9fT9mb250c2l6ZT0xNCZoaWRlbmF2aWdhdGlvbj0xJnRoZW1lPWRhcmtcIj5cbiAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9XCJodHRwczovL2NvZGVzYW5kYm94LmlvL3N0YXRpYy9pbWcvcGxheS1jb2Rlc2FuZGJveC5zdmdcIi8+XG4gICAgICAgICAgICAgICAgPC9hPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvbmctdGVtcGxhdGU+XG4gICAgPC9kaXY+XG48L2Rpdj5cbiJdfQ==

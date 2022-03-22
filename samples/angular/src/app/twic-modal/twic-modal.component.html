@@ -1,0 +1,32 @@
+<TwicWrapper>
+  <div class="twic-modal-container">
+      <TwicAbstract
+          title="A modal revealer"
+          codeSandBoxUrl=""
+          codeSandBoxName="TwicPics x Angular - Modal"
+      >
+          <p>
+              Click on the image of your choice to reveal a modal.
+          </p>
+      </TwicAbstract>
+      <div class="twic-grid">
+          <div *ngFor="let image of images; let imageIndex = index;">
+              <figure class="poster-wrapper twic-item" (click)="openModal( imageIndex )">
+                  <TwicImg
+                      [src]="image.url"
+                      focus="auto"
+                      ratio="0.95">
+                  </TwicImg>
+                  <figcaption>
+                      <p>Click</p>
+                  </figcaption>
+              </figure>
+              <app-modal
+                [image]="image"
+                [show]="imageIndex === idModalToOpen"
+                [onClose]="closeModal"
+              ></app-modal>
+          </div>
+      </div>
+  </div>
+</TwicWrapper>

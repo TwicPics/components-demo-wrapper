@@ -1,0 +1,57 @@
+<!-- demonstrates focus feature -->
+<TwicWrapper>
+  <div class="twic-focus-container">
+    <TwicAbstract title="focus property" codeSandBoxUrl="" codeSandBoxName="TwicPics x Angular - Focus">
+      <p>
+        The <span class="twic-code">focus</span> property will change
+        the focus point coordinates of the image (only useful with
+        <span class="twic-code">mode=`cover`</span>).
+        <br />
+        It allows to determine what should be visible when the image is cropped.
+      </p>
+      <p>
+        You can set the focus by using <em>coordinates </em>
+        or <span class="twic-code">auto</span> values:
+      </p>
+      <ul>
+        <li>
+          <em>Coordinates</em> represent a point in the image, specified as a couple of
+          positive lengths, separated by the character
+          <span class="twic-code">x</span>.
+          <br />
+          <i>eg</i> : 1920x1282
+          <br />1920 is the coordinate along the x-axis
+          (following the width of the image),<br />1282
+          is the coordinate along the y-axis (following the height of the image).
+        </li>
+        <li>
+          If <span class="twic-code">auto</span> is used in place of actual coordinates,
+          the focus point will be chosen automagically for you!
+        </li>
+      </ul>
+    </TwicAbstract>
+    <div class="twic-grid">
+      <div class="twic-item">
+        <button class="twic-button" (click)="onChangeFocus()">
+          Click to change the focus point
+        </button>
+        <ng-container *ngIf="show">
+            <TwicImg [src]="imgUrl" [focus]="focusArray[focusIndex]" ratio="4/5"></TwicImg>
+        </ng-container>
+        <span>focus={{focusArray[ focusIndex ] ? focusArray[ focusIndex ] : 'none (default)'}}</span>
+      </div>
+      <div class="twic-item">
+        <TwicImg [src]="imgUrl" ratio="4/5"></TwicImg>
+        <span>focus='none' (default)</span>
+      </div>
+      <div class="twic-item">
+        <TwicImg [src]="imgUrl" ratio="4/5" focus="1920x1282"></TwicImg>
+        <span>focus='1920x1282'</span>
+      </div>
+      <div class="twic-item">
+        <TwicImg [src]="imgUrl" ratio="4/5" focus="auto"></TwicImg>
+        <span>focus='auto'</span>
+      </div>
+    </div>
+  </div>
+</TwicWrapper>

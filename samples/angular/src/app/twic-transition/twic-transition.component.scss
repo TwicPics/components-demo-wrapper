@@ -1,0 +1,7 @@
+.twic-transition-container {
+  ::ng-deep .show-placeholders {
+    img {
+      opacity: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+<!-- demonstrates transition features -->
+<TwicWrapper>
+  <div class="twic-transition-container">
+    <TwicAbstract title="transition property" codeSandBoxUrl=""
+      codeSandBoxName="TwicPics x Angular - transition property">
+      <p>
+        The <span class="twic-code">transition</span> properties allow you
+        to customize the effect used to reveal the image once it has been loaded.
+      </p>
+      <ul>
+        <li>
+          <span class="twic-code">transition</span>: whether or not to reveal
+          images with a <em>fade in</em> effect (default: <span class="twic-code">true</span>).
+        </li>
+        <li>
+          <span class="twic-code">transitionDelay</span>: transition delay of
+          the transition effect (default: <span class="twic-code">0ms</span>).
+        </li>
+        <li>
+          <span class="twic-code">transitionDuration</span>: duration of the transition effect
+          (default: <span class="twic-code">400ms</span>).
+        </li>
+        <li>
+          <span class="twic-code">transitionTimingFunction</span>: CSS timing function applied
+          to the transition effect (default: <span class="twic-code">ease</span>).
+        </li>
+      </ul>
+    </TwicAbstract>
+    <div class="twic-testing-container">
+      <button class="twic-button" (click)="togglePlaceholder()">
+        {{ togglePlaceholderBtnText }}
+      </button>
+    </div>
+    <div class="twic-grid" [ngClass]="{ 'show-placeholders': showPlaceholder }">
+      <div class="twic-item">
+        <TwicImg [src]="imgUrl" placeholder="preview">
+        </TwicImg>
+        <span>default</span>
+      </div>
+      <div class="twic-item">
+        <TwicImg [src]="imgUrl" transition="false" placeholder="preview">
+        </TwicImg>
+        <span>transition=`false`</span>
+      </div>
+      <div class="twic-item">
+        <TwicImg [src]="imgUrl" transitionDuration="2000ms" placeholder="preview">
+        </TwicImg>
+        <span>transitionDuration=`2000ms`</span>
+      </div>
+      <div class="twic-item">
+        <TwicImg [src]="imgUrl" transitionDuration="2000ms" transitionTimingFunction="linear" placeholder="preview">
+        </TwicImg>
+        <span>transitionDuration=`2000ms` and transitionTimingFunction=`linear`</span>
+      </div>
+      <div class="twic-item">
+        <TwicImg [src]="imgUrl" transitionDelay="2000ms" transitionTimingFunction="linear" placeholder="preview">
+        </TwicImg>
+        <span>transitionDelay=`2000ms`</span>
+      </div>
+    </div>
+  </div>
+</TwicWrapper>

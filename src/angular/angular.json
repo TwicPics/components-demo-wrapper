@@ -1,0 +1,31 @@
+{
+    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+    "version": 1,
+    "newProjectRoot": "projects",
+    "projects": {
+        "demo-wrapper": {
+            "projectType": "library",
+            "root": "projects/demo-wrapper",
+            "sourceRoot": "projects/demo-wrapper/src",
+            "prefix": "",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:ng-packagr",
+                    "options": {
+                        "project": "projects/demo-wrapper/ng-package.json"
+                    },
+                    "configurations": {
+                        "production": {
+                            "tsConfig": "projects/demo-wrapper/tsconfig.lib.prod.json"
+                        },
+                        "development": {
+                            "tsConfig": "projects/demo-wrapper/tsconfig.lib.json"
+                        }
+                    },
+                    "defaultConfiguration": "production"
+                }
+            }
+        }
+    },
+    "defaultProject": "demo-wrapper"
+}

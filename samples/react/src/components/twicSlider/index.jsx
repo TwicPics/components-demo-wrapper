@@ -72,7 +72,7 @@ const TwicSlider = () => (
                 CLS optimization and art direction adaptation.
             </p>
             <p>
-                <strong>Change the width of your browser</strong> tto see the image ratio adapt according to
+                <strong>Change the width of your browser</strong> to see the image ratio adapt according to
                     the CSS rules.
             </p>
         </TwicAbstract>

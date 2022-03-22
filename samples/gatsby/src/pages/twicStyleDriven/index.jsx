@@ -25,7 +25,7 @@ const TwicStyleDriven = () => (
             <TwicAbstract
                 title="CSS style driven"
                 codeSandUrl="https://codesandbox.io/s/twicpics-x-gatsby-style-driven-h97h50"
-                codeSandBoxName="TwicPics x Gatsby - Style Driven"
+                codeSandBoxName="TwicPics x Gatsby - Style driven"
             >
                 <p>
                     You can set up the TwicPics components using pure CSS and the power of CSS variables.

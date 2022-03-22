@@ -1,0 +1,7 @@
+/*
+ * Public API Surface of demo-wrapper
+ */
+export * from './lib/twic-wrapper/twic-wrapper.component';
+export * from './lib/twic-abstract/twic-abstract.component';
+export * from './lib/demo-wrapper.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3Byb2plY3RzL2RlbW8td3JhcHBlci9zcmMvcHVibGljLWFwaS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7R0FFRztBQUNILGNBQWMsMkNBQTJDLENBQUM7QUFDMUQsY0FBYyw2Q0FBNkMsQ0FBQztBQUM1RCxjQUFjLDJCQUEyQixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLypcbiAqIFB1YmxpYyBBUEkgU3VyZmFjZSBvZiBkZW1vLXdyYXBwZXJcbiAqL1xuZXhwb3J0ICogZnJvbSAnLi9saWIvdHdpYy13cmFwcGVyL3R3aWMtd3JhcHBlci5jb21wb25lbnQnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvdHdpYy1hYnN0cmFjdC90d2ljLWFic3RyYWN0LmNvbXBvbmVudCc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9kZW1vLXdyYXBwZXIubW9kdWxlJztcbiJdfQ==

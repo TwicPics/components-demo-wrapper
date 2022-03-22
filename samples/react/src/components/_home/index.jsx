@@ -6,12 +6,12 @@ import "./index.scss";
 
 const categories = [
     {
-        "title": `Use cases`,
+        "title": `<TwicImg> use cases`,
         "items": [
             {
                 "route": `/basic-grid`,
                 "imgSrc": `https://assets.twicpics.com/examples/football.jpg`,
-                "title": `Basic Example`,
+                "title": `Basic example`,
             },
             {
                 "route": `/art-direction`,
@@ -21,7 +21,7 @@ const categories = [
             {
                 "route": `/flip`,
                 "imgSrc": `components/flip/orange-1.jpg`,
-                "title": `Flip Card`,
+                "title": `Flip cards`,
             },
             {
                 "route": `/life-cycle`,
@@ -46,42 +46,42 @@ const categories = [
             {
                 "route": `/style-driven`,
                 "imgSrc": `components/horse.jpg`,
-                "title": `Style Driven`,
+                "title": `Style driven`,
             },
         ],
     },
     {
-        "title": `Components properties`,
+        "title": `<TwicImg> properties`,
         "items": [
             {
                 "route": `/focus`,
                 "imgSrc": `components/puppy.jpg`,
-                "title": `Focus`,
+                "title": `focus`,
             },
             {
                 "route": `/mode`,
                 "imgSrc": `components/fox.jpg`,
-                "title": `Mode`,
+                "title": `mode`,
             },
             {
                 "route": `/placeholders`,
                 "imgSrc": `components/cat.jpg`,
-                "title": `Placeholders`,
+                "title": `placeholder`,
             },
             {
                 "route": `/positions`,
                 "imgSrc": `components/position/horse.jpg`,
-                "title": `Positions`,
+                "title": `position`,
             },
             {
                 "route": `/ratio`,
                 "imgSrc": `components/woman-and-winter.jpg`,
-                "title": `Ratio`,
+                "title": `ratio`,
             },
             {
                 "route": `/transition`,
                 "imgSrc": `components/peacock.jpg`,
-                "title": `Transition`,
+                "title": `transition`,
             },
         ],
     },

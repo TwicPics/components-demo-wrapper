@@ -1,0 +1,19 @@
+<header id="twic-header">
+    <a href="/" title="Home">
+        <h1 class="heading-primary">
+            <img [src]="urlLogoTwicPics" class="twicpics-logo" alt="TwicPics logo" />
+            <span>x</span>
+            <img [src]="urlLogoAngular" [ngClass]="classLogoAngular" [alt]="altLogoAngular" />
+        </h1>
+    </a>
+    <div class="tags-container">
+        <ng-container *ngFor="let tag of tags">
+            <div class="tag">
+                {{ tag }}
+            </div>
+        </ng-container>
+        <a [href]="redirect" target="_blank" class="documentation-link tag tag--bg-purple-rain" rel="noreferrer">
+            Documentation
+        </a>
+    </div>
+</header>

@@ -1,0 +1,24 @@
+.twic-ratio-container
+{
+    .twic-grid {
+        --twic-grid-columns-width:40%;
+        &.full-width {
+            .twic-item{
+                width: 100%;
+            }
+        }
+    
+        &.half-width {
+            .twic-item{
+                width: 50%;
+                margin: auto;
+            }
+        }
+    }
+
+    ::ng-deep .twic-item .twic-w {
+        background-color: #00FFA3;
+        display: block;
+    }
+}
+

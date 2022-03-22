@@ -1,0 +1,21 @@
+<!-- displays images with a horizontal scroll bar -->
+<TwicWrapper>
+  <TwicAbstract title="A slider" codeSandBoxUrl="" codeSandBoxName="TwicPics x Angular - Slider use case">
+    <p>
+      A simple slider that uses TwicPics for automatic lazy-loading,
+      CLS optimization and art direction adaptation.
+    </p>
+    <p>
+      <strong>Change the width of your browser</strong> to see the image ratio adapt according to the CSS rules.
+    </p>
+  </TwicAbstract>
+  <div class="twic-slider-container">
+    <ul class="slider">
+      <li class="slider-item" *ngFor="let img of images">
+        <figure class="card twic-item">
+          <TwicImg [src]="img.url"></TwicImg>
+        </figure>
+      </li>
+    </ul>
+  </div>
+</TwicWrapper>

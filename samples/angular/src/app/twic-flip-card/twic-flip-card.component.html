@@ -1,0 +1,26 @@
+<!-- demonstrates how to implement a flip effect -->
+<TwicWrapper>
+  <div class="twic-flip-card-container">
+    <TwicAbstract title="Flip cards" codeSandBoxUrl="" codeSandBoxName="TwicPics x Angular - Flip Cards">
+      <p>Move your mouse over the images below.</p>
+    </TwicAbstract>
+    <div class="twic-grid">
+      <ng-container *ngFor="let card of cards">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <figure class="twic-item">
+                <TwicImg [src]="card.front.url" focus="auto"></TwicImg>
+              </figure>
+            </div>
+            <div class="flip-card-back">
+              <figure class="twic-item">
+                <TwicImg [src]="card.back.url"></TwicImg>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</TwicWrapper>

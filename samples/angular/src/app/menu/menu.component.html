@@ -1,0 +1,25 @@
+<TwicWrapper>
+    <div class="home-container">
+        <ng-container *ngFor="let category of categories">
+            <div class="twic-panel">
+                <h3>{{ category.title }}</h3>
+                <div class="twic-grid">
+                    <ng-container *ngFor="let item of category.items">
+                        <a routerLink="{{ item.route }}">
+                            <figure class="twic-item">
+                                <TwicImg 
+                                    [src]="item.imgSrc" 
+                                    focus="auto" 
+                                    ratio="0.95">
+                                </TwicImg>
+                                <figcaption>
+                                    <p>{{ item.title }}</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </ng-container>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</TwicWrapper>
