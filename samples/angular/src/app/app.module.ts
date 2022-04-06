@@ -14,6 +14,7 @@ import { TwicFlipCardComponent } from "./twic-flip-card/twic-flip-card.component
 import { TwicStyleDrivenComponent } from "./twic-style-driven/twic-style-driven.component";
 import { TwicFocusComponent } from "./twic-focus/twic-focus.component";
 import { TwicLifeCycleComponent } from "./twic-life-cycle/twic-life-cycle.component";
+import { TwicModalComponent } from "./twic-modal/twic-modal.component";
 import { TwicModeComponent } from "./twic-mode/twic-mode.component";
 import { TwicPlaceholderComponent } from "./twic-placeholder/twic-placeholder.component";
 import { TwicPositionComponent } from "./twic-position/twic-position.component";
@@ -21,9 +22,8 @@ import { TwicRatioComponent } from "./twic-ratio/twic-ratio.component";
 import { TwicSliderComponent } from "./twic-slider/twic-slider.component";
 import { TwicSlideshowComponent } from "./twic-slideshow/twic-slideshow.component";
 import { TwicTransitionComponent } from "./twic-transition/twic-transition.component";
-import { SlideshowComponent } from './twic-slideshow/slideshow/slideshow.component';
-import { TwicModalComponent } from './twic-modal/twic-modal.component';
-import { ModalComponent } from './twic-modal/modal/modal.component';
+import { ModalComponent } from "./twic-modal/modal/modal.component";
+import { SlideshowComponent } from "./twic-slideshow/slideshow/slideshow.component";
 
 const appRoutes: Routes = [
   { path: "menu", component: MenuComponent },

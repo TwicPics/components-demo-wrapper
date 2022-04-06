@@ -1,17 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-    selector: 'app-twic-style-driven',
-    templateUrl: './twic-style-driven.component.html',
-    styleUrls: ['./twic-style-driven.component.scss'],
+  selector: "app-twic-style-driven",
+  templateUrl: "./twic-style-driven.component.html",
+  styleUrls: ["./twic-style-driven.component.scss"],
 })
 export class TwicStyleDrivenComponent implements OnInit {
+  imgUrl = `components/horse.jpg`;
 
-    imgUrl = `components/horse.jpg`;
+  constructor() {}
 
-    constructor() { }
-
-    ngOnInit(): void {
-    }
-
+  ngOnInit(): void {}
 }
