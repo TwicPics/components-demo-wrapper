@@ -30,8 +30,6 @@ export class SlideshowComponent implements OnInit, OnDestroy {
         }
     }
 
-
-
     updateIndex(newIndex: number) {
         const nbElement = this.images.length - 1;
         let _newIndex = newIndex;

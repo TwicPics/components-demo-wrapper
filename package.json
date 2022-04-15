@@ -101,8 +101,6 @@
     },
     "type": "module",
     "exports": {
-        "./style.css": "./style.css",
-        "./react": "./react",
         "./angular/dist": {
             "module": "./angular/dist/fesm2015/twicpics-components-demo-wrapper.mjs",
             "es2020": "./angular/dist/fesm2020/twicpics-components-demo-wrapper.mjs",
@@ -110,6 +108,9 @@
             "fesm2020": "./angular/dist/fesm2020/twicpics-components-demo-wrapper.mjs",
             "fesm2015": "./angular/dist/fesm2015/twicpics-components-demo-wrapper.mjs",
             "typings": "./angular/dist/twicpics-components-demo-wrapper.d.ts"
-        }
+        },
+        "./react": "./react",
+        "./style.css": "./style.css",
+        "./vue": "./vue"
     }
 }

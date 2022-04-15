@@ -42,14 +42,9 @@ body {
   width: 140px;
 }
 
-#twic-header .react-logo {
-  aspect-ratio: 3/1;
-  width: 120px;
-}
-
-#twic-header .next-logo {
-  aspect-ratio: 800/479;
-  width: 90px;
+#twic-header .angular-logo {
+  aspect-ratio: 2500/679;
+  width: 115px;
 }
 
 #twic-header .gatsby-logo {
@@ -57,9 +52,24 @@ body {
   width: 130px;
 }
 
-#twic-header .angular-logo {
-  aspect-ratio: 2500/679;
-  width: 115px;
+#twic-header .next-logo {
+  aspect-ratio: 800/479;
+  width: 90px;
+}
+
+#twic-header .nuxt-logo {
+  aspect-ratio: 2560/753;
+  width: 130px;
+}
+
+#twic-header .react-logo {
+  aspect-ratio: 3/1;
+  width: 120px;
+}
+
+#twic-header .vue-logo {
+  aspect-ratio: 16/9;
+  width: 120px;
 }
 
 #twic-header .tags-container {
