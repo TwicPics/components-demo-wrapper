@@ -20,17 +20,11 @@
         position: relative;
         &:hover {
             & ::ng-deep img.twic-done {
-                transform: scale(1.2);
+                transform: scale(1.2) !important;
             }
         }
         & ::ng-deep img {
             @extend .display-block-pointer;
-            position: absolute;
-            transform: scale(0);
-            transition: .3s all ease-in-out;
-            &.twic-done {
-                transform: scale(1);
-            }
         }
         & ::ng-deep .twic-w {
             position: absolute;

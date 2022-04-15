@@ -1,7 +1,14 @@
 .twic-transition-container {
     .show-placeholders {
-        :global(img) {
-            opacity: 0 !important;
+        :global(.twic-tf) {
+            & img{
+                opacity: 0 !important;
+            }
+        }
+        :global(.twic-tz) {
+            & img{
+                transform:scale(0) !important;
+            }
         }
     }
 }

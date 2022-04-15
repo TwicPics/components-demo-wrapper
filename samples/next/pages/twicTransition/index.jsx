@@ -34,8 +34,13 @@ const TwicTransition = () => {
                     </p>
                     <ul>
                         <li>
-                            <span className="twic-code">transition</span>: whether or not to reveal
-                            images with a <em>fade in</em> effect (default: <span className="twic-code">true</span>).
+                            <span class="twic-code">transition</span>: 
+                            determines how image will be revealed once loaded :
+                            with a <em>fade in</em> effect (`fade`), 
+                            a <em>zoom</em> effect (`zoom`), 
+                            <em>both</em> (`fade+zoom`) 
+                            or without any transition (`none`).
+                            (default: <span class="twic-code">fade</span>).
                         </li>
                         <li>
                             <span className="twic-code">transitionDelay</span>: transition delay of
@@ -68,11 +73,32 @@ const TwicTransition = () => {
                     <div className="twic-item">
                         <TwicImg
                             src={imgUrl}
-                            transition="false"
+                            transition="none"
                             placeholder="preview"
                         >
                         </TwicImg>
-                        <span>transition=`false`</span>
+                        <span>transition=`none`</span>
+                    </div>
+                    <div class="twic-item">
+                        <TwicImg  
+                            src={imgUrl} 
+                            transition="zoom">
+                        </TwicImg>
+                        <span>transition=`zoom`</span>
+                    </div>
+                    <div class="twic-item">
+                        <TwicImg
+                            src={imgUrl} 
+                            transition="fade">
+                        </TwicImg>
+                        <span>transition=`fade`</span>
+                    </div>
+                    <div class="twic-item">
+                        <TwicImg 
+                            src={imgUrl} 
+                            transition="fade+zoom">
+                        </TwicImg>
+                        <span>transition=`fade+zoom`</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg

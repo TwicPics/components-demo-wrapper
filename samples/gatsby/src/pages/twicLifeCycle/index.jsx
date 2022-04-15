@@ -211,30 +211,18 @@ const images = [
     ...seed,
 ];
 
-/**
- * displays images in grid with responsive rules set on li width
- * Custom behaviour on twic done ( scale 0 to 1 rather than opacity )
- * No placeholder
- */
 const TwicLifeCycle = () => (
     <TwicWrapper framework="gatsby">
         <TwicAbstract
-            title="TwicPics Life Cycle"
-            codeSandUrl="https://codesandbox.io/s/twicpics-x-gatsby-life-cycle-led4rf"
-            codeSandBoxName="TwicPics x Gatsby - Life"
+            title="Grid & Zoom effect"
+            codeSandUrl="https://codesandbox.io/s/twicpics-x-gatsby-grid-zoom-led4rf"
+            codeSandBoxName="TwicPics x Gatsby - Grid & Zoom effect"
         >
             <p>
-                It may be necessary to apply specific behavior to an image depending on its processing state.
+                A responsive grid of images enhanced by zoom transition.
             </p>
             <p>
-                To help you, the TwicPics script tags elements with specific classes as part of a life cycle
-            </p>
-            <p>
-                In this example, we apply a scale 0 to 1 transition when the image is ready to be displayed
-                <span className="twic-code" >class=twic-done</span>.
-            </p>
-            <p>
-                Scroll down to experience lazy loading in action.
+                <strong>Scroll down to experience lazy loading in action</strong>.
             </p>
         </TwicAbstract>
         <div className={ twicLifeCycle }>
@@ -244,7 +232,8 @@ const TwicLifeCycle = () => (
                         <a href="#">
                             <TwicImg
                                 src={ image.url } focus={ image.focus }
-                                placeholder="none" ratio="4/3" mode="cover"
+                                ratio="4/3" mode="cover"
+                                transition="fade+zoom"
                             />
                         </a>
                     </li>

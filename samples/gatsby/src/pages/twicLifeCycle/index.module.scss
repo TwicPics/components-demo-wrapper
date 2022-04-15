@@ -20,17 +20,12 @@
         position: relative;
         &:hover {
             & img:global(.twic-done) {
-                transform: scale(1.2);
+                transform: scale(1.2) !important;
             }
         }
         & img {
             @extend .display-block-pointer;
             position: absolute;
-            transform: scale(0);
-            transition: .3s all ease-in-out;
-            &:global(.twic-done) {
-                transform: scale(1);
-            }
         }
         & :global(.twic-w) {
             position: absolute;

@@ -26,7 +26,7 @@ const categories = [
             {
                 "route": `/twicLifeCycle`,
                 "imgSrc": `components/portraits/woman-1.jpg`,
-                "title": `Life cycle`,
+                "title": `Grid & Zoom`,
             },
             {
                 "route": `/twicModal`,
