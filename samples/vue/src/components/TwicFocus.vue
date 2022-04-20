@@ -3,7 +3,7 @@
     <div class="twic-focus-container">
       <TwicAbstract
         title="focus property"
-        codeSandBoxUrl=""
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-vue2-focus-property-f0orcn"
         codeSandBoxName="TwicPics x Vue - Focus"
       >
         <p>
@@ -84,7 +84,7 @@ import {
 } from "@twicpics/components-demo-wrapper/vue";
 
 export default {
-  name: "TwicArtDirections",
+  name: "TwicFocus",
   components: {
     TwicAbstract,
     TwicWrapper,

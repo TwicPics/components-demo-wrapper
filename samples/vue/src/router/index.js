@@ -5,7 +5,7 @@ import TwicArtDirections from "../components/TwicArtDirections.vue";
 import TwicBasicGrid from "../components/TwicBasicGrid.vue";
 import TwicFlipCards from "../components/TwicFlipCards.vue";
 import TwicFocus from "../components/TwicFocus.vue";
-import TwicLifeCycle from "../components/TwicLifeCycle.vue";
+import TwicGridAndZoom from "../components/TwicLifeCycle.vue";
 import TwicModal from "../components/twic-modal/TwicModal.vue";
 import TwicMode from "../components/TwicMode.vue";
 import TwicPlaceholder from "../components/TwicPlaceholder.vue";
@@ -45,9 +45,9 @@ const routes = [
     component: TwicFocus,
   },
   {
-    path: "/twicLifeCycle",
-    name: "TwicLifeCycle",
-    component: TwicLifeCycle,
+    path: "/twicGridAndZoom",
+    name: "TwicGridAndZoom",
+    component: TwicGridAndZoom,
   },
   {
     path: "/twicModal",

@@ -3,7 +3,7 @@
     <div class="twic-modal-container">
       <TwicAbstract
         title="A modal revealer"
-        codeSandBoxUrl=""
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-vue2-modal-b56wtp"
         codeSandBoxName="TwicPics x Vue - Modal"
       >
         <p>Click on the image of your choice to reveal a modal.</p>

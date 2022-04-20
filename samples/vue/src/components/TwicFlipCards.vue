@@ -3,7 +3,7 @@
     <div class="twic-flip-card-container">
       <TwicAbstract
         title="Flip cards"
-        codeSandBoxUrl=""
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-vue2-flip-cards-ylzujp"
         codeSandBoxName="TwicPics x Vue - Flip cards"
       >
         <p>Move your mouse over the images below.</p>
@@ -35,7 +35,7 @@ import {
 } from "@twicpics/components-demo-wrapper/vue";
 
 export default {
-  name: "TwicArtDirections",
+  name: "TwicFlipCards",
   components: {
     TwicAbstract,
     TwicWrapper,

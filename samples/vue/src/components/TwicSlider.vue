@@ -3,7 +3,7 @@
   <TwicWrapper>
     <TwicAbstract
       title="A slider"
-      codeSandBoxUrl=""
+      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-vue2-slider-l1u505"
       codeSandBoxName="TwicPics x Vue - Slider sample"
     >
       <p>
@@ -34,7 +34,7 @@ import {
 } from "@twicpics/components-demo-wrapper/vue";
 
 export default {
-  name: "TwicMode",
+  name: "TwicSlider",
   components: {
     TwicAbstract,
     TwicWrapper,

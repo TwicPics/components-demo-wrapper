@@ -4,7 +4,7 @@
     <div class="twic-slideshow-container">
       <TwicAbstract
         title="A Picture Carousel"
-        codeSandBoxUrl=""
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-vue2-carousel-5zhu43"
         codeSandBoxName="TwicPics x Vue - Picture Carousel"
       >
         <p>
@@ -29,7 +29,7 @@ import {
 } from "@twicpics/components-demo-wrapper/vue";
 
 export default {
-  name: "TwicMode",
+  name: "TwicSlideshow",
   components: {
     Slideshow,
     TwicAbstract,

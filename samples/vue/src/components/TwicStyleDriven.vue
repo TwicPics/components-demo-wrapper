@@ -1,71 +1,71 @@
 <template>
-<TwicWrapper>
-  <div class="twic-style-driven-container">
-    <TwicAbstract title="CSS style driven"
-      codeSandBoxUrl=""
-      codeSandBoxName="TwicPics x Vue - CSS style driven">
-      <p>
-        You can set up the TwicPics components using pure CSS and the power of
-        CSS variables.
-      </p>
-    </TwicAbstract>
-    <h2>
-      1. Display ratio with <span class=" twic-code">--twic-ratio</span>
-    </h2>
-    <div class="twic-grid">
-      <div class="twic-item landscape">
-        <TwicImg :src="imgUrl"></TwicImg>
-        <span>class landscape</span>
+  <TwicWrapper>
+    <div class="twic-style-driven-container">
+      <TwicAbstract
+        title="CSS style driven"
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-vue2-style-driven-vp5c8e"
+        codeSandBoxName="TwicPics x Vue - CSS style driven"
+      >
+        <p>
+          You can set up the TwicPics components using pure CSS and the power of
+          CSS variables.
+        </p>
+      </TwicAbstract>
+      <h2>1. Display ratio with <span class="twic-code">--twic-ratio</span></h2>
+      <div class="twic-grid">
+        <div class="twic-item landscape">
+          <TwicImg :src="imgUrl"></TwicImg>
+          <span>class landscape</span>
+        </div>
+        <div class="twic-item square">
+          <TwicImg :src="imgUrl"></TwicImg>
+          <span>class square</span>
+        </div>
+        <div class="twic-item portrait">
+          <TwicImg :src="imgUrl"></TwicImg>
+          <span>class portrait</span>
+        </div>
       </div>
-      <div class="twic-item square">
-        <TwicImg :src="imgUrl"></TwicImg>
-        <span>class square</span>
+      <h2>
+        2. Class combination: <span class="twic-code">object-fit</span> and
+        <span class="twic-code"> position</span> with
+        <span class="twic-code">--twic-mode</span> and
+        <span class="twic-code"> twic-position</span>
+      </h2>
+      <div class="twic-grid">
+        <div class="twic-item contain left">
+          <TwicImg :src="imgUrl" ratio="16/9"></TwicImg>
+          <span>class contain + class left</span>
+        </div>
+        <div class="twic-item contain right">
+          <TwicImg :src="imgUrl" ratio="16/9"></TwicImg>
+          <span>class contain + class right</span>
+        </div>
+        <div class="twic-item cover">
+          <TwicImg :src="imgUrl" focus="50px100p" ratio="16/9"></TwicImg>
+          <span>class cover</span>
+        </div>
       </div>
-      <div class="twic-item portrait">
-        <TwicImg :src="imgUrl"></TwicImg>
-        <span>class portrait</span>
+      <h2>
+        3. Other classical settings (here with
+        <span class="twic-code">width</span>)
+      </h2>
+      <div class="twic-grid">
+        <div class="twic-item lg">
+          <TwicImg :src="imgUrl"></TwicImg>
+          <span>class lg</span>
+        </div>
+        <div class="twic-item md">
+          <TwicImg :src="imgUrl"></TwicImg>
+          <span>class md</span>
+        </div>
+        <div class="twic-item sm">
+          <TwicImg :src="imgUrl"></TwicImg>
+          <span>class sm</span>
+        </div>
       </div>
     </div>
-    <h2>
-      2. Class combination: <span class="twic-code">object-fit</span> and
-      <span class="twic-code"> position</span> with
-      <span class="twic-code">--twic-mode</span> and
-      <span class="twic-code"> twic-position</span>
-    </h2>
-    <div class="twic-grid">
-      <div class="twic-item contain left">
-        <TwicImg :src="imgUrl" ratio="16/9"></TwicImg>
-        <span>class contain + class left</span>
-      </div>
-      <div class="twic-item contain right">
-        <TwicImg :src="imgUrl" ratio="16/9"></TwicImg>
-        <span>class contain + class right</span>
-      </div>
-      <div class="twic-item cover">
-        <TwicImg :src="imgUrl" focus="50px100p" ratio="16/9"></TwicImg>
-        <span>class cover</span>
-      </div>
-    </div>
-    <h2>
-      3. Other classical settings (here with
-      <span class="twic-code">width</span>)
-    </h2>
-    <div class="twic-grid">
-      <div class="twic-item lg">
-        <TwicImg :src="imgUrl"></TwicImg>
-        <span>class lg</span>
-      </div>
-      <div class="twic-item md">
-        <TwicImg :src="imgUrl"></TwicImg>
-        <span>class md</span>
-      </div>
-      <div class="twic-item sm">
-        <TwicImg :src="imgUrl"></TwicImg>
-        <span>class sm</span>
-      </div>
-    </div>
-  </div>
-</TwicWrapper>
+  </TwicWrapper>
 </template>
 
 <script>
@@ -75,7 +75,7 @@ import {
 } from "@twicpics/components-demo-wrapper/vue";
 
 export default {
-  name: "TwicMode",
+  name: "TwicStyleDriven",
   components: {
     TwicAbstract,
     TwicWrapper,
@@ -90,55 +90,55 @@ export default {
 
 <style lang="scss">
 .twic-style-driven-container {
-    h2 {
-        margin-bottom: 30px;
-    }
-    
-    .twic-grid {
-        margin-bottom: 60px;
-    }
+  h2 {
+    margin-bottom: 30px;
+  }
 
-    .twic-item .twic-w {
-        background-color: #00FFA3;
-        display: block;
-    }
+  .twic-grid {
+    margin-bottom: 60px;
+  }
 
-    .landscape {
-        --twic-ratio: calc(4/3);
-    }
-    .portrait {
-        --twic-ratio: calc(3/4);
-    }
-    .square {
-        --twic-ratio: calc(1);
-    }
+  .twic-item .twic-w {
+    background-color: #00ffa3;
+    display: block;
+  }
 
-    .contain {
-        --twic-mode: contain;
-    }
+  .landscape {
+    --twic-ratio: calc(4 / 3);
+  }
+  .portrait {
+    --twic-ratio: calc(3 / 4);
+  }
+  .square {
+    --twic-ratio: calc(1);
+  }
 
-    .cover {
-        --twic-mode: cover;
-    }
+  .contain {
+    --twic-mode: contain;
+  }
 
-    .left {
-        --twic-position: left;
-    }
+  .cover {
+    --twic-mode: cover;
+  }
 
-    .right {
-        --twic-position: right;
-    }
+  .left {
+    --twic-position: left;
+  }
 
-    .lg {
-        width:300px;
-    }
+  .right {
+    --twic-position: right;
+  }
 
-    .md {
-        width:150px;
-    }
+  .lg {
+    width: 300px;
+  }
 
-    .sm {
-        width: 100px;
-    }
+  .md {
+    width: 150px;
+  }
+
+  .sm {
+    width: 100px;
+  }
 }
 </style>

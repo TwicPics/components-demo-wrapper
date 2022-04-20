@@ -51,7 +51,7 @@ import {
 } from "@twicpics/components-demo-wrapper/vue";
 
 export default {
-  name: "TwicMode",
+  name: "Slideshow",
   components: {
     TwicAbstract,
     TwicWrapper,

@@ -2,7 +2,7 @@
   <TwicWrapper>
     <TwicAbstract
       title="Grid & zoom effect"
-      codeSandBoxUrl=""
+      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-vue2-grid-and-zoom-e7bl62"
       codeSandBoxName="TwicPics x Vue - Grid & zoom effect"
     >
       <p>A responsive grid of images enhanced by zoom transition.</p>
@@ -35,7 +35,7 @@ import {
 } from "@twicpics/components-demo-wrapper/vue";
 
 export default {
-  name: "TwicLifeCycle",
+  name: "TwicGridAndZoom",
   components: {
     TwicAbstract,
     TwicWrapper,

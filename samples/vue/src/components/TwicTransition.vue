@@ -4,7 +4,7 @@
     <div class="twic-transition-container">
       <TwicAbstract
         title="transition property"
-        codeSandBoxUrl=""
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-vue2-transition-property-gb31ok"
         codeSandBoxName="TwicPics x Vue - Transition property"
       >
         <p>
@@ -108,7 +108,7 @@ import {
 } from "@twicpics/components-demo-wrapper/vue";
 
 export default {
-  name: "TwicMode",
+  name: "TwicTransition",
   components: {
     TwicAbstract,
     TwicWrapper,

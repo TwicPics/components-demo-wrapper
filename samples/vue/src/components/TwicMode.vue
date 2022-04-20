@@ -4,7 +4,7 @@
     <div class="twic-mode-container">
       <TwicAbstract
         title="mode property"
-        codeSandBoxUrl=""
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-vue2-mode-property-k8trl9"
         codeSandBoxName="TwicPics x Vue - Mode property"
       >
         <p>

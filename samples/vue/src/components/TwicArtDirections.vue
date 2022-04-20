@@ -3,7 +3,7 @@
     <div class="twic-art-direction-container">
       <TwicAbstract
         title="Art directions with CSS media queries"
-        codeSandBoxUrl=""
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-vue2-art-directions-s0vks9"
         codeSandBoxName="TwicPics x Vue - Art directions"
       >
         <p>

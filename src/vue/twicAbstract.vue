@@ -35,15 +35,13 @@ export default {
       required: false,
     },
   },
-  computed: {
-    alt() {
-      this.codeSandBoxName
+  data() {
+    return {
+      alt: this.codeSandBoxName
         ? ` Edit ${this.codeSandBoxName} `
-        : ` Edit on CodeSandbox`;
-    },
-    href() {
-      `${this.codeSandBoxUrl}?fontsize=14&hidenavigation=1&theme=dark`;
-    },
+        : ` Edit on CodeSandbox`,
+      href: `${this.codeSandBoxUrl}?fontsize=14&hidenavigation=1&theme=dark`,
+    };
   },
 };
 </script>

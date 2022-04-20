@@ -56,6 +56,11 @@ export default {
               title: `Flip cards`,
             },
             {
+              route: `/twicGridAndZoom`,
+              imgSrc: `components/portraits/woman-1.jpg`,
+              title: `Grid & zoom`,
+            },
+            {
               route: `/twicModal`,
               imgSrc: `components/modal/seagull.jpg`,
               title: `Modal`,
@@ -74,11 +79,6 @@ export default {
               route: `/twicStyleDriven`,
               imgSrc: `components/horse.jpg`,
               title: `Style driven`,
-            },
-            {
-              route: `/twicLifeCycle`,
-              imgSrc: `components/portraits/woman-1.jpg`,
-              title: `Grid & zoom`,
             },
           ],
         },

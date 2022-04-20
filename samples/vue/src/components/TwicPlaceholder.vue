@@ -4,7 +4,7 @@
     <div class="twic-placeholder-container">
       <TwicAbstract
         title="placeholder property"
-        codeSandBoxUrl=""
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-vue2-placeholder-property-8ltkei"
         codeSandBoxName="TwicPics x Vue - Placeholder property"
       >
         <p>
@@ -69,7 +69,7 @@ import {
 } from "@twicpics/components-demo-wrapper/vue";
 
 export default {
-  name: "TwicMode",
+  name: "TwicPlaceholder",
   components: {
     TwicAbstract,
     TwicWrapper,

@@ -3,7 +3,7 @@
     <div class="twic-position-container">
       <TwicAbstract
         title="position property"
-        codeSandBoxUrl=""
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-vue2-position-property-bqwcdn"
         codeSandBoxName="TwicPics x Vue - Position property"
       >
         <p>
@@ -77,7 +77,7 @@ import {
 } from "@twicpics/components-demo-wrapper/vue";
 
 export default {
-  name: "TwicMode",
+  name: "TwicPosition",
   components: {
     TwicAbstract,
     TwicWrapper,

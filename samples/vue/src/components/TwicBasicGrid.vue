@@ -3,7 +3,7 @@
     <div class="twic-basic-grid-container">
       <TwicAbstract
         title="A basic example"
-        codeSandBoxUrl=""
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-vue2-basic-example-ym85ql"
         codeSandBoxName="TwicPics x Vue - A basic example"
       >
         <p>
@@ -82,7 +82,7 @@ import {
 } from "@twicpics/components-demo-wrapper/vue";
 
 export default {
-  name: "TwicBasicGrid",
+  name: "TwicBasicExample",
   components: {
     TwicAbstract,
     TwicWrapper,
