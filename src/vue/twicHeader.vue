@@ -46,6 +46,7 @@ export default {
   },
   data() {
     return {
+      redirect: ``,
       LOGO_PATH: `https://assets.twicpics.com/demo/@twicpics-components/logos/`,
       class: ``,
       src: ``,
@@ -55,10 +56,12 @@ export default {
 
   created() {
     if (this.framework === `vue`) {
+      this.redirect = `https://github.com/TwicPics/components/blob/main/documentation/vue2.md`;
       this.class = `vue-logo`;
       this.src = `${this.LOGO_PATH}vue.png`;
       this.alt = `Vue logo`;
     } else if (this.framework === `nuxt`) {
+      this.redirect = `https://github.com/TwicPics/components/blob/main/documentation/nuxt2.md`;
       this.class = `nuxt-logo`;
       this.src = `${this.LOGO_PATH}nuxt-2.png`;
       this.alt = `Nuxt logo`;

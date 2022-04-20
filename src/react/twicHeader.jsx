@@ -43,36 +43,49 @@ const FrameworkLogo = ( { framework = `react` } ) => {
     );
 };
 
-const TwicHeader = ( { tags = [ `@twicpics-components` ],
-    redirect = `https://github.com/TwicPics/components/tree/main/documentation#twicpics-components`,
-    framework } ) => (
-    <header id="twic-header">
-        <a href="/" title="Home">
-            <h1 className="heading-primary">
-                <img
-                    className="twicpics-logo"
-                    src={`${ LOGOS_PATH }twicpics.svg`}
-                    alt="TwicPics logo"
-                />
-                <span>x</span>
-                <FrameworkLogo framework={ framework } />
-            </h1>
-        </a>
-        <div className="tags-container">
-            {tags.map( ( tag, i ) => (
-                <div key={i} className="tag">
-                    {tag}
-                </div>
-            ) )}
-            <a
-                href={redirect}
-                target="_blank"
-                className="documentation-link tag tag--bg-purple-rain" rel="noreferrer"
-            >
-                Documentation
-            </a>
-        </div>
-    </header>
-);
+const TwicHeader = ( { tags = [ `@twicpics-components` ], framework } ) => {
+    let redirect = "";
+    switch (framework) {
+      case "react":
+        redirect = "https://github.com/TwicPics/components/blob/main/documentation/react.md";
+        break;
+      case "next":
+        redirect = "https://github.com/TwicPics/components/blob/main/documentation/next.md";
+        break;
+      case "gatsby":
+        redirect = "https://github.com/TwicPics/components/blob/main/documentation/gatsby.md";
+        break;
+      default:
+        redirect = "https://github.com/TwicPics/components/blob/main/documentation/react.md";
+    }
 
+    return (
+      <header id="twic-header">
+          <a href="/" title="Home">
+              <h1 className="heading-primary">
+                  <img
+                      className="twicpics-logo"
+                      src={`${ LOGOS_PATH }twicpics.svg`}
+                      alt="TwicPics logo"
+                  />
+                  <span>x</span>
+                  <FrameworkLogo framework={ framework } />
+              </h1>
+          </a>
+          <div className="tags-container">
+              {tags.map( ( tag, i ) => (
+                  <div key={i} className="tag">
+                      {tag}
+                  </div>
+              ) )}
+              <a
+                  href={redirect}
+                  target="_blank"
+                  className="documentation-link tag tag--bg-purple-rain" rel="noreferrer"
+              >
+                  Documentation
+              </a>
+          </div>
+      </header>
+)};
 export default TwicHeader;

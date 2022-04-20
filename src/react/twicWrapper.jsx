@@ -4,7 +4,7 @@ import { default as TwicHeader } from "./twicHeader";
 
 import React, { useEffect } from "react";
 
-const TwicWrapper = ( { className, tags, redirect, children, framework = `react` } ) => {
+const TwicWrapper = ( { className, tags, children, framework = `react` } ) => {
 
     useEffect( () => {
         const WebFont = require( `webfontloader` );
@@ -17,7 +17,7 @@ const TwicWrapper = ( { className, tags, redirect, children, framework = `react`
 
     return (
         <div id="twic-demo-wrapper" className={ className }>
-            <TwicHeader tags={tags} redirect={redirect} framework={framework}></TwicHeader>
+            <TwicHeader tags={tags} framework={framework}></TwicHeader>
             <main id="twic-demo-container">{children}</main>
         </div>
     );
