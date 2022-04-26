@@ -1,10 +1,10 @@
 <template>
   <!-- displays images with a horizontal scroll bar -->
-  <TwicWrapper>
+  <TwicWrapper framework="nuxt">
     <TwicAbstract
       title="A slider"
-      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-vue2-slider-l1u505"
-      codeSandBoxName="TwicPics x Vue - Slider sample"
+      codeSandBoxUrl=""
+      codeSandBoxName="TwicPics x Nuxt - Slider sample"
     >
       <p>
         A simple slider that uses TwicPics for automatic lazy-loading, CLS
@@ -34,7 +34,7 @@ import {
 } from "@twicpics/components-demo-wrapper/vue";
 
 export default {
-  name: "TwicSlider",
+  name: "SliderPage",
   components: {
     TwicAbstract,
     TwicWrapper,

@@ -1,10 +1,10 @@
 <template>
-  <TwicWrapper>
+  <TwicWrapper framework="nuxt">
     <div class="twic-position-container">
       <TwicAbstract
         title="position property"
-        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-vue2-position-property-bqwcdn"
-        codeSandBoxName="TwicPics x Vue - Position property"
+        codeSandBoxUrl=""
+        codeSandBoxName="TwicPics x Nuxt - Position property"
       >
         <p>
           In <span class="twic-code">contain</span> mode, the position property

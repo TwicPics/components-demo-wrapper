@@ -89,7 +89,7 @@ const categories = [
 
 function Home() {
     return (
-        <TwicWrapper>
+        <TwicWrapper framework="gatsby">
             <div className="home-container">
                 { categories.map( ( category, i ) => (
                     <div className="twic-panel" key={`category ${ i }`}>

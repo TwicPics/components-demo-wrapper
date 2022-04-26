@@ -1,11 +1,11 @@
 <template>
   <!-- displays a carousel of responsive images -->
-  <TwicWrapper>
+  <TwicWrapper framework="nuxt">
     <div class="twic-slideshow-container">
       <TwicAbstract
         title="A Picture Carousel"
-        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-vue2-carousel-5zhu43"
-        codeSandBoxName="TwicPics x Vue - Picture Carousel"
+        codeSandBoxUrl=""
+        codeSandBoxName="TwicPics x Nuxt - Picture Carousel"
       >
         <p>
           Use TwicPics for automatic lazy-loading, CLS optimization and art
@@ -22,16 +22,14 @@
 </template>
 
 <script>
-import Slideshow from "./Slideshow.vue";
 import {
   TwicAbstract,
   TwicWrapper,
 } from "@twicpics/components-demo-wrapper/vue";
 
 export default {
-  name: "TwicSlideshow",
+  name: "SlideshowPage",
   components: {
-    Slideshow,
     TwicAbstract,
     TwicWrapper,
   },

@@ -33,21 +33,19 @@ export default {
   props: {
     tags: {
       type: Array,
-      required: true,
-    },
-    redirect: {
-      type: String,
-      required: true,
+      required: false,
     },
     framework: {
       type: String,
-      required: true,
+      required: false,
     },
   },
   data() {
     return {
-      redirect: ``,
       LOGO_PATH: `https://assets.twicpics.com/demo/@twicpics-components/logos/`,
+      VUE_DOC: `https://github.com/TwicPics/components/blob/main/documentation/vue2.md`,
+      NUXT_DOC: `https://github.com/TwicPics/components/blob/main/documentation/nuxt2.md`,
+      redirect: ``,
       class: ``,
       src: ``,
       alt: ``,
@@ -56,12 +54,12 @@ export default {
 
   created() {
     if (this.framework === `vue`) {
-      this.redirect = `https://github.com/TwicPics/components/blob/main/documentation/vue2.md`;
+      this.redirect = this.VUE_DOC;
       this.class = `vue-logo`;
       this.src = `${this.LOGO_PATH}vue.png`;
       this.alt = `Vue logo`;
     } else if (this.framework === `nuxt`) {
-      this.redirect = `https://github.com/TwicPics/components/blob/main/documentation/nuxt2.md`;
+      this.redirect = this.NUXT_DOC;
       this.class = `nuxt-logo`;
       this.src = `${this.LOGO_PATH}nuxt-2.png`;
       this.alt = `Nuxt logo`;

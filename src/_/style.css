@@ -169,6 +169,7 @@ body {
 
 .twic-code {
   display: inline-block;
+  margin: 1px 0;
   padding: 2px 6px;
   font-family: sans-serif;
   border-radius: 4px;

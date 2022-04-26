@@ -1,10 +1,10 @@
 <template>
-  <TwicWrapper>
+  <TwicWrapper framework="nuxt">
     <div class="twic-focus-container">
       <TwicAbstract
         title="focus property"
-        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-vue2-focus-property-f0orcn"
-        codeSandBoxName="TwicPics x Vue - Focus"
+        codeSandBoxUrl=""
+        codeSandBoxName="TwicPics x Nuxt - Focus"
       >
         <p>
           The <span class="twic-code">focus</span> property will change the
@@ -15,7 +15,7 @@
           cropped.
         </p>
         <p>
-          You can set the focus by using <em>coordinates </em> or
+          You can set the focus by using <strong>coordinates</strong> or
           <span class="twic-code">auto</span> values:
         </p>
         <ul>

@@ -1,11 +1,11 @@
 <template>
   <!-- demonstrates transition features -->
-  <TwicWrapper>
+  <TwicWrapper framework="nuxt">
     <div class="twic-transition-container">
       <TwicAbstract
         title="transition properties"
-        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-vue2-transition-property-gb31ok"
-        codeSandBoxName="TwicPics x Vue - Transition property"
+        codeSandBoxUrl=""
+        codeSandBoxName="TwicPics x Nuxt - Transition property"
       >
         <p>
           The <span class="twic-code">transition</span> properties allow you to

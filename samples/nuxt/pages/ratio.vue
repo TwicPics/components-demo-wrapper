@@ -1,17 +1,17 @@
 <template>
-  <!-- demonstrates ratio features -->
-  <TwicWrapper>
+  <!-- demonstrates the ratio property -->
+  <TwicWrapper framework="nuxt">
     <div class="twic-ratio-container">
       <TwicAbstract
         title="ratio property"
-        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-vue2-ratio-property-erk6kw"
-        codeSandBoxName="TwicPics x Vue - Ratio property"
+        codeSandBoxUrl=""
+        codeSandBoxName="TwicPics x Nuxt - Ratio property"
       >
         <p>
           The <span class="twic-code">ratio</span> property determines the value
           of the width/height ratio of the image display area.
         </p>
-        <p>Value can be:</p>
+        <p>The value can be:</p>
         <ul>
           <li>
             a ratio expression of the form width/height like
@@ -27,7 +27,7 @@
           </li>
         </ul>
         <p>
-          A square area (<span class="twic-code"> ratio=`1`</span>) will be
+          A square area (<span class="twic-code"> ratio="1"</span>) will be
           created by default.
         </p>
       </TwicAbstract>
