@@ -7,7 +7,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "serve": "yarn && yarn nuxt"
+    "serve": "node ../../build && $npm_execpath install && yarn nuxt"
   },
   "dependencies": {
     "@twicpics/components": "0.6.3",
