@@ -3,7 +3,7 @@
     <div class="twic-basic-grid-container">
       <TwicAbstract
         title="A basic example"
-        codeSandBoxUrl=""
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-nuxt-basic-h5yd6s"
         codeSandBoxName="TwicPics x Nuxt - A basic example"
       >
         <p>

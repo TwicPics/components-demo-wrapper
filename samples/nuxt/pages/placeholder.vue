@@ -4,7 +4,7 @@
     <div class="twic-placeholder-container">
       <TwicAbstract
         title="placeholder property"
-        codeSandBoxUrl=""
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-nuxt-placeholder-property-lnmldu"
         codeSandBoxName="TwicPics x Nuxt - Placeholder property"
       >
         <p>

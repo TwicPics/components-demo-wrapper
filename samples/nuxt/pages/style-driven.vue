@@ -3,7 +3,7 @@
     <div class="twic-style-driven-container">
       <TwicAbstract
         title="CSS style driven"
-        codeSandBoxUrl=""
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-nuxt-style-driven-zw61ry"
         codeSandBoxName="TwicPics x Nuxt - CSS style driven"
       >
         <p>

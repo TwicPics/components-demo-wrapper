@@ -3,7 +3,7 @@
     <div class="twic-modal-container">
       <TwicAbstract
         title="A modal revealer"
-        codeSandBoxUrl=""
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-nuxt-modal-wfsdr4"
         codeSandBoxName="TwicPics x Nuxt - Modal"
       >
         <p>Click on the image of your choice to reveal a modal.</p>

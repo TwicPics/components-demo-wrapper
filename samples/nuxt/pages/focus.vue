@@ -3,8 +3,8 @@
     <div class="twic-focus-container">
       <TwicAbstract
         title="focus property"
-        codeSandBoxUrl=""
-        codeSandBoxName="TwicPics x Nuxt - Focus"
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-nuxt-focus-property-89i4lt"
+        codeSandBoxName="TwicPics x Nuxt - Focus property"
       >
         <p>
           The <span class="twic-code">focus</span> property will change the

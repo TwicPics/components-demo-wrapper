@@ -4,7 +4,7 @@
     <div class="twic-art-direction-container">
       <TwicAbstract
         title="Art directions with CSS media queries"
-        codeSandBoxUrl=""
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-nuxt-art-direction-ni4875"
         codeSandBoxName="TwicPics x Nuxt - Art directions"
       >
         <p>

@@ -4,7 +4,7 @@
     <div class="twic-ratio-container">
       <TwicAbstract
         title="ratio property"
-        codeSandBoxUrl=""
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-nuxt-ratio-property-1ruvjf"
         codeSandBoxName="TwicPics x Nuxt - Ratio property"
       >
         <p>

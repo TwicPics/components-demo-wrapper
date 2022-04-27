@@ -4,7 +4,7 @@
     <div class="twic-transition-container">
       <TwicAbstract
         title="transition properties"
-        codeSandBoxUrl=""
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-nuxt-transition-property-u665lz"
         codeSandBoxName="TwicPics x Nuxt - Transition property"
       >
         <p>

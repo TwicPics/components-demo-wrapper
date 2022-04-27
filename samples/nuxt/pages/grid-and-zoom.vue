@@ -2,7 +2,7 @@
   <TwicWrapper framework="nuxt">
     <TwicAbstract
       title="Grid & zoom effect"
-      codeSandBoxUrl=""
+      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-nuxt-grid-zoom-effect-2-9nwtds"
       codeSandBoxName="TwicPics x Nuxt - Grid & zoom effect"
     >
       <p>

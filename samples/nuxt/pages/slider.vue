@@ -3,7 +3,7 @@
   <TwicWrapper framework="nuxt">
     <TwicAbstract
       title="A slider"
-      codeSandBoxUrl=""
+      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-nuxt-slider-8m0ui2"
       codeSandBoxName="TwicPics x Nuxt - Slider sample"
     >
       <p>

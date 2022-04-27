@@ -4,7 +4,7 @@
     <div class="twic-slideshow-container">
       <TwicAbstract
         title="A Picture Carousel"
-        codeSandBoxUrl=""
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-nuxt-slideshow-rf2zks"
         codeSandBoxName="TwicPics x Nuxt - Picture Carousel"
       >
         <p>

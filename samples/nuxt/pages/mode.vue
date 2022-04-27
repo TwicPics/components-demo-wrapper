@@ -4,7 +4,7 @@
     <div class="twic-mode-container">
       <TwicAbstract
         title="mode property"
-        codeSandBoxUrl=""
+        codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-nuxt-mode-property-ejj4le"
         codeSandBoxName="TwicPics x Nuxt - Mode property"
       >
         <p>
