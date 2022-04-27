@@ -70,6 +70,8 @@ body {
 #twic-header .vue-logo {
   aspect-ratio: 16/9;
   width: 120px;
+  position: relative;
+  left: -8px;
 }
 
 #twic-header .tags-container {

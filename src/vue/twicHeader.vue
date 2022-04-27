@@ -8,7 +8,7 @@
           alt="TwicPics logo"
         />
         <span>x</span>
-        <img :class="this.class" :src="this.src" :alt="this.alt" />
+        <img :class="logoClass" :src="logoSrc" :alt="logoAlt" />
       </h1>
     </a>
     <div class="tags-container">
@@ -33,36 +33,36 @@ export default {
   props: {
     tags: {
       type: Array,
-      required: false,
+      required: true,
     },
     framework: {
       type: String,
-      required: false,
+      required: true,
     },
   },
   data() {
     return {
-      LOGO_PATH: `https://assets.twicpics.com/demo/@twicpics-components/logos/`,
+      LOGOS_PATH: `https://assets.twicpics.com/demo/@twicpics-components/logos/`,
       VUE_DOC: `https://github.com/TwicPics/components/blob/main/documentation/vue2.md`,
       NUXT_DOC: `https://github.com/TwicPics/components/blob/main/documentation/nuxt2.md`,
       redirect: ``,
-      class: ``,
-      src: ``,
-      alt: ``,
+      logoClass: ``,
+      logoSrc: ``,
+      logoAlt: ``,
     };
   },
 
   created() {
     if (this.framework === `vue`) {
       this.redirect = this.VUE_DOC;
-      this.class = `vue-logo`;
-      this.src = `${this.LOGO_PATH}vue.png`;
-      this.alt = `Vue logo`;
+      this.logoClass = `vue-logo`;
+      this.logoSrc = `${this.LOGOS_PATH}vue.png`;
+      this.logoAlt = `Vue logo`;
     } else if (this.framework === `nuxt`) {
       this.redirect = this.NUXT_DOC;
-      this.class = `nuxt-logo`;
-      this.src = `${this.LOGO_PATH}nuxt-2.png`;
-      this.alt = `Nuxt logo`;
+      this.logoClass = `nuxt-logo`;
+      this.logoSrc = `${this.LOGOS_PATH}nuxt-2.png`;
+      this.logoAlt = `Nuxt logo`;
     }
   },
 };
