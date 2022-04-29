@@ -28,10 +28,8 @@
         <button class="twic-button" (click)="onChangeMode()">
           Click to change the mode value
         </button>
-        <ng-container *ngIf="show">
-          <TwicImg [src]="imgUrl" [mode]="modeValues[ modeIndex ]"></TwicImg>
-        </ng-container>
-        <span>mode=`{{ modeValues[ modeIndex ] }}`</span>
+          <TwicImg [src]="urlValues[ modeIndex ]" [mode]="modeValues[ modeIndex ]"></TwicImg>
+    <span>mode=`{{ modeValues[ modeIndex ] }}`</span>
       </div>
       <div class=" twic-item">
         <TwicImg [src]="imgUrl"></TwicImg>

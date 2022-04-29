@@ -36,9 +36,7 @@
         <button class="twic-button" (click)="onChangeFocus()">
           Click to change the focus point
         </button>
-        <ng-container *ngIf="show">
           <TwicImg [src]="imgUrl" [focus]="focusArray[focusIndex]" ratio="4/5"></TwicImg>
-        </ng-container>
         <span>focus={{focusArray[ focusIndex ] ? focusArray[ focusIndex ] : 'none (default)'}}</span>
       </div>
       <div class="twic-item">
