@@ -10,18 +10,15 @@ type Mode = `contain` | `cover`;
 export class TwicModeComponent implements OnInit {
   imgUrl = `components/fox.jpg`;
   modeValues:Array< Mode > = [`cover`, `contain`];
+  urlValues:Array< string > = [`components/fox.jpg?0`, `components/fox.jpg?1`];
   modeIndex = 0;
-  // trick to force reload TwicImg
-  show = true;
-
   constructor() {}
 
   ngOnInit(): void {
   }
 
+
   onChangeMode = () => {
-    setTimeout(() => (this.show = false));
     this.modeIndex = (this.modeIndex + 1) % this.modeValues.length;
-    setTimeout(() => (this.show = true));
   };
 }

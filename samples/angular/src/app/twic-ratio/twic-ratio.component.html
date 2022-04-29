@@ -30,19 +30,15 @@
     </div>
     <div class="twic-grid" [ngClass]="{ 'full-width': fullWidthAera, 'half-width': fullWidthAera === false }">
       <div class="twic-item">
-        <ng-container *ngIf="show">
           <TwicImg [src]="imgUrl" [ratio]="ratioValues[ ratioIndex ]">
           </TwicImg>
-        </ng-container>
         <span>
           ratio={{ ratioValues[ ratioIndex ] ? ratioValues[ ratioIndex ] : '1 [default]' }} (cover)
         </span>
       </div>
       <div class="twic-item">
-        <ng-container *ngIf="show">
           <TwicImg [src]="imgUrl" mode="contain" [ratio]="ratioValues[ ratioIndex ]">
           </TwicImg>
-        </ng-container>
         <span>
           ratio={{ ratioValues[ ratioIndex ] ? ratioValues[ ratioIndex ] : '1 [default]' }} (contain)
         </span>
