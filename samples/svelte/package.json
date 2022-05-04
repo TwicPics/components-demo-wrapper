@@ -1,0 +1,29 @@
+{
+  "name": "svelte-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "PORT=3000 rollup -c -w",
+    "start": "sirv public --single --port 3000",
+    "serve": "node ../../build && $npm_execpath install && PORT=3000 rollup -c -w"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-css-only": "^3.0.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "sass": "^1.51.0",
+    "svelte": "^3.0.0",
+    "svelte-preprocess": "^4.10.6"
+  },
+  "dependencies": {
+    "@twicpics/components": "^0.7.0",
+    "@twicpics/components-demo-wrapper": "git+https://github.com/TwicPics/components-demo-wrapper.git#main",
+    "page": "^1.11.6",
+    "sirv-cli": "^1.0.0"
+  }
+}

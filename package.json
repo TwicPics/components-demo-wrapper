@@ -111,6 +111,9 @@
         },
         "./react": "./react",
         "./style.css": "./style.css",
+        "./svelte": {
+            "module": "./svelte/index.js"
+        },
         "./vue": "./vue"
     }
 }
