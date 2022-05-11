@@ -202,7 +202,7 @@ const images = [...seed, ...seed, ...seed];
 <TwicWrapper>
   <TwicAbstract
     title="Grid & zoom effect"
-    codeSandBoxUrl=""
+    codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-grid-and-zoom-4y2qli"
     codeSandBoxName="TwicPics x Svelte - Grid & zoom effect"
   >
     <p>A responsive grid of images enhanced by zoom transition.</p>

@@ -24,7 +24,7 @@ const togglePlaceholder = () => {
   <div class="twic-placeholder-container">
     <TwicAbstract
       title="placeholder property"
-      codeSandBoxUrl=""
+      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-placeholder-property-yfbeyk"
       codeSandBoxName="TwicPics x Svelte - Placeholder property"
     >
       <p>

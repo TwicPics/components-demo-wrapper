@@ -35,7 +35,7 @@ const closeModal = () => {
   <div class="twic-modal-container">
     <TwicAbstract
       title="A modal revealer"
-      codeSandBoxUrl=""
+      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-modal-y40dsr"
       codeSandBoxName="TwicPics x Svelte - Modal"
     >
       <p>Click on the image of your choice to reveal a modal.</p>

@@ -25,7 +25,7 @@ const onChangeAreaWidth = () => {
   <div class="twic-ratio-container">
     <TwicAbstract
       title="ratio property"
-      codeSandBoxUrl=""
+      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-template-vpou86"
       codeSandBoxName="TwicPics x Svelte - Ratio property"
     >
       <p>

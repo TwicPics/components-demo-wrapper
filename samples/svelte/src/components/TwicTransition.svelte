@@ -24,7 +24,7 @@ const toggleTransitions = () => {
   <div class="twic-transition-container">
     <TwicAbstract
       title="transition properties"
-      codeSandBoxUrl=""
+      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-transition-property-t97ixk"
       codeSandBoxName="TwicPics x Svelte - Transition property"
     >
       <p>

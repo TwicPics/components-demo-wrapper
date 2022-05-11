@@ -42,7 +42,7 @@ const images = [
   <div class="twic-working-without-images-container">
     <TwicAbstract
       title="Prepare your page template"
-      codeSandBoxUrl=""
+      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-working-without-images-n4bq41"
       codeSandBoxName='TwicPics x Svelte - src="undefined"'
     >
       <p>

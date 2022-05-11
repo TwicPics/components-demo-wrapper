@@ -42,7 +42,7 @@ const cards = [
   <div class="twic-flip-card-container">
     <TwicAbstract
       title="Flip cards"
-      codeSandBoxUrl=""
+      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-flip-cards-otfgj5"
       codeSandBoxName="TwicPics x Svelte - Flip cards"
     >
       <p>Move your mouse over the images below.</p>

@@ -20,7 +20,7 @@ const onChangeMode = () => {
   <div class="twic-mode-container">
     <TwicAbstract
       title="mode property"
-      codeSandBoxUrl=""
+      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-mode-property-jdu34q"
       codeSandBoxName="TwicPics x Svelte - Mode property"
     >
       <p>

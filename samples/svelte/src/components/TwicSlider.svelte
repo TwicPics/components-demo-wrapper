@@ -58,7 +58,7 @@ const images = [
 <TwicWrapper>
   <TwicAbstract
     title="A slider"
-    codeSandBoxUrl=""
+    codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-slider-xu3yd2"
     codeSandBoxName="TwicPics x Svelte - Slider sample"
   >
     <p>

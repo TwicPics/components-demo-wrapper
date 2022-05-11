@@ -1,7 +1,7 @@
 <script>
   export let title;
-  export let codeSandBoxName;
-  export let codeSandBoxUrl;
+  export let codeSandBoxName = ``;
+  export let codeSandBoxUrl = ``;
 
   const alt = codeSandBoxName ? ` Edit ${ codeSandBoxName } ` : ` Edit on CodeSandbox`;
   const href = `${ codeSandBoxUrl }?fontsize=14&hidenavigation=1&theme=dark`;

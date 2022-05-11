@@ -15,7 +15,7 @@ const onChangeFocus = () => {
   <div class="twic-focus-container">
     <TwicAbstract
       title="focus property"
-      codeSandBoxUrl=""
+      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-focus-property-gz0kp0"
       codeSandBoxName="TwicPics x Svelte - Focus property"
     >
       <p>

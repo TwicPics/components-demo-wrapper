@@ -9,7 +9,7 @@ const imgUrl = `components/greece.jpg`;
   <div class="twic-art-direction-container">
     <TwicAbstract
       title="Art directions with CSS media queries"
-      codeSandBoxUrl=""
+      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-art-directions-q8xl64"
       codeSandBoxName="TwicPics x Svelte - Art directions"
     >
       <p>

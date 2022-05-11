@@ -9,7 +9,7 @@ const imgUrl = `components/horse.jpg`;
   <div class="twic-style-driven-container">
     <TwicAbstract
       title="CSS style driven"
-      codeSandBoxUrl=""
+      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-styles-driven-ww3yjn"
       codeSandBoxName="TwicPics x Svelte - CSS style driven"
     >
       <p>

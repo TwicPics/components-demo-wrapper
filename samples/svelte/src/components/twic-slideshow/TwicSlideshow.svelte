@@ -31,7 +31,7 @@ const images = [
   <div class="twic-slideshow-container">
     <TwicAbstract
       title="A Picture Carousel"
-      codeSandBoxUrl=""
+      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-slideshow-28p9mh"
       codeSandBoxName="TwicPics x Svelte - Picture Carousel"
     >
       <p>

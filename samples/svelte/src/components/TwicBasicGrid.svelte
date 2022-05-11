@@ -7,7 +7,7 @@ import { TwicImg } from "@twicpics/components/svelte3";
   <div class="twic-basic-grid-container">
       <TwicAbstract
           title="A basic example"
-          codeSandUrl=""
+          codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-svelte-basic-example-ygqef7"
           codeSandBoxName="TwicPics x Svelte 3 - A basic example"
       >
           <p>
