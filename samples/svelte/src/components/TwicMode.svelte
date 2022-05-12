@@ -5,13 +5,11 @@ import { TwicImg } from "@twicpics/components/svelte3";
 const imgUrl = `components/fox.jpg`;
 const modeValues = [ `cover`, `contain` ];
 let modeIndex = 0;
-// trick to force reload TwicImg
-let show = true;
+
+$: finalImgUrl = `${imgUrl}?${modeIndex}`; // trick to force image reload
 
 const onChangeMode = () => {
-  setTimeout(() => (show = false));
   modeIndex = (modeIndex + 1) % modeValues.length;
-  setTimeout(() => (show = true));
 }
 </script>
 
@@ -48,12 +46,10 @@ const onChangeMode = () => {
         <button class="twic-button" on:click={ onChangeMode }>
           Click to change the mode value
         </button>
-        {#if show}
           <TwicImg
-            src={ imgUrl }
-            mode={ modeValues[ modeIndex ] }
+            src={ finalImgUrl }
+            mode={ modeValues[modeIndex] }
           ></TwicImg>
-        {/if}
         <span>
           <span class="twic-code">mode="{ modeValues[ modeIndex ] }"</span>
         </span>

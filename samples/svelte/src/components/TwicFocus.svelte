@@ -4,7 +4,7 @@ import { TwicImg } from "@twicpics/components/svelte3";
 
 const imgUrl = `components/puppy.jpg`;
 const focusArray = [``, `1920x1282`, `auto`];
-$: focusIndex = 0;
+let focusIndex = 0;
 
 const onChangeFocus = () => {
   focusIndex = (focusIndex + 1) % focusArray.length;

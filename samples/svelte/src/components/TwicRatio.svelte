@@ -6,13 +6,9 @@ const imgUrl = `components/woman-and-winter.jpg`;
 const ratioValues = [`2.39`, `16/9`, `4/3`, ``, `0.75`];
 let ratioIndex = 0;
 let fullWidthAera = true;
-// trick to force reload TwicImg
-let show = true;
 
 const onChangeRatio = () => {
-  setTimeout(() => (show = false));
   ratioIndex = (ratioIndex + 1) % ratioValues.length;
-  setTimeout(() => (show = true));
 }
 
 const onChangeAreaWidth = () => {
@@ -62,14 +58,11 @@ const onChangeAreaWidth = () => {
     </div>
     <div
       class="twic-grid"
-      class:modal-opened={ show }
       class:half-width={ fullWidthAera === false }
     >
       <div class="twic-item">
-        {#if show}
           <TwicImg src={ imgUrl } ratio={ ratioValues[ratioIndex] }>
           </TwicImg>
-        {/if}
         <span>
           <span class="twic-code">ratio="{
             ratioValues[ratioIndex] ? ratioValues[ratioIndex] : 1
@@ -81,14 +74,12 @@ const onChangeAreaWidth = () => {
         </span>
       </div>
       <div class="twic-item">
-        {#if show}
           <TwicImg
           src={ imgUrl }
           mode="contain"
           ratio={ ratioValues[ratioIndex] }
         >
         </TwicImg>
-        {/if}
         <span>
           <span class="twic-code">ratio="{
             ratioValues[ratioIndex] ? ratioValues[ratioIndex] : 1

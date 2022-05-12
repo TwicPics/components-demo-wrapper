@@ -15,7 +15,7 @@ const onChangeSrc = () => {
 }
 
 const ratioClassArray = [ `ratio-1by1`, `ratio-4by3`, `ratio-3by4` ];
-$: ratioClassIndex = 0;
+let ratioClassIndex = 0;
 
 const onChangeAspectRatio = () => {
   ratioClassIndex = (ratioClassIndex + 1) % ratioClassArray.length;
