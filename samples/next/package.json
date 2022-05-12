@@ -6,7 +6,7 @@
     ],
     "dependencies": {
         "@moxy/next-compile-node-modules": "^2.1.1",
-        "@twicpics/components": "^0.6.0",
+        "@twicpics/components": "^0.8.0",
         "@twicpics/components-demo-wrapper": "git+https://github.com/TwicPics/components-demo-wrapper.git#main",
         "next": "11.1.2",
         "prop-types": "15.7.2",

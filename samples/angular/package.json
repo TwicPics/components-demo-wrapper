@@ -18,7 +18,7 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
-    "@twicpics/components": "^0.6.6",
+    "@twicpics/components": "^0.8.0",
     "@twicpics/components-demo-wrapper": "git+https://github.com/TwicPics/components-demo-wrapper.git#main",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

@@ -21,7 +21,7 @@
     "svelte-preprocess": "^4.10.6"
   },
   "dependencies": {
-    "@twicpics/components": "^0.7.0",
+    "@twicpics/components": "^0.8.0",
     "@twicpics/components-demo-wrapper": "git+https://github.com/TwicPics/components-demo-wrapper.git#main",
     "page": "^1.11.6",
     "sirv-cli": "^1.0.0"

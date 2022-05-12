@@ -16,7 +16,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@twicpics/components": "^0.6.0",
+    "@twicpics/components": "^0.8.0",
     "@twicpics/components-demo-wrapper": "git+https://github.com/TwicPics/components-demo-wrapper.git#main",
     "gatsby": "^4.10.0",
     "gatsby-cli": "^4.10.1",

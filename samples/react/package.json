@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@twicpics/components": "^0.6.0",
+    "@twicpics/components": "^0.8.0",
     "@twicpics/components-demo-wrapper": "git+https://github.com/TwicPics/components-demo-wrapper.git#main",
     "react": "17.0.2",
     "react-app-rewired": "2.1.8",
