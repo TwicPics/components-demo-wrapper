@@ -143,8 +143,10 @@ const categories = [
       justify-content: center;
       align-items: center;
       margin: 12px;
-      height: 32px;
+      height: 40px;
+      text-align: center;
       font-size: 1em;
+      font-weight: 500;
       color: #fff;
       background: rgba(0, 0, 0, 0.5);
       transition: all 0.3s;
