@@ -8,8 +8,8 @@
     "serve": "node ../../build && $npm_execpath install && PORT=3000 rollup -c -w"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^16.0.0",
-    "@rollup/plugin-node-resolve": "^10.0.0",
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
     "rollup": "^2.3.4",
     "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-css-only": "^3.0.0",
@@ -24,6 +24,6 @@
     "@twicpics/components": "^0.8.0",
     "@twicpics/components-demo-wrapper": "git+https://github.com/TwicPics/components-demo-wrapper.git#main",
     "page": "^1.11.6",
-    "sirv-cli": "^1.0.0"
+    "sirv-cli": "^2.0.2"
   }
 }
