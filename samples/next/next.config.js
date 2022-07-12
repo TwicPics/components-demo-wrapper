@@ -1,9 +1,9 @@
 /* eslint-disable strict */
 /* globals module, require */
 "use strict";
-
-const withCompileNodeModules = require( `@moxy/next-compile-node-modules` );
-
-module.exports = withCompileNodeModules( {
-    "test": /\.jsx$/,
-} );
+const withTM = require(`next-transpile-modules`)([
+  `@twicpics/components-demo-wrapper`,
+]);
+module.exports = withTM({
+  test: /\.jsx$/,
+});
