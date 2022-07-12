@@ -1,6 +1,9 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import {
+    BrowserRouter as Router,
+    useRoutes,
+  } from "react-router-dom";
 import Home from './components/_home';
 import TwicBasicGrid from './components/twicBasicGrid';
 import TwicSlideshow from './components/twicSlideshow';
@@ -17,29 +20,36 @@ import TwicModal from "./components/twicModal";
 import TwicLifeCycle from "./components/twicLifeCycle";
 import TwicArtDirection from "./components/twicArtDirection";
 
-function App() {
+
+
+const App = () => {
+    const routes = useRoutes([
+      { path: "/", element: <Home /> },
+      { path: "basic-grid", element: <TwicBasicGrid /> },
+      { path: "art-direction", element: <TwicArtDirection /> },
+      { path: "flip", element: <TwicFlipCard /> },
+      { path: "focus", element: <TwicFocus /> },
+      { path: "life-cycle", element: <TwicLifeCycle /> },
+      { path: "modal", element: <TwicModal /> },
+      { path: "mode", element: <TwicMode /> },
+      { path: "positions", element: <TwicPosition /> },
+      { path: "placeholders", element: <TwicPlaceholder /> },
+      { path: "ratio", element: <TwicRatio /> },
+      { path: "slider", element: <TwicSlider /> },
+      { path: "slideshow", element: <TwicSlideshow /> },
+      { path: "style-driven", element: <TwicStyleDriven /> },
+      { path: "transition", element: <TwicTransition /> },
+    ]);
+    return routes;
+  };
+
+
+const AppWrapper = () => {
     return (
-        <div className="App">
-            <Router>
-                <>
-                    <Route exact path="/" component={Home} />
-                    <Route exact path="/basic-grid" component={TwicBasicGrid} />
-                    <Route exact path="/art-direction" component={TwicArtDirection} />
-                    <Route exact path="/flip" component={TwicFlipCard} />
-                    <Route exact path="/focus" component={TwicFocus} />
-                    <Route exact path="/life-cycle" component={TwicLifeCycle} />
-                    <Route exact path="/modal" component={TwicModal} />
-                    <Route exact path="/mode" component={TwicMode} />
-                    <Route exact path="/positions" component={TwicPosition} />
-                    <Route exact path="/placeholders" component={TwicPlaceholder} />
-                    <Route exact path="/ratio" component={TwicRatio} />
-                    <Route exact path="/slider" component={TwicSlider} />
-                    <Route exact path="/slideshow" component={TwicSlideshow} />
-                    <Route exact path="/style-driven" component={TwicStyleDriven} />
-                    <Route exact path="/transition" component={TwicTransition} />
-                </>
-            </Router>
-        </div>
+      <Router>
+        <App />
+      </Router>
     );
-}
-export default App;
+  };
+
+export default AppWrapper;
