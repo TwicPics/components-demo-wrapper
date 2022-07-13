@@ -22,6 +22,14 @@ module.exports = config => {
             rule.options.presets[ 0 ][ 0 ] = require.resolve( `@babel/preset-react` );
         }
     } );
+    config.module.rules.push(
+        {
+          test: /\.m?js/,
+          resolve: {
+            fullySpecified: false,
+          },
+        },
+      );
     config.resolve.plugins = config.resolve.plugins.filter( plugin => !( plugin instanceof ModuleScopePlugin ) );
-    return config;
+    return {...config, ignoreWarnings : [ /Failed to parse source map/ ]};
 };
