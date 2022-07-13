@@ -212,7 +212,6 @@ const images = [...seed, ...seed, ...seed];
     <ul>
       {#each images as image}
         <li class="twic-item">
-          <div>
             <TwicImg
               src={image.url}
               focus={image.focus}
@@ -222,7 +221,6 @@ const images = [...seed, ...seed, ...seed];
               mode="cover"
             >
             </TwicImg>
-          </div>
         </li>
       {/each}
     </ul>
@@ -231,12 +229,6 @@ const images = [...seed, ...seed, ...seed];
 
 
 <style lang="scss">
-@mixin display-block-pointer {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
 .twic-life-cycle {
   ul {
     display: grid;
@@ -246,20 +238,11 @@ const images = [...seed, ...seed, ...seed];
     width: 100%;
   }
 
-  .twic-item div {
-    @include display-block-pointer;
-    padding-bottom: 75%;
-    position: relative;
+  li {
     &:hover {
       & :global(img.twic-done) {
         transform: scale(1.2) !important;
       }
-    }
-    & :global(img) {
-      @include display-block-pointer;
-    }
-    & :global(.twic-w) {
-      position: absolute;
     }
   }
 }

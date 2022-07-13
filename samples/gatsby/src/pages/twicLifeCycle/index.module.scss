@@ -1,48 +1,31 @@
-.display-block-pointer {
-    cursor: pointer;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
 .twic-life-cycle {
-    ul {
-        display: grid;
-        gap: 1rem;
-        list-style: none;
-        position: relative;
-        width: 100%;
-    }
+  ul {
+      display: grid;
+      gap: 1rem;
+      list-style: none;
+      position: relative;
+      width: 100%;
+  }
 
-    a {
-        @extend .display-block-pointer;
-        padding-bottom: 75%;
-        position: relative;
-        &:hover {
-            & img:global(.twic-done) {
-                transform: scale(1.2) !important;
-            }
-        }
-        & img {
-            @extend .display-block-pointer;
-            position: absolute;
-        }
-        & :global(.twic-w) {
-            position: absolute;
-        }
-    }
+  li {
+      &:hover {
+          & img:global(.twic-done) {
+              transform: scale(1.2) !important;
+          }
+      }
+  }
 }
 
 .twic-life-cycle ul {
-    @media screen and (min-width: 425px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  @media screen and (min-width: 425px) {
+      grid-template-columns: repeat(2, 1fr);
+  }
 
-    @media screen and (min-width: 768px) {
-        grid-template-columns: repeat(4, 1fr);
-    }
+  @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(4, 1fr);
+  }
 
-    @media screen and (min-width: 1440px) {
-        grid-template-columns: repeat(6, 1fr);
-    }
+  @media screen and (min-width: 1440px) {
+      grid-template-columns: repeat(6, 1fr);
+  }
 }

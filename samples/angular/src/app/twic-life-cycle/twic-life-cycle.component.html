@@ -10,13 +10,11 @@
         </p>
     </TwicAbstract>
     <div class="twic-life-cycle">
-        <ul class="">
+        <ul>
             <ng-container *ngFor="let image of images">
                 <li class="twic-item">
-                    <a href="#">
-                        <TwicImg [src]="image.url" [focus]="image.focus" transition="fade+zoom" transitionDuration="500ms" ratio="4/3" mode="cover">
-                        </TwicImg>
-                    </a>
+                    <TwicImg [src]="image.url" [focus]="image.focus" transition="fade+zoom" transitionDuration="500ms" ratio="4/3" mode="cover">
+                    </TwicImg>
                 </li>
             </ng-container>
         </ul>

@@ -229,13 +229,11 @@ const TwicLifeCycle = () => (
             <ul className="">
                 { images.map( ( image, i ) => (
                     <li className="twic-item" key={ i }>
-                        <a href="#">
-                            <TwicImg
-                                src={ image.url } focus={ image.focus }
-                                transition="fade+zoom"
-                                ratio="4/3" mode="cover"
-                            />
-                        </a>
+                        <TwicImg
+                            src={ image.url } focus={ image.focus }
+                            transition="fade+zoom"
+                            ratio="4/3" mode="cover"
+                        />
                     </li>
                 ) ) }
             </ul>
