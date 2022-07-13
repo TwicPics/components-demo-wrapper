@@ -148,24 +148,24 @@ export default {
     & figcaption {
       position: absolute;
       right: 0;
-      bottom: 0%;
+      bottom: 0;
       left: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       margin: 12px;
-      font-size: 1.1em;
+      height: 40px;
+      text-align: center;
+      font-size: 1em;
+      font-weight: 600;
       color: #fff;
       background: rgba(0, 0, 0, 0.5);
       transition: all 0.3s;
-      & p {
-        padding: 5px;
-      }
     }
     &:hover {
       cursor: pointer;
       & figcaption {
-        bottom: 40%;
+          bottom: 40%;
       }
     }
   }

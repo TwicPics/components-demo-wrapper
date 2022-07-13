@@ -49,7 +49,7 @@ const categories = [
         {
             "route": `/working-without-images`,
             "imgSrc": `components/woman.jpg`,
-            "title": `Working without images`,
+            "title": `Page templating`,
         },
     ],
   },
@@ -146,7 +146,7 @@ const categories = [
       height: 40px;
       text-align: center;
       font-size: 1em;
-      font-weight: 500;
+      font-weight: 600;
       color: #fff;
       background: rgba(0, 0, 0, 0.5);
       transition: all 0.3s;
