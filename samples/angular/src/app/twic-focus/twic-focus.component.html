@@ -36,12 +36,19 @@
         <button class="twic-button" (click)="onChangeFocus()">
           Click to change the focus point
         </button>
+        <ng-template [ngIf]="focusArray[focusIndex] !== ''" [ngIfElse]="noFocus">
           <TwicImg [src]="imgUrl" [focus]="focusArray[focusIndex]" ratio="4/5"></TwicImg>
-        <span>focus={{focusArray[ focusIndex ] ? focusArray[ focusIndex ] : 'none (default)'}}</span>
+          <span>focus={{focusArray[ focusIndex ]}}</span>
+        </ng-template>
+
+        <ng-template #noFocus>
+          <TwicImg [src]="imgUrl" ratio="4/5"></TwicImg>
+          <span>No focus (default)</span>
+        </ng-template>
       </div>
       <div class="twic-item">
         <TwicImg [src]="imgUrl" ratio="4/5"></TwicImg>
-        <span>focus='none' (default)</span>
+        <span>No focus (default)</span>
       </div>
       <div class="twic-item">
         <TwicImg [src]="imgUrl" ratio="4/5" focus="1920x1282"></TwicImg>
