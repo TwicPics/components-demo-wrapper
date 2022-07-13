@@ -211,10 +211,10 @@ const images = [
     ...seed,
 ];
 
-const TwicLifeCycle = () => (
+const TwicGridAndZoom = () => (
     <TwicWrapper>
         <TwicAbstract
-            title="TwicPics Grid & Zoom"
+            title="TwicPics grid & zoom"
             codeSandUrl="https://codesandbox.io/s/twicpics-x-react-grid-zoom-4eq9x"
             codeSandBoxName="TwicPics x React - Grid & Zoom"
         >
@@ -225,7 +225,7 @@ const TwicLifeCycle = () => (
                 <strong>Scroll down to experience lazy loading in action</strong>.
             </p>
         </TwicAbstract>
-        <div className="twic-life-cycle">
+        <div className="twic-grid-and-zoom">
             <ul className="">
                 { images.map( ( image, i ) => (
                     <li className="twic-item" key={ i }>
@@ -240,4 +240,4 @@ const TwicLifeCycle = () => (
         </div>
     </TwicWrapper>
 );
-export default TwicLifeCycle;
+export default TwicGridAndZoom;

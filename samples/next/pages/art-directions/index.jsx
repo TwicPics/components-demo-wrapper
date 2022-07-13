@@ -9,13 +9,13 @@ const imgUrl = `components/greece.jpg`;
 /**
  * demonstrates that setting up components using CSS enables hassle-free responsive designs.
  */
-const TwicArtDirection = () => (
+const TwicArtDirections = () => (
     <TwicWrapper framework="next">
-        <div className={ styles[ `twic-art-direction-container` ] }>
+        <div className={ styles[ `twic-art-directions-container` ] }>
             <TwicAbstract
-                title="Art Direction with CSS Media Queries"
+                title="Art directions with CSS media queries"
                 codeSandUrl="https://codesandbox.io/s/twicpics-x-next-art-direction-ps2zj"
-                codeSandBoxName="TwicPics x Next - Art Direction"
+                codeSandBoxName="TwicPics x Next - Art Directions"
             >
                 <p>Setting up components using CSS enables hassle-free responsive designs.</p>
                 <p>You do not need to create a set of images derived from the original.</p>
@@ -36,4 +36,4 @@ const TwicArtDirection = () => (
     </TwicWrapper>
 );
 
-export default TwicArtDirection;
+export default TwicArtDirections;

@@ -13,7 +13,7 @@ import { TwicBasicGridComponent } from "./twic-basic-grid/twic-basic-grid.compon
 import { TwicFlipCardComponent } from "./twic-flip-card/twic-flip-card.component";
 import { TwicStyleDrivenComponent } from "./twic-style-driven/twic-style-driven.component";
 import { TwicFocusComponent } from "./twic-focus/twic-focus.component";
-import { TwicLifeCycleComponent } from "./twic-life-cycle/twic-life-cycle.component";
+import { TwicGridAndZoomComponent } from './twic-grid-and-zoom/twic-grid-and-zoom.component';
 import { TwicModalComponent } from "./twic-modal/twic-modal.component";
 import { TwicModeComponent } from "./twic-mode/twic-mode.component";
 import { TwicPlaceholderComponent } from "./twic-placeholder/twic-placeholder.component";
@@ -27,20 +27,20 @@ import { SlideshowComponent } from "./twic-slideshow/slideshow/slideshow.compone
 
 const appRoutes: Routes = [
   { path: "menu", component: MenuComponent },
-  { path: "twicArtDirection", component: TwicArtDirectionComponent },
-  { path: "twicBasicGrid", component: TwicBasicGridComponent },
-  { path: "twicFlipCard", component: TwicFlipCardComponent },
-  { path: "twicFocus", component: TwicFocusComponent },
-  { path: "twicLifeCycle", component: TwicLifeCycleComponent },
-  { path: "twicMode", component: TwicModeComponent },
-  { path: "twicModal", component: TwicModalComponent },
-  { path: "twicPlaceholder", component: TwicPlaceholderComponent },
-  { path: "twicPosition", component: TwicPositionComponent },
-  { path: "twicRatio", component: TwicRatioComponent },
-  { path: "twicSlider", component: TwicSliderComponent },
-  { path: "twicSlideshow", component: TwicSlideshowComponent },
-  { path: "twicStyleDriven", component: TwicStyleDrivenComponent },
-  { path: "twicTransition", component: TwicTransitionComponent },
+  { path: "art-directions", component: TwicArtDirectionComponent },
+  { path: "basic-grid", component: TwicBasicGridComponent },
+  { path: "flip-cards", component: TwicFlipCardComponent },
+  { path: "focus", component: TwicFocusComponent },
+  { path: "grid-and-zoom", component: TwicGridAndZoomComponent },
+  { path: "mode", component: TwicModeComponent },
+  { path: "modal", component: TwicModalComponent },
+  { path: "placeholder", component: TwicPlaceholderComponent },
+  { path: "position", component: TwicPositionComponent },
+  { path: "ratio", component: TwicRatioComponent },
+  { path: "slider", component: TwicSliderComponent },
+  { path: "slideshow", component: TwicSlideshowComponent },
+  { path: "style-driven", component: TwicStyleDrivenComponent },
+  { path: "transition", component: TwicTransitionComponent },
   {
     path: "",
     redirectTo: "menu",
@@ -56,7 +56,7 @@ const appRoutes: Routes = [
     TwicBasicGridComponent,
     TwicFlipCardComponent,
     TwicFocusComponent,
-    TwicLifeCycleComponent,
+    TwicGridAndZoomComponent,
     TwicStyleDrivenComponent,
     TwicModeComponent,
     TwicPlaceholderComponent,

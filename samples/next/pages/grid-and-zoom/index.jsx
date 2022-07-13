@@ -211,7 +211,7 @@ const images = [
     ...seed,
 ];
 
-const TwicLifeCycle = () => (
+const TwicGridAndZoom = () => (
     <TwicWrapper framework="next">
         <TwicAbstract
             title="TwicPics Grid & Zoom Effect"
@@ -225,7 +225,7 @@ const TwicLifeCycle = () => (
                 <strong>Scroll down to experience lazy loading in action</strong>.
             </p>
         </TwicAbstract>
-        <div className={ styles[ `twic-life-cycle` ] }>
+        <div className={ styles[ `twic-grid-and-zoom` ] }>
             <ul>
                 { images.map( ( image, i ) => (
                     <li className="twic-item" key={ i }>
@@ -240,4 +240,4 @@ const TwicLifeCycle = () => (
         </div>
     </TwicWrapper>
 );
-export default TwicLifeCycle;
+export default TwicGridAndZoom;

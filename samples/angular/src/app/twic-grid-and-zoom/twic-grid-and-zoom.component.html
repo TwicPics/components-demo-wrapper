@@ -1,0 +1,22 @@
+<TwicWrapper>
+  <TwicAbstract title="Grid & zoom effect"
+      codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-angular-twicpics-grid-zoom-xwh9yp"
+      codeSandBoxName="TwicPics x Angular - TwicPics Grid & Zoom">
+      <p>
+          A responsive grid of images enhanced by a zoom transition.
+      </p>
+      <p>
+          <strong>Scroll down to experience lazy loading in action</strong>.
+      </p>
+  </TwicAbstract>
+  <div class="twic-grid-and-zoom">
+      <ul>
+          <ng-container *ngFor="let image of images">
+              <li class="twic-item">
+                  <TwicImg [src]="image.url" [focus]="image.focus" transition="fade+zoom" transitionDuration="500ms" ratio="4/3" mode="cover">
+                  </TwicImg>
+              </li>
+          </ng-container>
+      </ul>
+  </div>
+</TwicWrapper>

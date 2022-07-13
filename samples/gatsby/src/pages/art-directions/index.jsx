@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import {
-    twicArtDirectionContainer,
+    twicArtDirectionsContainer,
     styleDrivenResponsive,
 } from "./index.module.scss";
 import { TwicWrapper, TwicAbstract } from "@twicpics/components-demo-wrapper/react";
@@ -12,13 +12,13 @@ const imgUrl = `components/greece.jpg`;
 /**
  * demonstrates that setting up components using CSS enables hassle-free responsive designs.
  */
-const TwicArtDirection = () => (
+const TwicArtDirections = () => (
     <TwicWrapper framework="gatsby">
-        <div className={ twicArtDirectionContainer }>
+        <div className={ twicArtDirectionsContainer }>
             <TwicAbstract
-                title="Art Direction with CSS Media Queries"
+                title="Art directions with CSS media queries"
                 codeSandUrl="https://codesandbox.io/s/twicpics-x-gatsby-art-direction-k4n458"
-                codeSandBoxName="TwicPics x Gatsby - Art Direction"
+                codeSandBoxName="TwicPics x Gatsby - Art Directions"
             >
                 <p>Setting up components using CSS enables hassle-free responsive designs.</p>
                 <p>You do not need to create a set of images derived from the original.</p>
@@ -39,4 +39,4 @@ const TwicArtDirection = () => (
     </TwicWrapper>
 );
 
-export default TwicArtDirection;
+export default TwicArtDirections;

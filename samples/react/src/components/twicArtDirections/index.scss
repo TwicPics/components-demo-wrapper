@@ -1,5 +1,5 @@
 
-.twic-art-direction-container {
+.twic-art-directions-container {
     .style-driven-responsive {
         --twic-ratio: calc(2/3);
         --twic-mode: cover;
@@ -7,7 +7,7 @@
     }
 }
 
-.twic-art-direction-container .style-driven-responsive {
+.twic-art-directions-container .style-driven-responsive {
     max-width: 1024px;
     
     @media (min-width: 640px) {

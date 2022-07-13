@@ -208,7 +208,7 @@ const images = [...seed, ...seed, ...seed];
     <p>A responsive grid of images enhanced by zoom transition.</p>
     <p><strong>Scroll down to experience lazy loading in action</strong>.</p>
   </TwicAbstract>
-  <div class="twic-life-cycle">
+  <div class="twic-grid-and-zoom">
     <ul>
       {#each images as image}
         <li class="twic-item">
@@ -229,7 +229,7 @@ const images = [...seed, ...seed, ...seed];
 
 
 <style lang="scss">
-.twic-life-cycle {
+.twic-grid-and-zoom {
   ul {
     display: grid;
     gap: 1rem;
@@ -247,7 +247,7 @@ const images = [...seed, ...seed, ...seed];
   }
 }
 
-.twic-life-cycle ul {
+.twic-grid-and-zoom ul {
   @media screen and (min-width: 425px) {
     grid-template-columns: repeat(2, 1fr);
   }

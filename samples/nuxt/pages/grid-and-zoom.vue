@@ -11,7 +11,7 @@
       </p>
       <p><strong>Scroll down to experience lazy loading in action</strong>.</p>
     </TwicAbstract>
-    <div class="twic-life-cycle">
+    <div class="twic-grid-and-zoom">
       <ul>
         <li v-for="(image, index) in images" :key="index" class="twic-item">
             <TwicImg
@@ -250,7 +250,7 @@ export default {
 </script>
 
 <style lang="scss">
-.twic-life-cycle {
+.twic-grid-and-zoom {
   ul {
     display: grid;
     gap: 1rem;
@@ -268,7 +268,7 @@ export default {
   }
 }
 
-.twic-life-cycle ul {
+.twic-grid-and-zoom ul {
   @media screen and (min-width: 425px) {
     grid-template-columns: repeat(2, 1fr);
   }

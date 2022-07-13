@@ -1,6 +1,6 @@
 /* eslint-disable max-lines */
 import React from "react";
-import { twicLifeCycle } from "./index.module.scss";
+import { twicGridAndZoom } from "./index.module.scss";
 import { TwicWrapper, TwicAbstract } from "@twicpics/components-demo-wrapper/react";
 import { TwicImg } from "@twicpics/components/react";
 
@@ -211,7 +211,7 @@ const images = [
     ...seed,
 ];
 
-const TwicLifeCycle = () => (
+const TwicGridAndZoom = () => (
     <TwicWrapper framework="gatsby">
         <TwicAbstract
             title="Grid & Zoom effect"
@@ -225,7 +225,7 @@ const TwicLifeCycle = () => (
                 <strong>Scroll down to experience lazy loading in action</strong>.
             </p>
         </TwicAbstract>
-        <div className={ twicLifeCycle }>
+        <div className={ twicGridAndZoom }>
             <ul>
                 { images.map( ( image, i ) => (
                     <li className="twic-item" key={ i }>
@@ -240,4 +240,4 @@ const TwicLifeCycle = () => (
         </div>
     </TwicWrapper>
 );
-export default TwicLifeCycle;
+export default TwicGridAndZoom;

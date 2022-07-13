@@ -1,11 +1,11 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: "app-twic-life-cycle",
-  templateUrl: "./twic-life-cycle.component.html",
-  styleUrls: ["./twic-life-cycle.component.scss"],
+  selector: "app-twic-grid-and-zoom",
+  templateUrl: "./twic-grid-and-zoom.component.html",
+  styleUrls: ["./twic-grid-and-zoom.component.scss"],
 })
-export class TwicLifeCycleComponent implements OnInit {
+export class TwicGridAndZoomComponent implements OnInit {
   /**
    * list of unit images
    */

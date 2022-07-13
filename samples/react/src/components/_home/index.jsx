@@ -9,24 +9,24 @@ const categories = [
         "title": `<TwicImg> use cases`,
         "items": [
             {
+                "route": `/art-directions`,
+                "imgSrc": `components/greece.jpg`,
+                "title": `Art directions`,
+              },
+              {
                 "route": `/basic-grid`,
                 "imgSrc": `https://assets.twicpics.com/examples/football.jpg`,
                 "title": `Basic example`,
             },
             {
-                "route": `/art-direction`,
-                "imgSrc": `components/greece.jpg`,
-                "title": `Art direction`,
-            },
-            {
-                "route": `/flip`,
+                "route": `/flip-cards`,
                 "imgSrc": `components/flip/orange-1.jpg`,
                 "title": `Flip cards`,
             },
             {
-                "route": `/life-cycle`,
+                "route": `/grid-and-zoom`,
                 "imgSrc": `components/portraits/woman-1.jpg`,
-                "title": `Grid & Zoom`,
+                "title": `Grid & zoom`,
             },
             {
                 "route": `/modal`,
@@ -69,7 +69,7 @@ const categories = [
                 "title": `placeholder`,
             },
             {
-                "route": `/positions`,
+                "route": `/position`,
                 "imgSrc": `components/position/horse.jpg`,
                 "title": `position`,
             },

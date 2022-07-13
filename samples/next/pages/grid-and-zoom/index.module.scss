@@ -1,4 +1,4 @@
-.twic-life-cycle {
+.twic-grid-and-zoom {
     ul {
         display: grid;
         gap: 1rem;
@@ -9,14 +9,14 @@
 
     li {
         &:hover {
-            & ::ng-deep img.twic-done {
+            & img:global(.twic-done) {
                 transform: scale(1.2) !important;
             }
         }
     }
 }
 
-.twic-life-cycle ul {
+.twic-grid-and-zoom ul {
     @media screen and (min-width: 425px) {
         grid-template-columns: repeat(2, 1fr);
     }

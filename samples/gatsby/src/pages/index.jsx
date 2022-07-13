@@ -9,42 +9,42 @@ const categories = [
         "title": `<TwicImg> use cases`,
         "items": [
             {
-                "route": `/twicBasicGrid`,
+                "route": `/art-directions`,
+                "imgSrc": `components/greece.jpg`,
+                "title": `Art directions`,
+            },
+            {
+                "route": `/basic-grid`,
                 "imgSrc": `https://assets.twicpics.com/examples/football.jpg`,
                 "title": `Basic example`,
             },
             {
-                "route": `/twicArtDirection`,
-                "imgSrc": `components/greece.jpg`,
-                "title": `Art direction`,
-            },
-            {
-                "route": `/twicFlipCard`,
+                "route": `/flip-cards`,
                 "imgSrc": `components/flip/orange-1.jpg`,
                 "title": `Flip cards`,
             },
             {
-                "route": `/twicLifeCycle`,
+                "route": `/grid-and-zoom`,
                 "imgSrc": `components/portraits/woman-1.jpg`,
-                "title": `Grid & Zoom`,
+                "title": `Grid & zoom`,
             },
             {
-                "route": `/twicModal`,
+                "route": `/modal`,
                 "imgSrc": `components/modal/seagull.jpg`,
                 "title": `Modal`,
             },
             {
-                "route": `/twicSlider`,
+                "route": `/slider`,
                 "imgSrc": `components/slider/pantone.jpg`,
                 "title": `Slider`,
             },
             {
-                "route": `/twicSlideshow`,
+                "route": `/slideshow`,
                 "imgSrc": `components/slideshow/space-1.jpg`,
                 "title": `Slideshow`,
             },
             {
-                "route": `/twicStyleDriven`,
+                "route": `/style-driven`,
                 "imgSrc": `components/horse.jpg`,
                 "title": `Style driven`,
             },
@@ -54,32 +54,32 @@ const categories = [
         "title": `<TwicImg> properties`,
         "items": [
             {
-                "route": `/twicFocus`,
+                "route": `/focus`,
                 "imgSrc": `components/puppy.jpg`,
                 "title": `focus`,
             },
             {
-                "route": `/twicMode`,
+                "route": `/mode`,
                 "imgSrc": `components/fox.jpg`,
                 "title": `mode`,
             },
             {
-                "route": `/twicPlaceholder`,
+                "route": `/placeholder`,
                 "imgSrc": `components/cat.jpg`,
                 "title": `placeholder`,
             },
             {
-                "route": `/twicPosition`,
+                "route": `/position`,
                 "imgSrc": `components/position/horse.jpg`,
                 "title": `position`,
             },
             {
-                "route": `/twicRatio`,
+                "route": `/ratio`,
                 "imgSrc": `components/woman-and-winter.jpg`,
                 "title": `ratio`,
             },
             {
-                "route": `/twicTransition`,
+                "route": `/transition`,
                 "imgSrc": `components/peacock.jpg`,
                 "title": `transition`,
             },

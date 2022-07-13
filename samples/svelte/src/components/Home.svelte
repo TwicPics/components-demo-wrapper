@@ -7,14 +7,14 @@ const categories = [
     "title": `<TwicImg> use cases`,
     "items": [
         {
-            "route": `/basic-grid`,
-            "imgSrc": `https://assets.twicpics.com/examples/football.jpg`,
-            "title": `Basic example`,
-        },
-        {
             "route": `/art-directions`,
             "imgSrc": `components/greece.jpg`,
             "title": `Art directions`,
+        },
+        {
+            "route": `/basic-grid`,
+            "imgSrc": `https://assets.twicpics.com/examples/football.jpg`,
+            "title": `Basic example`,
         },
         {
             "route": `/flip-cards`,
@@ -24,7 +24,7 @@ const categories = [
         {
             "route": `/grid-and-zoom`,
             "imgSrc": `components/portraits/woman-1.jpg`,
-            "title": `Grid & Zoom`,
+            "title": `Grid & zoom`,
         },
         {
             "route": `/modal`,
@@ -47,7 +47,7 @@ const categories = [
             "title": `Style driven`,
         },
         {
-            "route": `/working-without-images`,
+            "route": `/page-templating`,
             "imgSrc": `components/woman.jpg`,
             "title": `Page templating`,
         },

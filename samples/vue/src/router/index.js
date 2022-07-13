@@ -5,7 +5,7 @@ import TwicArtDirections from "../components/TwicArtDirections.vue";
 import TwicBasicGrid from "../components/TwicBasicGrid.vue";
 import TwicFlipCards from "../components/TwicFlipCards.vue";
 import TwicFocus from "../components/TwicFocus.vue";
-import TwicGridAndZoom from "../components/TwicLifeCycle.vue";
+import TwicGridAndZoom from "../components/TwicGridAndZoom.vue";
 import TwicModal from "../components/twic-modal/TwicModal.vue";
 import TwicMode from "../components/TwicMode.vue";
 import TwicPlaceholder from "../components/TwicPlaceholder.vue";
@@ -25,72 +25,72 @@ const routes = [
     component: Menu,
   },
   {
-    path: "/twicArtDirections",
+    path: "/art-directions",
     name: "TwicArtDirections",
     component: TwicArtDirections,
   },
   {
-    path: "/twicBasicGrid",
+    path: "/basic-grid",
     name: "TwicBasicGrid",
     component: TwicBasicGrid,
   },
   {
-    path: "/twicFlipCards",
+    path: "/flip-cards",
     name: "TwicFlipCards",
     component: TwicFlipCards,
   },
   {
-    path: "/twicFocus",
+    path: "/focus",
     name: "TwicFocus",
     component: TwicFocus,
   },
   {
-    path: "/twicGridAndZoom",
+    path: "/grid-and-zoom",
     name: "TwicGridAndZoom",
     component: TwicGridAndZoom,
   },
   {
-    path: "/twicModal",
+    path: "/modal",
     name: "TwicModal",
     component: TwicModal,
   },
   {
-    path: "/twicMode",
+    path: "/mode",
     name: "TwicMode",
     component: TwicMode,
   },
   {
-    path: "/twicPlaceholder",
+    path: "/placeholder",
     name: "TwicPlaceholder",
     component: TwicPlaceholder,
   },
   {
-    path: "/twicPosition",
+    path: "/position",
     name: "TwicPosition",
     component: TwicPosition,
   },
   {
-    path: "/twicRatio",
+    path: "/ratio",
     name: "TwicRatio",
     component: TwicRatio,
   },
   {
-    path: "/twicSlider",
+    path: "/slider",
     name: "TwicSlider",
     component: TwicSlider,
   },
   {
-    path: "/twicSlideshow",
+    path: "/slideshow",
     name: "TwicSlideshow",
     component: TwicSlideshow,
   },
   {
-    path: "/twicStyleDriven",
+    path: "/style-driven",
     name: "TwicStyleDriven",
     component: TwicStyleDriven,
   },
   {
-    path: "/twicTransition",
+    path: "/transition",
     name: "TwicTransition",
     component: TwicTransition,
   },
