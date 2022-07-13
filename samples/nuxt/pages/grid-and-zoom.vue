@@ -14,7 +14,6 @@
     <div class="twic-life-cycle">
       <ul>
         <li v-for="(image, index) in images" :key="index" class="twic-item">
-          <a href="#">
             <TwicImg
               :src="image.url"
               :focus="image.focus"
@@ -24,7 +23,6 @@
               mode="cover"
             >
             </TwicImg>
-          </a>
         </li>
       </ul>
     </div>
@@ -252,13 +250,6 @@ export default {
 </script>
 
 <style lang="scss">
-.display-block-pointer {
-  cursor: pointer;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
 .twic-life-cycle {
   ul {
     display: grid;
@@ -268,20 +259,11 @@ export default {
     width: 100%;
   }
 
-  a {
-    @extend .display-block-pointer;
-    padding-bottom: 75%;
-    position: relative;
+  li {
     &:hover {
       & img.twic-done {
         transform: scale(1.2) !important;
       }
-    }
-    & img {
-      @extend .display-block-pointer;
-    }
-    & .twic-w {
-      position: absolute;
     }
   }
 }

@@ -1,10 +1,3 @@
-.display-block-pointer {
-    cursor: pointer;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
 .twic-life-cycle {
     ul {
         display: grid;
@@ -14,20 +7,11 @@
         width: 100%;
     }
 
-    a {
-        @extend .display-block-pointer;
-        padding-bottom: 75%;
-        position: relative;
+    li {
         &:hover {
             & ::ng-deep img.twic-done {
                 transform: scale(1.2) !important;
             }
-        }
-        & ::ng-deep img {
-            @extend .display-block-pointer;
-        }
-        & ::ng-deep .twic-w {
-            position: absolute;
         }
     }
 }
