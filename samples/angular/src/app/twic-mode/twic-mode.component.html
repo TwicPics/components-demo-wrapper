@@ -29,20 +29,28 @@
           Click to change the mode value
         </button>
           <TwicImg [src]="urlValues[ modeIndex ]" [mode]="modeValues[ modeIndex ]"></TwicImg>
-    <span>mode=`{{ modeValues[ modeIndex ] }}`</span>
+      <span>
+        <span class="twic-code">
+          mode="{{ modeValues[ modeIndex ] }}"
+        </span>
+      </span>
       </div>
-      <div class=" twic-item">
+      <div class="twic-item">
         <TwicImg [src]="imgUrl"></TwicImg>
-        <span>No mode set (cover by default)</span>
+        <span>No mode set (<span class="twic-code">cover</span> by default)</span>
       </div>
       <div class="twic-item">
         <TwicImg [src]="imgUrl" mode="cover"></TwicImg>
-        <span>mode=`cover`</span>
+        <span>
+          <span class="twic-code">mode="cover"</span>
+        </span>
       </div>
       <div class="twic-item">
         <TwicImg [src]="imgUrl" mode="contain"></TwicImg>
-        <span>mode=`contain`</span>
+        <span>
+          <span class="twic-code">mode="contain"</span>
+        </span>
       </div>
-    </div>
+      </div>
   </div>
 </TwicWrapper>

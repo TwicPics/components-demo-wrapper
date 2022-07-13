@@ -4,30 +4,33 @@
     <TwicAbstract title="focus property" codeSandBoxUrl="https://codesandbox.io/s/twicpics-x-angular-focus-8nuqtc"
       codeSandBoxName="TwicPics x Angular - Focus">
       <p>
-        The <span class="twic-code">focus</span> property will change
-        the focus point coordinates of the image (only useful with
+        The <span class="twic-code">focus</span> property will change the
+        focus point coordinates of the image (only useful with
         <span class="twic-code">mode=`cover`</span>).
         <br />
-        It allows to determine what should be visible when the image is cropped.
+        It allows to determine what should be visible when the image is
+        cropped.
       </p>
       <p>
-        You can set the focus by using <em>coordinates </em>
-        or <span class="twic-code">auto</span> values:
+        You can set the focus by using <em>coordinates </em> or
+        <span class="twic-code">auto</span> values:
       </p>
       <ul>
         <li>
-          <em>Coordinates</em> represent a point in the image, specified as a couple of
-          positive lengths, separated by the character
-          <span class="twic-code">x</span>.
+          <strong>Coordinates</strong> represent a point in the image,
+          specified as a couple of positive lengths, separated by the
+          character <span class="twic-code">x</span>.
           <br />
-          <i>eg</i> : 1920x1282
-          <br />1920 is the coordinate along the x-axis
-          (following the width of the image),<br />1282
-          is the coordinate along the y-axis (following the height of the image).
+          As an example, in
+          <span class="twic-code">focus="1920x1282"</span>:<br />
+          - <span class="twic-code">1920</span> is the coordinate along the
+          x-axis (following the width of the image) <br />
+          - and <span class="twic-code">1282</span> is the coordinate along
+          the y-axis (following the height of the image)
         </li>
         <li>
-          If <span class="twic-code">auto</span> is used in place of actual coordinates,
-          the focus point will be chosen automagically for you!
+          If <span class="twic-code">auto</span> is used in place of actual
+          coordinates, the focus point will be chosen automagically for you!
         </li>
       </ul>
     </TwicAbstract>
@@ -38,7 +41,10 @@
         </button>
         <ng-template [ngIf]="focusArray[focusIndex] !== ''" [ngIfElse]="noFocus">
           <TwicImg [src]="imgUrl" [focus]="focusArray[focusIndex]" ratio="4/5"></TwicImg>
-          <span>focus={{focusArray[ focusIndex ]}}</span>
+          <span>
+            <span class="twic-code">
+              focus="{{focusArray[ focusIndex ]}}"</span>
+            </span>
         </ng-template>
 
         <ng-template #noFocus>
@@ -52,11 +58,19 @@
       </div>
       <div class="twic-item">
         <TwicImg [src]="imgUrl" ratio="4/5" focus="1920x1282"></TwicImg>
-        <span>focus='1920x1282'</span>
+        <span>
+          <span class="twic-code">
+            focus="1920x1282"
+          </span>
+        </span>
       </div>
       <div class="twic-item">
         <TwicImg [src]="imgUrl" ratio="4/5" focus="auto"></TwicImg>
-        <span>focus='auto'</span>
+        <span>
+          <span class="twic-code">
+            focus="auto"
+          </span>
+        </span>
       </div>
     </div>
   </div>

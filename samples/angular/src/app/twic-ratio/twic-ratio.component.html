@@ -8,20 +8,24 @@
         The <span class="twic-code">ratio</span> property determines the value
         of the width/height ratio of the image display area.
       </p>
-      <p>
-        Value can be:
-      </p>
+      <p>Its value can be:</p>
       <ul>
         <li>
-          a ratio expression of the form width/height like 4/3, 16/9 or 1/1.
+          a ratio expression of the form width/height like
+          <span class="twic-code">4/3</span>,
+          <span class="twic-code">16/9</span>, or
+          <span class="twic-code">1/1</span> .
         </li>
         <li>
-          a number that is the result of such an expression like 1.85, 2 or 0.5.
+          a number that is the result of such an expression like
+          <span class="twic-code">1.85</span>,
+          <span class="twic-code">2</span>, or
+          <span class="twic-code">0.5</span>.
         </li>
       </ul>
       <p>
-        A square area (<span class="twic-code">
-          ratio=`1`</span>) will be created by default.
+        A square area (<span class="twic-code"> ratio="1"</span>) will be
+        created by default.
       </p>
     </TwicAbstract>
     <div class="twic-testing-container">
@@ -30,19 +34,35 @@
     </div>
     <div class="twic-grid" [ngClass]="{ 'full-width': fullWidthAera, 'half-width': fullWidthAera === false }">
       <div class="twic-item">
-          <TwicImg [src]="imgUrl" [ratio]="ratioValues[ ratioIndex ]">
-          </TwicImg>
-        <span>
-          ratio={{ ratioValues[ ratioIndex ] ? ratioValues[ ratioIndex ] : '1 [default]' }} (cover)
+        <TwicImg [src]="imgUrl" [ratio]="ratioValues[ratioIndex]">
+        </TwicImg>
+      <span>
+        <span class="twic-code">ratio="{{
+          ratioValues[ratioIndex] ? ratioValues[ratioIndex] : 1
+        }}"</span>
+        <ng-template [NgIf]="!ratioValues[ratioIndex]">
+          [default ratio]
+        </ng-template>
+        (mode is <span class="twic-code">cover</span>)
+      </span>
+    </div>
+    <div class="twic-item">
+        <TwicImg
+        [src]="imgUrl"
+        mode="contain"
+        [ratio]="ratioValues[ratioIndex]"
+      >
+      </TwicImg>
+      <span>
+        <span class="twic-code">
+          ratio="{{ ratioValues[ratioIndex] ? ratioValues[ratioIndex] : 1 }}"
         </span>
-      </div>
-      <div class="twic-item">
-          <TwicImg [src]="imgUrl" mode="contain" [ratio]="ratioValues[ ratioIndex ]">
-          </TwicImg>
-        <span>
-          ratio={{ ratioValues[ ratioIndex ] ? ratioValues[ ratioIndex ] : '1 [default]' }} (contain)
-        </span>
-      </div>
+        <ng-template [NgIf]="!ratioValues[ratioIndex]">
+          [default ratio]
+        </ng-template>
+        (mode is <span class="twic-code">contain</span>)
+      </span>
+    </div>
     </div>
   </div>
 </TwicWrapper>

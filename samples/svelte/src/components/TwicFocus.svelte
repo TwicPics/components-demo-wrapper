@@ -67,7 +67,7 @@ const onChangeFocus = () => {
           </span>
         {:else}
           <span v-else>
-            <span class="twic-code">focus="none"</span>
+            <span>No focus</span>
             (default)
           </span>
         {/if}
@@ -75,7 +75,7 @@ const onChangeFocus = () => {
       <div class="twic-item">
         <TwicImg src={ imgUrl } ratio="4/5" placeholder="preview"></TwicImg>
         <span>
-          <span class="twic-code">focus="none"</span>
+          <span>No focus</span>
             (default)
         </span>
       </div>

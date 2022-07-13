@@ -8,21 +8,25 @@
         CSS variables.
       </p>
     </TwicAbstract>
-    <h2>
-      1. Display ratio with <span class=" twic-code">--twic-ratio</span>
-    </h2>
+    <h2>1. Display ratio with <span class="twic-code">--twic-ratio</span></h2>
     <div class="twic-grid">
       <div class="twic-item landscape">
         <TwicImg [src]="imgUrl"></TwicImg>
-        <span>class landscape</span>
+        <span>class
+          <span class="twic-code">landscape</span>
+        </span>
       </div>
       <div class="twic-item square">
         <TwicImg [src]="imgUrl"></TwicImg>
-        <span>class square</span>
+        <span>class
+          <span class="twic-code">square</span>
+        </span>
       </div>
       <div class="twic-item portrait">
         <TwicImg [src]="imgUrl"></TwicImg>
-        <span>class portrait</span>
+        <span>class
+          <span class="twic-code">portrait</span>
+        </span>
       </div>
     </div>
     <h2>
@@ -34,15 +38,25 @@
     <div class="twic-grid">
       <div class="twic-item contain left">
         <TwicImg [src]="imgUrl" ratio="16/9"></TwicImg>
-        <span>class contain + class left</span>
+        <span>class
+          <span class="twic-code">contain</span>
+          & class
+          <span class="twic-code">left</span>
+        </span>
       </div>
       <div class="twic-item contain right">
         <TwicImg [src]="imgUrl" ratio="16/9"></TwicImg>
-        <span>class contain + class right</span>
+        <span>class
+          <span class="twic-code">contain</span>
+          & class 
+          <span class="twic-code">right</span>
+        </span>
       </div>
       <div class="twic-item cover">
         <TwicImg [src]="imgUrl" focus="50px100p" ratio="16/9"></TwicImg>
-        <span>class cover</span>
+        <span>class 
+          <span class="twic-code">cover</span>
+        </span>
       </div>
     </div>
     <h2>
@@ -52,15 +66,21 @@
     <div class="twic-grid">
       <div class="twic-item lg">
         <TwicImg [src]="imgUrl"></TwicImg>
-        <span>class lg</span>
+        <span>class 
+          <span class="twic-code">lg</span>
+        </span>
       </div>
       <div class="twic-item md">
         <TwicImg [src]="imgUrl"></TwicImg>
-        <span>class md</span>
+        <span>class
+          <span class="twic-code">md</span>
+        </span>
       </div>
       <div class="twic-item sm">
         <TwicImg [src]="imgUrl"></TwicImg>
-        <span>class sm</span>
+        <span>class
+          <span class="twic-code">sm</span>
+        </span>
       </div>
     </div>
   </div>
