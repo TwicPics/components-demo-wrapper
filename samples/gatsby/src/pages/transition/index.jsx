@@ -29,31 +29,36 @@ const TwicTransition = () => {
                     codeSandBoxName="TwicPics x Gatsby - Transition"
                 >
                     <p>
-                        The <span className="twic-code">transition</span> properties allow you
-                        to customize the effect used to reveal the image once it has been loaded.
+                      The <span className="twic-code">transition</span> properties allow you to
+                      customize the effect used to reveal the image once it has been loaded.
                     </p>
                     <ul>
-                        <li>
-                            <span class="twic-code">transition</span>: 
-                            determines how image will be revealed once loaded :
-                            with a <em>fade in</em> effect (`fade`), 
-                            a <em>zoom</em> effect (`zoom`), 
-                            <em>both</em> (`fade+zoom`) 
-                            or without any transition (`none`).
-                            (default: <span class="twic-code">fade</span>).
-                        </li>
-                        <li>
-                            <span className="twic-code">transitionDelay</span>: transition delay of
-                            the transition effect (default: <span className="twic-code">0ms</span>).
-                        </li>
-                        <li>
-                            <span className="twic-code">transitionDuration</span>: duration of the transition effect
-                            (default: <span className="twic-code">400ms</span>).
-                        </li>
-                        <li>
-                            <span className="twic-code">transitionTimingFunction</span>: CSS timing function applied
-                            to the transition effect (default: <span className="twic-code">ease</span>).
-                        </li>
+                      <li>
+                        <span className="twic-code">transition</span>: determines how the image
+                        will be revealed once loaded (default:{" "}
+                        <span className="twic-code">fade</span>). The possible values are:
+                        <br />
+                        - <span className="twic-code">fade</span>, for a{" "}
+                        <em>fade in</em> effect<br />
+                        - <span className="twic-code">zoom</span>, for a{" "}
+                        <em>zoom</em> effect<br />
+                        - <span className="twic-code">fade+zoom</span>, for both{" "}
+                        <em>fade</em> and <em>zoom</em> effects<br />
+                        - or <span className="twic-code">none</span>, for no transition
+                      </li>
+                      <li>
+                        <span className="twic-code">transitionDelay</span>: transition delay of
+                        the transition effect (default: <span className="twic-code">0ms</span>).
+                      </li>
+                      <li>
+                        <span className="twic-code">transitionDuration</span>: duration of the
+                        transition effect (default: <span className="twic-code">400ms</span>).
+                      </li>
+                      <li>
+                        <span className="twic-code">transitionTimingFunction</span>: CSS timing
+                        function applied to the transition effect (default:{" "}
+                        <span className="twic-code">ease</span>).
+                      </li>
                     </ul>
                 </TwicAbstract>
                 <div className="twic-testing-container">
@@ -68,7 +73,7 @@ const TwicTransition = () => {
                             placeholder="preview"
                         >
                         </TwicImg>
-                        <span>default</span>
+                        <span>Default values</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
@@ -77,28 +82,36 @@ const TwicTransition = () => {
                             placeholder="preview"
                         >
                         </TwicImg>
-                        <span>transition=`none`</span>
+                        <span>
+                          <span className="twic-code">transition="none"</span>
+                        </span>
                     </div>
-                    <div class="twic-item">
+                    <div className="twic-item">
                         <TwicImg  
                             src={imgUrl} 
                             transition="zoom">
                         </TwicImg>
-                        <span>transition=`zoom`</span>
+                        <span>
+                          <span className="twic-code">transition="zoom"</span>
+                        </span>
                     </div>
-                    <div class="twic-item">
+                    <div className="twic-item">
                         <TwicImg
                             src={imgUrl} 
                             transition="fade">
                         </TwicImg>
-                        <span>transition=`fade`</span>
+                        <span>
+                          <span className="twic-code">transition="fade"</span>
+                        </span>
                     </div>
-                    <div class="twic-item">
+                    <div className="twic-item">
                         <TwicImg 
                             src={imgUrl} 
                             transition="fade+zoom">
                         </TwicImg>
-                        <span>transition=`fade+zoom`</span>
+                        <span>
+                          <span className="twic-code">transition="fade+zoom"</span>
+                        </span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
@@ -107,7 +120,9 @@ const TwicTransition = () => {
                             placeholder="preview"
                         >
                         </TwicImg>
-                        <span>transitionDuration=`2000ms`</span>
+                        <span>
+                          <span className="twic-code">transitionDuration="2000ms"</span>
+                        </span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
@@ -117,7 +132,10 @@ const TwicTransition = () => {
                             placeholder="preview"
                         >
                         </TwicImg>
-                        <span>transitionDuration=`2000ms` and transitionTimingFunction=`linear`</span>
+                        <span>
+                          <span className="twic-code">transitionDuration="2000ms"</span>{" "}
+                          and <span className="twic-code">transitionTimingFunction="linear"</span>
+                        </span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
@@ -127,7 +145,9 @@ const TwicTransition = () => {
                             placeholder="preview"
                         >
                         </TwicImg>
-                        <span>transitionDelay=`2000ms`</span>
+                        <span>
+                          <span className="twic-code">transitionDelay="2000ms"</span>
+                        </span>
                     </div>
                 </div>
             </div>

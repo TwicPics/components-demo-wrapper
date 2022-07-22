@@ -32,23 +32,24 @@ const TwicMode = () => {
                     codeSandBoxName="TwicPics x Gatsby - Mode Property"
                 >
                     <p>
-                        <span>The </span>
-                        <span className="twic-code">mode</span>
-                        <span> property determines if the image fills or sits inside the area.</span>
+                      <span>The </span>
+                      <span className="twic-code">mode</span>
+                      <span>
+                        property determines if the image fills or sits inside the
+                        area.</span
+                      >
                     </p>
-                    <p>
-                        Here are the two accepted values:
-                        <ul>
-                            <li>
-                                <span className="twic-code">cover</span>:
-                                <span> the image fills the area and is cropped accordingly.</span>
-                            </li>
-                            <li>
-                                <span className="twic-code">contain</span>:
-                                <span> the image sits inside the area with no cropping.</span>
-                            </li>
-                        </ul>
-                    </p>
+                    <p>Here are the two accepted values:</p>
+                    <ul>
+                      <li>
+                        <span className="twic-code">cover</span>:
+                        <span> the image fills the area and is cropped accordingly.</span>
+                      </li>
+                      <li>
+                        <span className="twic-code">contain</span>:
+                        <span> the image sits inside the area with no cropping.</span>
+                      </li>
+                    </ul>
                 </TwicAbstract>
                 <div className="twic-grid">
                     <div className="twic-item">
@@ -61,19 +62,25 @@ const TwicMode = () => {
                             mode={ modesArray[ modeIndex ] }
                         >
                         </TwicImg>
-                        <span>mode=`{modesArray[ modeIndex ] }`</span>
+                        <span>
+                          <span className="twic-code">mode="{ modesArray[ modeIndex ] }"</span>
+                        </span>
                     </div>
                     <div className="twic-item">
                         <TwicImg src={imgUrl}></TwicImg>
-                        <span>No mode set (cover by default)</span>
+                        <span>No mode set (<span className="twic-code">cover</span> by default)</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg src={imgUrl} mode="cover"></TwicImg>
-                        <span>mode=`cover`</span>
+                        <span>
+                          <span className="twic-code">mode="cover"</span>
+                        </span>
                     </div>
                     <div className="twic-item">
                         <TwicImg src={imgUrl} mode="contain"></TwicImg>
-                        <span>mode=`contain`</span>
+                        <span>
+                          <span className="twic-code">mode="contain"</span>
+                        </span>
                     </div>
                 </div>
             </div>

@@ -37,15 +37,21 @@ const TwicStyleDriven = () => (
             <div className="twic-grid">
                 <div className={ `${ landscape } twic-item` }>
                     <TwicImg src={imgUrl}></TwicImg>
-                    <span>class landscape</span>
+                    <span>class{" "}
+                      <span className="twic-code">landscape</span>
+                    </span>
                 </div>
                 <div className={ ` ${ square } twic-item` }>
                     <TwicImg src={imgUrl}></TwicImg>
-                    <span>class square</span>
+                    <span>class{" "}
+                      <span className="twic-code">square</span>
+                    </span>
                 </div>
                 <div className={ ` ${ portrait } twic-item` }>
                     <TwicImg src={imgUrl}></TwicImg>
-                    <span>class portrait</span>
+                    <span>class{" "}
+                      <span className="twic-code">portrait</span>
+                    </span>
                 </div>
             </div>
             <h2>
@@ -56,30 +62,46 @@ const TwicStyleDriven = () => (
             <div className="twic-grid">
                 <div className={ `${ contain } ${ left } twic-item` }>
                     <TwicImg src={imgUrl} ratio="16/9"></TwicImg>
-                    <span>class contain + class left</span>
+                    <span>class{" "}
+                      <span className="twic-code">contain</span>{" "}
+                      & class{" "}
+                        <span className="twic-code">left</span>
+                    </span>
                 </div>
                 <div className={ `${ contain } ${ right } twic-item` }>
                     <TwicImg src={imgUrl} ratio="16/9"></TwicImg>
-                    <span>class contain + class right</span>
+                    <span>class{" "}
+                      <span className="twic-code">contain</span>{" "}
+                      & class{" "}
+                        <span className="twic-code">right</span>
+                    </span>
                 </div>
                 <div className={ `${ cover } twic-item` }>
                     <TwicImg src={imgUrl} focus="50px100p" ratio="16/9"></TwicImg>
-                    <span>class cover</span>
+                    <span>class{" "}
+                       <span className="twic-code">cover</span>
+                    </span>
                 </div>
             </div>
             <h2>3. Other classical settings (here with <span className="twic-code">width</span>)</h2>
             <div className="twic-grid">
                 <div className={ `${ lg } twic-item` }>
                     <TwicImg src={imgUrl}></TwicImg>
-                    <span>class lg</span>
+                    <span>class{" "}
+                      <span className="twic-code">lg</span>
+                    </span>
                 </div>
                 <div className={ `${ md } twic-item` }>
                     <TwicImg src={imgUrl}></TwicImg>
-                    <span>class md</span>
+                    <span>class{" "}
+                      <span className="twic-code">md</span>
+                    </span>
                 </div>
                 <div className={ `${ sm } twic-item` }>
                     <TwicImg src={imgUrl}></TwicImg>
-                    <span>class sm</span>
+                    <span>class{" "}
+                      <span className="twic-code">sm</span>
+                    </span>
                 </div>
             </div>
         </div>

@@ -34,23 +34,27 @@ const TwicRatio = () => {
                     codeSandBoxName="TwicPics x Gatsby - Ratio"
                 >
                     <p>
-                        The <span className="twic-code">ratio</span> property determines the value
-                        of the width/height ratio of the image display area.
+                      The <span className="twic-code">ratio</span> property determines the value
+                      of the width/height ratio of the image display area.
                     </p>
-                    <p>
-                        Value can be:
-                    </p>
+                    <p>Its value can be:</p>
                     <ul>
-                        <li>
-                            a ratio expression of the form width/height like 4/3, 16/9 or 1/1.
-                        </li>
-                        <li>
-                            a number that is the result of such an expression like 1.85, 2 or 0.5.
-                        </li>
+                      <li>
+                        a ratio expression of the form width/height like{" "}
+                        <span className="twic-code">4/3</span>,{" "}
+                        <span className="twic-code">16/9</span>, or{" "}
+                        <span className="twic-code">1/1</span>.
+                      </li>
+                      <li>
+                        a number that is the result of such an expression like{" "}
+                        <span className="twic-code">1.85</span>,{" "}
+                        <span className="twic-code">2</span>, or{" "}
+                        <span className="twic-code">0.5</span>.
+                      </li>
                     </ul>
                     <p>
-                        A square area (<span className="twic-code">
-                        ratio=`1`</span>) will be created by default.
+                      A square area (<span className="twic-code"> ratio="1"</span>) will be
+                      created by default.
                     </p>
                 </TwicAbstract>
                 <div className="twic-testing-container">
@@ -65,7 +69,11 @@ const TwicRatio = () => {
                         >
                         </TwicImg>
                         <span>
-                            ratio={ratiosArray[ ratioIndex ] ? ratiosArray[ ratioIndex ] : `1 (default)`} (cover)
+                          <span className="twic-code">ratio="{
+                            ratiosArray[ratioIndex] ? ratiosArray[ratioIndex] : 1
+                          }"</span>{" "}
+                          { !ratiosArray[ratioIndex] && "[default ratio]" }
+                          {" "}(mode is <span className="twic-code">cover</span>)
                         </span>
                     </div>
                     <div className="twic-item">
@@ -76,7 +84,11 @@ const TwicRatio = () => {
                         >
                         </TwicImg>
                         <span>
-                            ratio={ratiosArray[ ratioIndex ] ? ratiosArray[ ratioIndex ] : `1 (default)`} (contain)
+                          <span className="twic-code">ratio="{
+                            ratiosArray[ratioIndex] ? ratiosArray[ratioIndex] : 1
+                          }"</span>{" "}
+                          { !ratiosArray[ratioIndex] && "[default ratio]" }
+                          {" "}(mode is <span className="twic-code">cover</span>)
                         </span>
                     </div>
                 </div>

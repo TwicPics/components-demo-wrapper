@@ -66,7 +66,7 @@ const onChangeFocus = () => {
             <span class="twic-code">focus="{ focusArray[ focusIndex]  }"</span>
           </span>
         {:else}
-          <span v-else>
+          <span>
             <span>No focus</span>
             (default)
           </span>

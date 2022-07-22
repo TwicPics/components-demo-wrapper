@@ -39,20 +39,20 @@ const TwicPosition = () => {
                     codeSandBoxName="TwicPics x Gatsby - Position"
                 >
                     <p>
-                        In <span className="twic-code">contain</span> mode,
-                        the position property changes the location of the image inside the area of the component.
+                      In <span className="twic-code">contain</span> mode, the position property
+                      changes the location of the image inside the area of the component.
                     </p>
                     <p>
-                        The syntax is the same as for CSS position properties (e.g. <span className="twic-code">
-                        background-position</span> or <span className="twic-code">
-                        object-position</span>).
+                      The syntax is the same as for CSS position properties (e.g.{" "}
+                      <span className="twic-code"> background-position</span> or{" "}
+                      <span className="twic-code"> object-position</span>).
                     </p>
                     <p>
-                        Useful values are <span className="twic-code">
-                            top</span>, <span className="twic-code">
-                            bottom</span>, <span className="twic-code">
-                            left</span>, <span className="twic-code">
-                            right</span> but all valid CSS position values are valid.
+                      Useful values are <span className="twic-code"> top</span>,{" "}
+                      <span className="twic-code"> bottom</span>,{" "}
+                      <span className="twic-code"> left</span>,{" "}
+                      <span className="twic-code"> right</span> but all valid CSS position
+                      values are valid.
                     </p>
                 </TwicAbstract>
                 <div className="twic-testing-container">
@@ -66,7 +66,9 @@ const TwicPosition = () => {
                             position={ vPositionArray[ vPositionIndex ] }
                         >
                         </TwicImg>
-                        <span>position=`{vPositionArray[ vPositionIndex ] }`</span>
+                        <span>
+                          <span className="twic-code">position="{ vPositionArray[vPositionIndex] }"</span>
+                        </span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
@@ -75,7 +77,9 @@ const TwicPosition = () => {
                             position={ hPositionArray[ hPositionIndex ] }
                         >
                         </TwicImg>
-                        <span>position=`{hPositionArray[ hPositionIndex ] }`</span>
+                        <span>
+                          <span className="twic-code">position="{ hPositionArray[hPositionIndex] }"</span>
+                        </span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
@@ -83,7 +87,7 @@ const TwicPosition = () => {
                             mode="contain"
                         >
                         </TwicImg>
-                        <span>No position set (center by default)</span>
+                        <span>No position set (<span className="twic-code"> center</span> by default)</span>
                     </div>
                     <div className="twic-item">
                         <TwicImg
@@ -91,7 +95,7 @@ const TwicPosition = () => {
                             mode="contain"
                         >
                         </TwicImg>
-                        <span>No position set (center by default)</span>
+                        <span>No position set (<span className="twic-code"> center</span> by default)</span>
                     </div>
                 </div>
             </div>

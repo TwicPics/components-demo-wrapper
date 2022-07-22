@@ -34,7 +34,7 @@ const onChangeAreaWidth = () => {
           a ratio expression of the form width/height like
           <span class="twic-code">4/3</span>,
           <span class="twic-code">16/9</span>, or
-          <span class="twic-code">1/1</span> .
+          <span class="twic-code">1/1</span>.
         </li>
         <li>
           a number that is the result of such an expression like
