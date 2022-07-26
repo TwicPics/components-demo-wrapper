@@ -25,8 +25,10 @@ const onChangeAreaWidth = () => {
       codeSandBoxName="TwicPics x Svelte - Ratio property"
     >
       <p>
-        The <span class="twic-code">ratio</span> property determines the value
-        of the width/height ratio of the image display area.
+        <strong>
+          The <dfn title="ratio property">ratio</dfn> property determines the value
+          of the width/height ratio of the image display area.
+        </strong>
       </p>
       <p>Its value can be:</p>
       <ul>

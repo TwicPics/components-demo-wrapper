@@ -19,15 +19,18 @@ const onChangeFocus = () => {
       codeSandBoxName="TwicPics x Svelte - Focus property"
     >
       <p>
-        The <span class="twic-code">focus</span> property will change the
-        focus point coordinates of the image (only useful with
+        <strong>
+          The <dfn title="focus property">focus</dfn> property will change the
+          focus point coordinates of the image
+        </strong>
+         (only useful with
         <span class="twic-code">mode="cover"</span>).
         <br />
         It allows to determine what should be visible when the image is
         cropped.
       </p>
       <p>
-        You can set the focus by using <em>coordinates </em> or
+        You can set the focus by using coordinates or
         <span class="twic-code">auto</span> values:
       </p>
       <ul>

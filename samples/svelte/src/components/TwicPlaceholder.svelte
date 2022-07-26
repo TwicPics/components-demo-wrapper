@@ -28,8 +28,9 @@ const togglePlaceholder = () => {
       codeSandBoxName="TwicPics x Svelte - Placeholder property"
     >
       <p>
-        The <span class="twic-code">placeholder</span> property helps optimize
-        your CLS and implement the LQIP technique.
+        <strong>
+          The <dfn title="placeholder property">placeholder</dfn> property helps you optimize user experience, CLS, and implement the LQIP technique.
+        </strong>
       </p>
       <p>
         TwicPics Components automatically adds a background placeholder to

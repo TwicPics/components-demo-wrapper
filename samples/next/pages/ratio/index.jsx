@@ -59,8 +59,8 @@ const TwicRatio = () => {
                 </div>
                 <div className={`twic-grid ${fullWidthAera ? `full-width` : `half-width`} `}>
                     <div className="twic-item">
-                        <TwicImg src={ imgUrl } ratio={ ratioValues[ratioIndex] }>
-                        </TwicImg>
+                      <TwicImg src={ imgUrl } ratio={ ratioValues[ratioIndex] }>
+                      </TwicImg>
                       <span>
                         <span className="twic-code">ratio="{
                           ratioValues[ratioIndex] ? ratioValues[ratioIndex] : 1
@@ -74,15 +74,15 @@ const TwicRatio = () => {
                         src={ imgUrl }
                         mode="contain"
                         ratio={ ratioValues[ratioIndex] }
-                    >
-                      </TwicImg>
-                      <span>
-                        <span className="twic-code">ratio="{
-                          ratioValues[ratioIndex] ? ratioValues[ratioIndex] : 1
-                        }"</span>{" "}
-                        { !ratioValues[ ratioIndex ] && "- default ratio"}{" "}
-                        (mode is <span className="twic-code">contain</span>)
-                      </span>
+                        >
+                        </TwicImg>
+                        <span>
+                          <span className="twic-code">ratio="{
+                            ratioValues[ratioIndex] ? ratioValues[ratioIndex] : 1
+                          }"</span>{" "}
+                          { !ratioValues[ ratioIndex ] && "- default ratio"}{" "}
+                          (mode is <span className="twic-code">contain</span>)
+                        </span>
                     </div>
                 </div>
             </div>

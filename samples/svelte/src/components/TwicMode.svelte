@@ -22,12 +22,12 @@ const onChangeMode = () => {
       codeSandBoxName="TwicPics x Svelte - Mode property"
     >
       <p>
-        <span>The </span>
-        <span class="twic-code">mode</span>
-        <span>
+        <strong>
+          The
+          <dfn title="mode property">mode</dfn>
           property determines if the image fills or sits inside the
-          area.</span
-        >
+          area.
+        </strong>
       </p>
       <p>Here are the two accepted values:</p>
       <ul>

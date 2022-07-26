@@ -26,8 +26,11 @@ const onChangePosition = () => {
       codeSandBoxName="TwicPics x Svelte - Position property"
     >
       <p>
-        In <span class="twic-code">contain</span> mode, the position property
-        changes the location of the image inside the area of the component.
+        In <span class="twic-code">contain</span> mode,
+        <strong>
+          the <dfn title="position property">position</dfn> property
+          changes the location of the image inside the area of the component.
+        </strong>
       </p>
       <p>
         The syntax is the same as for CSS position properties (e.g.

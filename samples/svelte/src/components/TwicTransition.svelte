@@ -28,8 +28,10 @@ const toggleTransitions = () => {
       codeSandBoxName="TwicPics x Svelte - Transition property"
     >
       <p>
-        The <span class="twic-code">transition</span> properties allow you to
-        customize the effect used to reveal the image once it has been loaded.
+        <strong>
+          The <dfn title="transition property">transition</dfn> properties allow you to
+          customize the effect used to reveal the image once it has been loaded
+        </strong>.
       </p>
       <ul>
         <li>
