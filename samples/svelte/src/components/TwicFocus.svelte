@@ -21,7 +21,7 @@ const onChangeFocus = () => {
       <p>
         The <span class="twic-code">focus</span> property will change the
         focus point coordinates of the image (only useful with
-        <span class="twic-code">mode=`cover`</span>).
+        <span class="twic-code">mode="cover"</span>).
         <br />
         It allows to determine what should be visible when the image is
         cropped.

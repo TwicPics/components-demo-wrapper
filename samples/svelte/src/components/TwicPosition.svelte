@@ -37,7 +37,7 @@ const onChangePosition = () => {
       <p>
         Useful values are <span class="twic-code"> top</span>,
         <span class="twic-code"> bottom</span>,
-        <span class="twic-code"> left</span>,
+        <span class="twic-code"> left</span>, and
         <span class="twic-code"> right</span> but all valid CSS position
         values are valid.
       </p>

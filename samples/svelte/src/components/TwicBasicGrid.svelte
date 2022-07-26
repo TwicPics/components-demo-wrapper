@@ -18,7 +18,7 @@ import { TwicImg } from "@twicpics/components/svelte3";
               TwicPics Components make it dead easy to unleash the power of TwicPics.
           </p>
 
-              Here the properties used in this example :
+              Here the properties used in this example:
           <ul>
               <li>
                   <span class="twic-code">ratio</span>:
