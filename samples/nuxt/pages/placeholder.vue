@@ -8,19 +8,21 @@
         codeSandBoxName="TwicPics x Nuxt - Placeholder property"
       >
         <p>
-          The <span class="twic-code">placeholder</span> property helps optimize
-          your CLS and implement the LQIP technique.
+          <strong>
+            The <dfn title="placeholder property">placeholder</dfn> property helps you optimize user experience,
+            CLS, and implement the LQIP technique.
+          </strong>
         </p>
         <p>
-          TwicPics Components automatically add a background placeholder to your
-          images: their size are reserved in the page before the images are
+          TwicPics Components automatically adds a background placeholder to
+          your images: their size are reserved in the page before the images are
           actually loaded.
         </p>
         <p>
-          The <span class="twic-code"> placeholder </span> values can be:
-          <span class="twic-code">preview</span>,
+          The placeholder values can be:
+          <span class="twic-code"> preview </span>,
           <span class="twic-code"> meancolor </span>,
-          <span class="twic-code"> maincolor </span>, or
+          <span class="twic-code"> maincolor </span> or
           <span class="twic-code"> none </span>.
         </p>
         <p>
@@ -43,19 +45,28 @@
       >
         <div class="twic-item">
           <TwicImg :src="imgUrl" placeholder="preview"></TwicImg>
-          <span>placeholder=`preview` (default)</span>
+          <span>
+            <span class="twic-code">placeholder="preview"</span>
+            (default value)
+          </span>
         </div>
         <div class="twic-item">
           <TwicImg :src="imgUrl" placeholder="meancolor"></TwicImg>
-          <span>placeholder=`meancolor`</span>
+          <span>
+            <span class="twic-code">placeholder="meancolor"</span>
+          </span>
         </div>
         <div class="twic-item">
           <TwicImg :src="imgUrl" placeholder="maincolor"></TwicImg>
-          <span>placeholder=`maincolor`</span>
+          <span>
+            <span class="twic-code">placeholder="maincolor"</span>
+          </span>
         </div>
         <div class="twic-item">
           <TwicImg :src="imgUrl" placeholder="none"></TwicImg>
-          <span>placeholder=`none`</span>
+          <span>
+            <span class="twic-code">placeholder="none"</span>
+          </span>
         </div>
       </div>
     </div>

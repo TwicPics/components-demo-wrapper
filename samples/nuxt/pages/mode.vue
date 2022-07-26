@@ -1,5 +1,5 @@
 <template>
-  <!-- demonstrates mode features (contain or cover) -->
+  <!-- demonstrates the mode property (contain or cover) -->
   <TwicWrapper framework="nuxt">
     <div class="twic-mode-container">
       <TwicAbstract
@@ -8,22 +8,21 @@
         codeSandBoxName="TwicPics x Nuxt - Mode property"
       >
         <p>
-          <span>The </span>
-          <span class="twic-code">mode</span>
-          <span>
-            property determines if the image fills or sits inside the
-            area.</span
-          >
+          <strong>
+            The
+            <dfn title="mode property">mode</dfn>
+            property determines if the image fills or sits inside the area.
+          </strong>
         </p>
         <p>Here are the two accepted values:</p>
         <ul>
           <li>
             <span class="twic-code">cover</span>:
-            <span> the image fills the area and is cropped accordingly.</span>
+            the image fills the area and is cropped accordingly.
           </li>
           <li>
             <span class="twic-code">contain</span>:
-            <span> the image sits inside the area with no cropping.</span>
+            the image sits inside the area with no cropping.
           </li>
         </ul>
       </TwicAbstract>
@@ -37,19 +36,25 @@
             :src="imgUrl"
             :mode="modeValues[modeIndex]"
           ></TwicImg>
-          <span>mode=`{{ modeValues[modeIndex] }}`</span>
+          <span>
+            <span class="twic-code">mode="{{ modeValues[ modeIndex ] }}"</span>
+          </span>
         </div>
         <div class="twic-item">
           <TwicImg :src="imgUrl"></TwicImg>
-          <span>No mode set (cover by default)</span>
+          <span>No mode set (<span class="twic-code">cover</span> by default)</span>
         </div>
         <div class="twic-item">
           <TwicImg :src="imgUrl" mode="cover"></TwicImg>
-          <span>mode=`cover`</span>
+          <span>
+            <span class="twic-code">mode="cover"</span>
+          </span>
         </div>
         <div class="twic-item">
           <TwicImg :src="imgUrl" mode="contain"></TwicImg>
-          <span>mode=`contain`</span>
+          <span>
+            <span class="twic-code">mode="contain"</span>
+          </span>
         </div>
       </div>
     </div>

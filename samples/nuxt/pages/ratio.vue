@@ -8,16 +8,17 @@
         codeSandBoxName="TwicPics x Nuxt - Ratio property"
       >
         <p>
-          The <span class="twic-code">ratio</span> property determines the value
-          of the width/height ratio of the image display area.
+          <strong>
+          The <dfn title="ratio property">ratio</dfn> property determines the value
+          of the width/height ratio of the image display area.</strong>
         </p>
-        <p>The value can be:</p>
+        <p>Its value can be:</p>
         <ul>
           <li>
             a ratio expression of the form width/height like
             <span class="twic-code">4/3</span>,
             <span class="twic-code">16/9</span>, or
-            <span class="twic-code">1/1</span> .
+            <span class="twic-code">1/1</span>.
           </li>
           <li>
             a number that is the result of such an expression like
@@ -50,10 +51,11 @@
           <TwicImg v-if="show" :src="imgUrl" :ratio="ratioValues[ratioIndex]">
           </TwicImg>
           <span>
-            ratio={{
-              ratioValues[ratioIndex] ? ratioValues[ratioIndex] : "1 [default]"
-            }}
-            (cover)
+            <span class="twic-code">ratio="{{
+              ratioValues[ratioIndex] ? ratioValues[ratioIndex] : 1
+            }}"</span>
+            {{ !ratioValues[ratioIndex] ? "[default ratio]" : "" }}
+            (mode is <span class="twic-code">cover</span>)
           </span>
         </div>
         <div class="twic-item">
@@ -65,10 +67,11 @@
           >
           </TwicImg>
           <span>
-            ratio={{
-              ratioValues[ratioIndex] ? ratioValues[ratioIndex] : "1 [default]"
-            }}
-            (contain)
+            <span class="twic-code">ratio="{{
+              ratioValues[ratioIndex] ? ratioValues[ratioIndex] : 1
+            }}"</span>
+            {{ !ratioValues[ratioIndex] ? "[default ratio]" : "" }}
+            (mode is <span class="twic-code">contain</span>)
           </span>
         </div>
       </div>
