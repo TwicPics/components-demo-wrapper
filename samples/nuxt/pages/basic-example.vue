@@ -39,49 +39,49 @@
 
       <div class="twic-grid">
         <div class="twic-item">
-              <TwicImg src="https://assets.twicpics.com/examples/football.jpg" />
-              <span>
-                  Default values
-              </span>
-          </div>
-          <div class="twic-item">
-              <TwicImg
-                  src="/football.jpg"
-                  ratio="16/9"
-                  mode="cover"
-                  placeholder="meancolor"
-              />
-              <span>
-                <span class="twic-code">ratio="16/9"</span> & 
-                <span class="twic-code">mode="cover"</span>: the image fills the area
-              </span>
-          </div>
-          <div class="twic-item">
-              <TwicImg
-                  src="/football.jpg"
-                  step="100"
-                  mode="contain"
-                  ratio="16/9"
-              />
-              <span>
-                <span class="twic-code">ratio="16/9"</span> &
-                <span class="twic-code">mode="contain"</span>: the image sits inside the area
-              </span>
-          </div>
-          <div class="twic-item">
-              <TwicImg
-                  src="/football.jpg"
-                  step="100"
-                  focus="auto"
-                  ratio="2/3"
-                  placeholder="maincolor"
-              />
-              <span>
-                <span class="twic-code">ratio="2/3"</span>,
-                <span class="twic-code">mode="contain"</span> & <span class="twic-code">focus="auto"</span>
-              </span>
-          </div>
+            <TwicImg src="https://assets.twicpics.com/examples/football.jpg" />
+            <span>
+                Default values
+            </span>
         </div>
+        <div class="twic-item">
+            <TwicImg
+                src="/football.jpg"
+                ratio="16/9"
+                mode="cover"
+                placeholder="meancolor"
+            />
+            <span>
+              <span class="twic-code">ratio="16/9"</span> & 
+              <span class="twic-code">mode="cover"</span>: the image fills the area
+            </span>
+        </div>
+        <div class="twic-item">
+            <TwicImg
+                src="/football.jpg"
+                step="100"
+                mode="contain"
+                ratio="16/9"
+            />
+            <span>
+              <span class="twic-code">ratio="16/9"</span> &
+              <span class="twic-code">mode="contain"</span>: the image sits inside the area
+            </span>
+        </div>
+        <div class="twic-item">
+            <TwicImg
+                src="/football.jpg"
+                step="100"
+                focus="auto"
+                ratio="2/3"
+                placeholder="maincolor"
+            />
+            <span>
+              <span class="twic-code">ratio="2/3"</span>,
+              <span class="twic-code">mode="contain"</span> & <span class="twic-code">focus="auto"</span>
+            </span>
+        </div>
+      </div>
     </div>
   </TwicWrapper>
 </template>

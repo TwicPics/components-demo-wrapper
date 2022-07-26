@@ -85,7 +85,7 @@ const TwicTransition = () => {
                         >
                         </TwicImg>
                         <span>
-                          <span class="twic-code">transition="none"</span>
+                          <span className="twic-code">transition="none"</span>
                         </span>
                     </div>
                     <div className="twic-item">
@@ -94,7 +94,7 @@ const TwicTransition = () => {
                             transition="zoom">
                         </TwicImg>
                         <span>
-                          <span class="twic-code">transition="zoom"</span>
+                          <span className="twic-code">transition="zoom"</span>
                         </span>
                     </div>
                     <div className="twic-item">
@@ -103,7 +103,7 @@ const TwicTransition = () => {
                             transition="fade">
                         </TwicImg>
                         <span>
-                          <span class="twic-code">transition="fade"</span>
+                          <span className="twic-code">transition="fade"</span>
                         </span>
                     </div>
                     <div className="twic-item">
@@ -112,7 +112,7 @@ const TwicTransition = () => {
                             transition="fade+zoom">
                         </TwicImg>
                         <span>
-                          <span class="twic-code">transition="fade+zoom"</span>
+                          <span className="twic-code">transition="fade+zoom"</span>
                         </span>
                     </div>
                     <div className="twic-item">
@@ -123,7 +123,7 @@ const TwicTransition = () => {
                         >
                         </TwicImg>
                         <span>
-                          <span class="twic-code">transitionDuration="2000ms"</span>
+                          <span className="twic-code">transitionDuration="2000ms"</span>
                         </span>
                     </div>
                     <div className="twic-item">
@@ -135,8 +135,8 @@ const TwicTransition = () => {
                         >
                         </TwicImg>
                         <span>
-                          <span class="twic-code">transitionDuration="2000ms"</span>{" "}
-                          and <span class="twic-code">transitionTimingFunction="linear"</span>
+                          <span className="twic-code">transitionDuration="2000ms"</span>{" "}
+                          and <span className="twic-code">transitionTimingFunction="linear"</span>
                         </span>
                     </div>
                     <div className="twic-item">
@@ -148,7 +148,7 @@ const TwicTransition = () => {
                         >
                         </TwicImg>
                         <span>
-                          <span class="twic-code">transitionDelay="2000ms"</span>
+                          <span className="twic-code">transitionDelay="2000ms"</span>
                         </span>
                     </div>
                 </div>

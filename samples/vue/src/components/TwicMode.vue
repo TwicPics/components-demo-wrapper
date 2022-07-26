@@ -8,12 +8,12 @@
         codeSandBoxName="TwicPics x Vue - Mode property"
       >
         <p>
-          <span>The </span>
-          <span class="twic-code">mode</span>
-          <span>
+          <strong>
+            The
+            <dfn title="mode property">mode</dfn>
             property determines if the image fills or sits inside the
-            area.</span
-          >
+            area.
+          </strong>
         </p>
         <p>Here are the two accepted values:</p>
         <ul>
@@ -37,19 +37,25 @@
             :src="imgUrl"
             :mode="modeValues[modeIndex]"
           ></TwicImg>
-          <span>mode=`{{ modeValues[modeIndex] }}`</span>
+          <span>
+            <span class="twic-code">mode="{{ modeValues[ modeIndex ] }}"</span>
+          </span>
         </div>
         <div class="twic-item">
           <TwicImg :src="imgUrl"></TwicImg>
-          <span>No mode set (cover by default)</span>
+          <span>No mode set (<span class="twic-code">cover</span> by default)</span>
         </div>
         <div class="twic-item">
           <TwicImg :src="imgUrl" mode="cover"></TwicImg>
-          <span>mode=`cover`</span>
+          <span>
+            <span class="twic-code">mode="cover"</span>
+          </span>
         </div>
         <div class="twic-item">
           <TwicImg :src="imgUrl" mode="contain"></TwicImg>
-          <span>mode=`contain`</span>
+          <span>
+            <span class="twic-code">mode="contain"</span>
+          </span>
         </div>
       </div>
     </div>

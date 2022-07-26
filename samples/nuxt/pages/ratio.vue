@@ -54,7 +54,7 @@
             <span class="twic-code">ratio="{{
               ratioValues[ratioIndex] ? ratioValues[ratioIndex] : 1
             }}"</span>
-            {{ !ratioValues[ratioIndex] ? "[default ratio]" : "" }}
+            {{ !ratioValues[ratioIndex] ? "- default ratio" : "" }}
             (mode is <span class="twic-code">cover</span>)
           </span>
         </div>
@@ -70,7 +70,7 @@
             <span class="twic-code">ratio="{{
               ratioValues[ratioIndex] ? ratioValues[ratioIndex] : 1
             }}"</span>
-            {{ !ratioValues[ratioIndex] ? "[default ratio]" : "" }}
+            {{ !ratioValues[ratioIndex] ? "- default ratio" : "" }}
             (mode is <span class="twic-code">contain</span>)
           </span>
         </div>

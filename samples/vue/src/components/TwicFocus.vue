@@ -7,15 +7,19 @@
         codeSandBoxName="TwicPics x Vue - Focus"
       >
         <p>
-          The <span class="twic-code">focus</span> property will change the
-          focus point coordinates of the image (only useful with
-          <span class="twic-code">mode=`cover`</span>).
-          <br />
+          <strong>
+            The <dfn title="focus property">focus</dfn> property changes the
+            focus point coordinates of the image
+          </strong>
+          (only useful with
+          <span class="twic-code">mode="cover"</span>).
+        </p>
+        <p>
           It allows to determine what should be visible when the image is
           cropped.
         </p>
         <p>
-          You can set the focus by using <em>coordinates </em> or
+          You can set the focus by using coordinates or
           <span class="twic-code">auto</span> values:
         </p>
         <ul>
@@ -48,14 +52,16 @@
             ratio="4/5"
             placeholder="preview"
           ></TwicImg>
-          <span v-if="focusArray[focusIndex]"
-            >focus='{{ focusArray[focusIndex] }}'</span
-          >
-          <span v-else>focus='none' (default)</span>
+          <span v-if="focusArray[focusIndex]">
+            <span class="twic-code">focus="{{ focusArray[ focusIndex] }}"</span>
+          </span>
+          <span v-else>
+            No focus (default)
+          </span>
         </div>
         <div class="twic-item">
           <TwicImg :src="imgUrl" ratio="4/5" placeholder="preview"></TwicImg>
-          <span>focus='none' (default)</span>
+          <span>No focus (default)</span>
         </div>
         <div class="twic-item">
           <TwicImg
@@ -64,7 +70,9 @@
             focus="1920x1282"
             placeholder="preview"
           ></TwicImg>
-          <span>focus='1920x1282'</span>
+          <span>
+            <span class="twic-code">focus="1920x1282"</span>
+          </span>
         </div>
         <div class="twic-item">
           <TwicImg
@@ -73,7 +81,9 @@
             focus="auto"
             placeholder="preview"
           ></TwicImg>
-          <span>focus='auto'</span>
+          <span>
+            <span class="twic-code">focus="auto"</span>
+          </span>
         </div>
       </div>
     </div>

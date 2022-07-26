@@ -7,8 +7,11 @@
         codeSandBoxName="TwicPics x Vue - Position property"
       >
         <p>
-          In <span class="twic-code">contain</span> mode, the position property
-          changes the location of the image inside the area of the component.
+          In <span class="twic-code">contain</span> mode,
+          <strong>
+            the <dfn title="position property">position</dfn> property
+            changes the location of the image inside the area of the component.
+          </strong>
         </p>
         <p>
           The syntax is the same as for CSS position properties (e.g.
@@ -18,8 +21,8 @@
         <p>
           Useful values are <span class="twic-code"> top</span>,
           <span class="twic-code"> bottom</span>,
-          <span class="twic-code"> left</span>,
-          <span class="twic-code"> right</span> but all valid CSS position
+          <span class="twic-code"> left</span>, and
+          <span class="twic-code"> right</span>, but all valid CSS position
           values are valid.
         </p>
       </TwicAbstract>
@@ -37,9 +40,9 @@
             :position="verticalPositionArray[verticalPositionIndex]"
           >
           </TwicImg>
-          <span
-            >position=`{{ verticalPositionArray[verticalPositionIndex] }}`</span
-          >
+          <span>
+            <span class="twic-code">position="{{ verticalPositionArray[verticalPositionIndex] }}"</span>
+          </span>
         </div>
         <div class="twic-item">
           <TwicImg
@@ -49,21 +52,20 @@
             :position="horizontalPositionArray[horizontalPositionIndex]"
           >
           </TwicImg>
-          <span
-            >position=`{{
-              horizontalPositionArray[horizontalPositionIndex]
-            }}`</span
+          <span>
+            <span class="twic-code">position="{{ horizontalPositionArray[horizontalPositionIndex] }}"</span>
+          </span
           >
         </div>
         <div class="twic-item">
           <TwicImg :src="landscapeImgUrl" mode="contain" placeholder="none">
           </TwicImg>
-          <span>No position set (center by default)</span>
+          <span>No position set (<span class="twic-code"> center</span> by default)</span>
         </div>
         <div class="twic-item">
           <TwicImg :src="portraitImgUrl" mode="contain" placeholder="none">
           </TwicImg>
-          <span>No position set (center by default)</span>
+          <span>No position set (<span class="twic-code"> center</span> by default)</span>
         </div>
       </div>
     </div>

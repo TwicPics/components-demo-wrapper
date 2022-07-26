@@ -72,7 +72,7 @@ const TwicRatio = () => {
                           <span className="twic-code">ratio="{
                             ratiosArray[ratioIndex] ? ratiosArray[ratioIndex] : 1
                           }"</span>{" "}
-                          { !ratiosArray[ratioIndex] && "[default ratio]" }
+                          { !ratiosArray[ratioIndex] && "- default ratio" }
                           {" "}(mode is <span className="twic-code">cover</span>)
                         </span>
                     </div>
@@ -87,7 +87,7 @@ const TwicRatio = () => {
                           <span className="twic-code">ratio="{
                             ratiosArray[ratioIndex] ? ratiosArray[ratioIndex] : 1
                           }"</span>{" "}
-                          { !ratiosArray[ratioIndex] && "[default ratio]" }
+                          { !ratiosArray[ratioIndex] && "- default ratio" }
                           {" "}(mode is <span className="twic-code">cover</span>)
                         </span>
                     </div>

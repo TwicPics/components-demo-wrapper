@@ -8,8 +8,10 @@
         codeSandBoxName="TwicPics x Vue - Transition property"
       >
         <p>
-          The <span class="twic-code">transition</span> properties allow you to
-          customize the effect used to reveal the image once it has been loaded.
+          <strong>
+            The <dfn title="transition property">transition</dfn> properties allow you to
+            customize the effect used to reveal the image once it has been loaded
+          </strong>.
         </p>
         <ul>
           <li>
@@ -51,24 +53,32 @@
       >
         <div class="twic-item">
           <TwicImg :src="imgUrl" placeholder="preview"> </TwicImg>
-          <span>default</span>
+          <span>Default values</span>
         </div>
         <div class="twic-item">
           <TwicImg :src="imgUrl" transition="none" placeholder="preview">
           </TwicImg>
-          <span>transition=`none`</span>
+          <span>
+            <span class="twic-code">transition="none"</span>
+          </span>
         </div>
         <div class="twic-item">
           <TwicImg :src="imgUrl" transition="zoom"> </TwicImg>
-          <span>transition=`zoom`</span>
+          <span>
+            <span class="twic-code">transition="zoom"</span>
+          </span>
         </div>
         <div class="twic-item">
           <TwicImg :src="imgUrl" transition="fade"> </TwicImg>
-          <span>transition=`fade`</span>
+          <span>
+            <span class="twic-code">transition="fade"</span>
+          </span>
         </div>
         <div class="twic-item">
           <TwicImg :src="imgUrl" transition="fade+zoom"> </TwicImg>
-          <span>transition=`fade+zoom`</span>
+          <span>
+            <span class="twic-code">transition="fade+zoom"</span>
+          </span>
         </div>
         <div class="twic-item">
           <TwicImg
@@ -77,7 +87,9 @@
             placeholder="preview"
           >
           </TwicImg>
-          <span>transitionDuration=`2000ms`</span>
+          <span>
+            <span class="twic-code">transitionDuration="2000ms"</span>
+          </span>
         </div>
         <div class="twic-item">
           <TwicImg
@@ -87,10 +99,10 @@
             placeholder="preview"
           >
           </TwicImg>
-          <span
-            >transitionDuration=`2000ms` and
-            transitionTimingFunction=`linear`</span
-          >
+          <span>
+            <span class="twic-code">transitionDuration="2000ms"</span>
+            and <span class="twic-code">transitionTimingFunction="linear"</span>
+          </span>
         </div>
         <div class="twic-item">
           <TwicImg
@@ -100,7 +112,9 @@
             placeholder="preview"
           >
           </TwicImg>
-          <span>transitionDelay=`2000ms`</span>
+          <span>
+            <span class="twic-code">transitionDelay="2000ms"</span>
+          </span>
         </div>
       </div>
     </div>

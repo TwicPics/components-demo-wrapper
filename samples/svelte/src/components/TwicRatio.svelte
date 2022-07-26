@@ -70,7 +70,7 @@ const onChangeAreaWidth = () => {
             ratioValues[ratioIndex] ? ratioValues[ratioIndex] : 1
           }"</span>
           {#if !ratioValues[ratioIndex]}
-            [default ratio]
+            - default ratio
           {/if}
           (mode is <span class="twic-code">cover</span>)
         </span>
@@ -87,7 +87,7 @@ const onChangeAreaWidth = () => {
             ratioValues[ratioIndex] ? ratioValues[ratioIndex] : 1
           }"</span>
           {#if !ratioValues[ratioIndex]}
-            [default ratio]
+            - default ratio
           {/if}
           (mode is <span class="twic-code">contain</span>)
         </span>

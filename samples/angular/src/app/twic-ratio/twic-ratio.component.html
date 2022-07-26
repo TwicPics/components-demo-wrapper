@@ -41,7 +41,7 @@
           ratioValues[ratioIndex] ? ratioValues[ratioIndex] : 1
         }}"</span>
         <ng-template [NgIf]="!ratioValues[ratioIndex]">
-          [default ratio]
+          - default ratio
         </ng-template>
         (mode is <span class="twic-code">cover</span>)
       </span>
@@ -58,7 +58,7 @@
           ratio="{{ ratioValues[ratioIndex] ? ratioValues[ratioIndex] : 1 }}"
         </span>
         <ng-template [NgIf]="!ratioValues[ratioIndex]">
-          [default ratio]
+          - default ratio
         </ng-template>
         (mode is <span class="twic-code">contain</span>)
       </span>
