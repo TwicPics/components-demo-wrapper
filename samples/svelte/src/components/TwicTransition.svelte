@@ -146,6 +146,9 @@ const toggleTransitions = () => {
     :global(.twic-tf img) {
       opacity: 0 !important;
     }
+    :global(.twic-tf img + div) {
+      opacity: 1 !important;
+    }
     :global(.twic-tz img) {
       transform: scale(0) !important;
     }
