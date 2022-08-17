@@ -20,7 +20,7 @@
         }
         &:hover {
             & :global(img) {
-                opacity: 0 !important;
+                visibility: hidden !important;
             }
             & figcaption {
                 opacity: 1;

@@ -95,7 +95,10 @@ const togglePlaceholder = () => {
 .twic-placeholder-container {
   .show-placeholders {
     :global(img) {
-      opacity: 0 !important;
+        visibility: hidden !important;
+    }
+    :global(img + div) {
+      opacity: 1 !important;
     }
     :global(img + div) {
       opacity: 1 !important;

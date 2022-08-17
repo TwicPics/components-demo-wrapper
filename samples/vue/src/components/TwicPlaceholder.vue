@@ -108,7 +108,10 @@ export default {
 .twic-placeholder-container {
   .show-placeholders {
     img {
-      opacity: 0 !important;
+      visibility: hidden !important;
+    }
+    img + div {
+      opacity: 1 !important;
     }
     img + div {
       opacity: 1 !important;
