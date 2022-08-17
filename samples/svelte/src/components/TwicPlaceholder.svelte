@@ -100,9 +100,6 @@ const togglePlaceholder = () => {
     :global(img + div) {
       opacity: 1 !important;
     }
-    :global(img + div) {
-      opacity: 1 !important;
-    }
   }
 }
 </style>

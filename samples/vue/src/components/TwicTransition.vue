@@ -163,9 +163,6 @@ export default {
       & img + div{
         opacity: 1 !important;
       }
-      & img + div{
-        opacity: 1 !important;
-      }
     }
     .twic-tz {
       & img {
