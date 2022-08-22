@@ -8,12 +8,12 @@
     }
 
     .twic-item {
-        & img {
-            transition: .3s all ease-in-out;
+        & ::ng-deep img {
+            transition: .3s all ease-in-out;   
         }
         &:hover {
-            & img.twic-done {
-                transform: scale(1.1);
+            & ::ng-deep img.twic-done {
+                transform: scale(1.1) !important;
             }
         }
     }

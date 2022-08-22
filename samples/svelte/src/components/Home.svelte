@@ -132,6 +132,18 @@ const categories = [
     --twic-grid-columns-width: calc(200px);
   }
 
+  :global(.twic-item) {
+        & :global(img) {
+            transition: .3s all ease-in-out;
+        }
+       
+        &:hover {
+            & :global(img.twic-done) {
+                transform: scale(1.1) !important;
+            }
+        }
+    }
+
   figure {
     position: relative;
     & figcaption {

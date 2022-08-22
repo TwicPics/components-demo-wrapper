@@ -122,7 +122,7 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 .home-container {
   h3 {
     margin-bottom: 1rem;
@@ -138,7 +138,7 @@ export default {
     }
     &:hover {
       & img.twic-done {
-        transform: scale(1.1);
+        transform: scale(1.1) !important;
       }
     }
   }
