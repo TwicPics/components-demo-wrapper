@@ -1,32 +1,32 @@
 {
-  "name": "gatsby",
-  "version": "1.0.0",
-  "private": true,
-  "description": "gatsby",
-  "author": "Miguel Beignon",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "node ../../build && $npm_execpath install && gatsby build",
-    "serve": "node ../../build && $npm_execpath install && gatsby clean && gatsby develop -p 3000",
-    "serve_o": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "dependencies": {
-    "@twicpics/components": "0.10.0",
-    "@twicpics/components-demo-wrapper": "git+https://github.com/TwicPics/components-demo-wrapper.git#main",
-    "gatsby": "^4.10.0",
-    "gatsby-cli": "^4.10.1",
-    "gatsby-plugin-compile-es6-packages": "^2.1.1",
-    "gatsby-plugin-manifest": "^4.10.1",
-    "gatsby-plugin-sass": "^5.10.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-swipeable": "7.0.0",
-    "sass": "^1.49.9",
-    "webfontloader": "^1.6.28"
-  }
+    "name": "gatsby",
+    "version": "1.0.0",
+    "private": true,
+    "description": "gatsby",
+    "author": "Miguel Beignon",
+    "keywords": [
+        "gatsby"
+    ],
+    "scripts": {
+        "develop": "gatsby develop",
+        "start": "gatsby develop",
+        "build": "node ../../build && $npm_execpath install && gatsby build",
+        "serve": "node ../../build && $npm_execpath install && gatsby clean && gatsby develop -p 3000",
+        "serve_o": "gatsby serve",
+        "clean": "gatsby clean"
+    },
+    "dependencies": {
+        "@twicpics/components": "0.11.0",
+        "@twicpics/components-demo-wrapper": "git+https://github.com/TwicPics/components-demo-wrapper.git#main",
+        "gatsby": "^4.10.0",
+        "gatsby-cli": "^4.10.1",
+        "gatsby-plugin-compile-es6-packages": "^2.1.1",
+        "gatsby-plugin-manifest": "^4.10.1",
+        "gatsby-plugin-sass": "^5.10.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-swipeable": "7.0.0",
+        "sass": "^1.49.9",
+        "webfontloader": "^1.6.28"
+    }
 }

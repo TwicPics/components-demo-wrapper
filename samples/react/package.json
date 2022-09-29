@@ -1,33 +1,33 @@
 {
-  "name": "app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@twicpics/components": "0.10.0",
-    "@twicpics/components-demo-wrapper": "git+https://github.com/TwicPics/components-demo-wrapper.git#main",
-    "react": "18.2.0",
-    "react-app-rewired": "2.2.1",
-    "react-dom": "18.2.0",
-    "react-router-dom": "6.3.0",
-    "react-scripts": "5.0.1",
-    "react-swipeable": "7.0.0",
-    "sass": "^1.49.7",
-    "webfontloader": "^1.6.28"
-  },
-  "scripts": {
-    "build": "node ../../build && $npm_execpath install && DISABLE_ESLINT_PLUGIN=true SKIP_PREFLIGHT_CHECK=true react-app-rewired build",
-    "serve": "node ../../build && $npm_execpath install && DISABLE_ESLINT_PLUGIN=true SKIP_PREFLIGHT_CHECK=true react-app-rewired start"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "app",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@twicpics/components": "0.11.0",
+        "@twicpics/components-demo-wrapper": "git+https://github.com/TwicPics/components-demo-wrapper.git#main",
+        "react": "18.2.0",
+        "react-app-rewired": "2.2.1",
+        "react-dom": "18.2.0",
+        "react-router-dom": "6.3.0",
+        "react-scripts": "5.0.1",
+        "react-swipeable": "7.0.0",
+        "sass": "^1.49.7",
+        "webfontloader": "^1.6.28"
+    },
+    "scripts": {
+        "build": "node ../../build && $npm_execpath install && DISABLE_ESLINT_PLUGIN=true SKIP_PREFLIGHT_CHECK=true react-app-rewired build",
+        "serve": "node ../../build && $npm_execpath install && DISABLE_ESLINT_PLUGIN=true SKIP_PREFLIGHT_CHECK=true react-app-rewired start"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
 }

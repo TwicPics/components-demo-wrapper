@@ -1,25 +1,25 @@
 {
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ],
-  "dependencies": {
-    "next-transpile-modules": "9.0.0",
-    "@twicpics/components": "0.10.0",
-    "@twicpics/components-demo-wrapper": "git+https://github.com/TwicPics/components-demo-wrapper.git#main",
-    "next": "12.2.2",
-    "prop-types": "15.8.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-swipeable": "7.0.0",
-    "sass": "^1.49.7",
-    "webfontloader": "^1.6.28"
-  },
-  "license": "MIT",
-  "scripts": {
-    "build": "node ../../build && $npm_execpath install && next build",
-    "serve": "node ../../build && $npm_execpath install && next -p 3000",
-    "start": "node ../../build && $npm_execpath install && next build && next start -p 3000"
-  }
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
+    ],
+    "dependencies": {
+        "next-transpile-modules": "9.0.0",
+        "@twicpics/components": "0.11.0",
+        "@twicpics/components-demo-wrapper": "git+https://github.com/TwicPics/components-demo-wrapper.git#main",
+        "next": "12.2.2",
+        "prop-types": "15.8.1",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-swipeable": "7.0.0",
+        "sass": "^1.49.7",
+        "webfontloader": "^1.6.28"
+    },
+    "license": "MIT",
+    "scripts": {
+        "build": "node ../../build && $npm_execpath install && next build",
+        "serve": "node ../../build && $npm_execpath install && next -p 3000",
+        "start": "node ../../build && $npm_execpath install && next build && next start -p 3000"
+    }
 }
