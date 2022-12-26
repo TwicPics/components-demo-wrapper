@@ -1,20 +1,22 @@
-<img align="right" width="30%" src="https://raw.githubusercontent.com/twicpics/components/main/logo.png">
+[![NPM Version][npm-image]][npm-url]
+[![License][license-image]][license-url]
 
-# Demonstration of TwicPics components
+## ⚠️ Deprecation warning ⚠️
 
-This repository contains samples of the use of twicpics components [`@twicpics/components`](https://www.npmjs.com/package/@twicpics/components).
+**This package has been deprecated in favor of: **
 
-## What is [TwicPics](https://www.twicpics.com/)?
+- [Demonstration of TwicPics components in a React.js project](https://github.com/TwicPics/components-demo-react).
+- [Demonstration of TwicPics components in a Next.js project](https://github.com/TwicPics/components-demo-next).
+- [Demonstration of TwicPics components in a Gatsby.js project](https://github.com/TwicPics/components-demo-gatsby).
+- [Demonstration of TwicPics components in a Vue2 project](https://github.com/TwicPics/components-demo-vue2).
+- [Demonstration of TwicPics components in a Vue3 project](https://github.com/TwicPics/components-demo-vue3).
+- [Demonstration of TwicPics components in a Nuxt2 project](https://github.com/TwicPics/components-demo-nuxt2).
+- [Demonstration of TwicPics components in a Nuxt3 project](https://github.com/TwicPics/components-demo-nuxt3).
+- [Demonstration of TwicPics components in a Svelte3 project](https://github.com/TwicPics/components-demo-svelte3).
+- [Demonstration of TwicPics components in a Angular project](https://github.com/TwicPics/components-demo-angular).
 
-[TwicPics](https://www.twicpics.com/) is a __Responsive Image Service Solution__ (SaaS) that enables __on-demand responsive image generation__.
 
-With [TwicPics](https://www.twicpics.com/), developers only deal with high-resolution versions of their media while end-users receive __optimized, perfectly sized, device-adapted__ versions __delivered from a server close to them__.
-
-[TwicPics](https://www.twicpics.com/) acts as an __image proxy__. It requests your master image, be it on your own web server, cloud storage or DAM, then generates a __device-adapted__ version with __best-in-class compression__, delivered directly to the end-user from the __closest delivery point__ available.
-
-## Content
-
-| directory | content |
-| - | - |
-| `wrapper` | Divided into sub-directories. One per supported framework + one common sub-directories (`_`) which contains the wrapper style |
-| `samples` | This directory contains sample projects for all supported frameworks. See inner `README.md` |
+[license-image]: https://img.shields.io/npm/l/@twicpics/components-react-native.svg?style=flat-square
+[license-url]: https://raw.githubusercontent.com/twicpics/components-react-native/master/LICENSE
+[npm-image]: https://img.shields.io/badge/npm-v0.0.1-orange.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/@twicpics/components-react-native/v/0.0.1
